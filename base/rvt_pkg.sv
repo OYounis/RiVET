@@ -8,19 +8,17 @@ package rvt_pkg;
   `include "rvt_macros.svh"
 
   typedef enum int {
-    RVT_NONE, 
-    RVT_CHECKER, 
-    RVT_COVERAGE, 
-    RVT_LOGGER
-  } sub_mode_t;
-  
-  `include "rvt_object.svh"
-  `include "rvt_component.svh"
+    SubNone,
+    SubChecker,
+    SubCoverage,
+    SubLogger
+  } sub_mode_e;
 
-  `include "rvt_item.svh"
-  typedef class rvt_driver;
-  typedef class rvt_monitor;
-  typedef class rvt_subscriber;
+  `include "rvt_base_obj.svh"
+  `include "rvt_base_cmp.svh"
+
+  `include "rvt_base_item.svh"
+  `include "rvt_base_agnt.svh"
 
   `include "rvt_bfm_cb.svh"
   `include "rvt_bfm.svh"
@@ -30,7 +28,7 @@ package rvt_pkg;
   `include "rvt_cfg.svh"
   `include "rvt_agent_cfg.svh"
 
-  `include "rvt_sequencer.svh"
+  `include "rvt_seqr.svh"
 
   `include "rvt_sequence.svh"
 

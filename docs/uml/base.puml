@@ -1,0 +1,146 @@
+' - private
+' # protected
+' + public
+
+' Extension	<|--	
+' Composition	*--	
+' Aggregation	o--
+
+@startuml base
+class uvm_component
+class uvm_object
+class uvm_sequence_item
+class uvm_agent
+class uvm_driver    <<REQ : uvm_sequence_item, RSP : REQ>>
+class uvm_monitor   <<REQ : uvm_sequence_item, RSP : REQ>>
+class uvm_sequencer <<REQ : uvm_sequence_item, RSP : REQ>>
+class uvm_sequence  <<REQ : uvm_sequence_item, RSP : REQ>>
+
+class rvt_cmp
+class rvt_obj
+class rvt_item
+class rvt_agnt
+class rvt_drv  <<REQ : rvt_item, RSP : REQ>>
+class rvt_mon  <<REQ : rvt_item, RSP : REQ>>
+class rvt_seq  <<REQ : rvt_item, RSP : REQ>>
+class rvt_seqr <<REQ : rvt_item, RSP : REQ>>
+
+abstract rvt_bfm
+
+class rvt_cfg {
+  + uvm_active_passive_enum is_active
+  + sub_mode_e sub_en[string]
+}
+
+class rvt_agnt_cfg {
+  + rvt_bfm m_bfm
+  + string running_phase_name[]
+}
+
+class rvt_env_cfg {
+  + rvt_bfm m_bfm [string]
+  + rvt_agnt_cfg m_agnt_cfg [string]
+}
+
+abstract rvt_dut_cfg {
+  - int dut_params [string]
+
+  + {abstract} void initialiase(string)
+  + bit get_param(string, ref int)
+  + bit set_param(string, int)
+}
+
+class rvt_rv_instr {
+  # instr_t   m_instr
+  # rvt_instr_cov m_cov
+
+  + format_t m_format
+  + asm_t    m_asm
+  + bit      m_decoded
+
+  + opcode_t opcode
+
+  + logic [2:0] funct3
+  + logic [4:0] funct5
+  + logic [7:0] funct7
+
+  + logic [4:0] rs2
+  + logic [4:0] rs1
+  + logic [4:0] rd
+
+  + logic [31:0] imm
+
+  + amo_t amo
+  + logic aq
+  + logic rl
+
+  + fpo_t fpo
+  + logic [1:0] fmt
+
+  + bit m_imm_vld
+  + bit m_rd_vld
+  + bit m_rs1_vld
+  + bit m_rs2_vld
+
+  + bit m_funct3_vld
+  + bit m_funct5_vld
+  + bit m_funct7_vld
+
+  + logic [31:0] getRawInstr()
+  + setRawInstr(logic [31:0] raw_instr)
+  + sampleCov()
+  + decode()
+  + bit hasRd()
+  + bit hasRs1()
+  + bit hasRs2()
+  + bit hasImm()
+  + logic[31:0] getImm()
+  + bit hasFunct7()
+  + logic [6:0] getFunct7()
+  + bit hasFunct5()
+  + logic [4:0] getFunct5()
+  + bit hasFunct3()
+  + logic [2:0] getFunct3()
+  + asm_t getAsm()
+}
+
+abstract class rvt_rv_instr_lookup {
+  {static} asm_t ASM_BY_FORMAT [format_t][$]
+  {static} RV64_ASM[$]
+  {static} asm_t ASM_BY_EXT [rv_ext_t][$]
+
+  {static} format_t getFormatFromAsm(asm_t)
+  {static} function is64bAsm(asm_t)
+}
+
+class rvt_rv_instr_cov
+
+uvm_sequence_item <|-- rvt_item
+uvm_object    <|-- rvt_obj
+uvm_component <|-- rvt_cmp
+uvm_agent     <|-- rvt_agnt
+uvm_driver    <|-- rvt_drv
+uvm_monitor   <|-- rvt_mon
+uvm_sequencer <|-- rvt_seqr
+uvm_sequence  <|-- rvt_seq
+
+rvt_obj <|-- rvt_bfm
+
+rvt_obj <|-- rvt_cfg
+rvt_obj <|-- rvt_dut_cfg
+
+rvt_cfg <|-- rvt_agnt_cfg
+rvt_cfg <|-- rvt_env_cfg
+
+rvt_item <|-- rvt_rv_instr
+rvt_obj  <|-- rvt_rv_instr_cov
+rvt_obj  <|-- rvt_rv_instr_lookup
+
+
+rvt_agnt_cfg o-- rvt_bfm
+rvt_env_cfg  o- rvt_bfm
+rvt_env_cfg  o- rvt_agnt_cfg
+
+rvt_rv_instr O- rvt_rv_instr_cov
+
+@enduml

@@ -2,7 +2,7 @@
  * Memory model class containing the memory array itself
  * and methods required to access the model.
  */
-class rvt_mem#(type CFG = rvt_base_cfg) extends uvm_component;
+class rvt_mem#(type CFG = rvt_mem_cfg) extends rvt_component;
   //Re-definition of the same typedefs in the CFG to be available in this class scope.
   typedef CFG::data_t   data_t;
   typedef CFG::addr_t   addr_t;

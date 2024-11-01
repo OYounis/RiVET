@@ -1,2 +1,2 @@
-#RiVET: RISC Verification and Evaluation Testbench
-A scalable verification environment for Risc-V Processor Hardware Testing
+# RiVET: RISC Verification and Evaluation Toolkit
+A scalable environment for RISC processor verification and performance evaluation

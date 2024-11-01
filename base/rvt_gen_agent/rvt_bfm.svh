@@ -1,6 +1,6 @@
 class rvt_bfm#(
   type REQ = rvt_item
-) extends rvt_object;
+) extends rvt_obj;
   `uvm_object_param_utils(rvt_bfm#(REQ))
   `uvm_register_cb(rvt_bfm#(REQ), rvt_bfm_cb)
 

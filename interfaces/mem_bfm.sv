@@ -14,11 +14,11 @@ interface mem_bfm_if(interface _if);
     extern virtual task sample();
   endclass
 
-  virtual task mem_bfm::drive();
+  virtual automatic task mem_bfm::drive();
 
   endtask
 
-  virtual task mem_bfm::sample();
+  virtual automatic task mem_bfm::sample();
 
   endtask
 endinterface

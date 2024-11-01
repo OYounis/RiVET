@@ -1,8 +1,8 @@
-/* Class: rvt_monitor
+/* Class: rvt_gen_mon
  * Extends <uvm_monitor>. Base genric monitor class containing generic monitor methods.
  * All generic monitors should extend this class.
  */
-class rvt_monitor #(
+class rvt_gen_mon #(
   type REQ = rvt_item
 ) extends uvm_monitor;
   typedef rvt_bfm#(REQ) bfm_m;
@@ -19,7 +19,7 @@ class rvt_monitor #(
   `uvm_component_new()
   // Factory Registry: `uvm_component_utils
   // UVM factory registry.
-  `uvm_component_param_utils(rvt_monitor#(REQ))
+  `uvm_component_param_utils(rvt_gen_mon#(REQ))
 
   // Function: build_phase
   // UVM build phase, calls the do_build function.
@@ -33,22 +33,22 @@ class rvt_monitor #(
   // Task: monitor
   // Sample DUT bus signals. Base implementation calls the BFM monitor() task.
   extern virtual task monitor();
-endclass : rvt_monitor
+endclass : rvt_gen_mon
 
-function void rvt_monitor::build_phase(uvm_phase phase);
+function void rvt_gen_mon::build_phase(uvm_phase phase);
   super.build_phase(phase);
   this.do_build();
 endfunction
 
-task rvt_monitor::run_phase(uvm_phase phase);
+task rvt_gen_mon::run_phase(uvm_phase phase);
   super.run_phase(phase);
   this.monitor();
 endtask
 
-function void rvt_monitor::do_build();
+function void rvt_gen_mon::do_build();
   ap = new({this.get_name(),"_ap"}, this);
 endfunction
 
-task rvt_monitor::monitor();
+task rvt_gen_mon::monitor();
   bfm.monitor();
 endtask
