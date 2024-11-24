@@ -1,3 +1,7 @@
+/**
+ * @file rvt_macors.svh
+ * @brief Additional RiVET essential DV macros
+ */
 
 //! @def RVT_STRINGIFY(MSG_)
 //! Return a string of the input
@@ -12,7 +16,7 @@
 //! @def RVT_METHOD_REQUIRES_EXTENSION
 //! Return a string of the input
 `ifndef RVT_METHOD_REQUIRES_EXTENSION
-`define RVT_METHOD_REQUIRES_EXTENSION(METHOD_)\
+`define RVT_METHOD_REQUIRES_EXTENSION(METHOD_ = "")\
   `uvm_fatal($sformatf("[RVT/%0s]", get_name()), \
   $sformatf("Method %0s::%0s requires an implementation in this extended class", get_type_name(), METHOD_);
 `endif //RVT_METHOD_REQUIRES_EXTENSION
@@ -32,6 +36,7 @@
   static virtual function NAME_ get(); \
    if(singleton_inst == null) begin \
     singleton_inst = new(); \
+    initialize();\
    end \
    return singleton_inst; \
   endfunction : get \

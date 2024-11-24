@@ -1,0 +1,838 @@
+\hypertarget{riscv__fixed__params_8svh}{}\doxysection{base/riscv/riscv\+\_\+fixed\+\_\+params.svh File Reference}
+\label{riscv__fixed__params_8svh}\index{base/riscv/riscv\_fixed\_params.svh@{base/riscv/riscv\_fixed\_params.svh}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{riscv__fixed__params_8svh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{riscv__fixed__params_8svh_a08151e66b1e0869c46a3c443508d2396}{\+\_\+\+RVT\+\_\+\+FIXED\+\_\+\+PARAMS\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+parameter logic$<$ 1\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a577bf170970b3ce01e0fbbe5a8ce26c5}{PRV\+\_\+\+LVL\+\_\+M}} = 0b11
+\begin{DoxyCompactList}\small\item\em Privilege Levels. \end{DoxyCompactList}\item 
+parameter logic$<$ 1\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_aab8818273020f165d806317df19ffe79}{PRV\+\_\+\+LVL\+\_\+S}} = 0b01
+\item 
+parameter logic$<$ 1\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a0039a196a36b7ef9a68f699eac987e2f}{PRV\+\_\+\+LVL\+\_\+U}} = 0b00
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a4e23a7eacde6549b4adf3d5b7bff9c05}{OPCODE\+\_\+\+LOAD}} = 0b00\+\_\+000\+\_\+11
+\begin{DoxyCompactList}\small\item\em RISC-\/V opcodes. \end{DoxyCompactList}\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a8c370bf217bb8be41629cef5c4816e30}{OPCODE\+\_\+\+STORE}} = 0b01\+\_\+000\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a16f843eabdb840f91570753236ab46e8}{OPCODE\+\_\+\+MADD}} = 0b10\+\_\+000\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_adce03840262e1c770b2063c9e899a481}{OPCOED\+\_\+\+BRANCH}} = 0b11\+\_\+000\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_aae5a34921067aea32f2f4505ed266a71}{OPCODE\+\_\+\+LOAD\+\_\+\+FP}} = 0b00\+\_\+001\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a2b443165540a49a49780453982f54459}{OPCODE\+\_\+\+STORE\+\_\+\+FP}} = 0b01\+\_\+001\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a09ed1fb0384e6d9f6d2b0ce76b3f7928}{OPCODE\+\_\+\+MSUB}} = 0b10\+\_\+001\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a5796e8dbfdb552e5c9907b9667aa70da}{OPCODE\+\_\+\+JALR}} = 0b11\+\_\+001\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_abebbaac726c83e67ce35250f0dc8037b}{OPCODE\+\_\+\+CUSTOM0}} = 0b00\+\_\+010\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_acb8f21f8f720fb066084b3ad1724fdb8}{OPCODE\+\_\+\+CUSTOM1}} = 0b01\+\_\+010\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ac52eebdd6db8d43c6cbc6a8ee2f6417d}{OPCODE\+\_\+\+NMSUB}} = 0b10\+\_\+010\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ab93761506e04962a2d933b00ab47a24c}{OPCODE\+\_\+\+RESERVED}} = 0b11\+\_\+010\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a0009520cae53e1ea77b4702077722512}{OPCODE\+\_\+\+MISC\+\_\+\+MEM}} = 0b00\+\_\+011\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a1717f4925f9a8bb43f1c0edbe1d817c9}{OPCODE\+\_\+\+AMO}} = 0b01\+\_\+011\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_acf9ea7c402798650b53b26c048b18d65}{OPCODE\+\_\+\+NMADD}} = 0b10\+\_\+011\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a0c2070d1b424b40f5864264e392e1335}{OPCODE\+\_\+\+JAL}} = 0b11\+\_\+011\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ad465ae574455b19ee380ddfc9ea5d6ba}{OPCODE\+\_\+\+OP\+\_\+\+IMM}} = 0b00\+\_\+100\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a295cab68eb4baf68e254921ae182c421}{OPCODE\+\_\+\+OP}} = 0b01\+\_\+100\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ac40b5d3a35bdf244d743367201e4c9b2}{OPCODE\+\_\+\+OP\+\_\+\+FP}} = 0b10\+\_\+100\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a7cda713c41426abc99e256f330244ad6}{OPCODE\+\_\+\+SYSTEM}} = 0b11\+\_\+100\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_abff652b07bc698d035fdd5ec2673aaa0}{OPCODE\+\_\+\+AUIPC}} = 0b00\+\_\+101\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a9e9c1f4ca601aac022ff5ed1bf6e142c}{OPCODE\+\_\+\+LUI}} = 0b01\+\_\+101\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_acad5c53e8144b4af56acdc9cf81c7710}{OPCODE\+\_\+\+OP\+\_\+V}} = 0b10\+\_\+101\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_af510da1ae0c8a27d47b072cad9b03201}{OPCODE\+\_\+\+OP\+\_\+\+VE}} = 0b11\+\_\+101\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a67ce947ee51d4c1d6428cf3a42816162}{OPCODE\+\_\+\+OP\+\_\+\+IMM32}} = 0b00\+\_\+110\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_aaf69f04b389505feafc7d475a98b90fb}{OPCODE\+\_\+\+OP32}} = 0b01\+\_\+110\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a191a4c6ce779a8ec03d7b3a678291171}{OPCODE\+\_\+\+CUSTOM2}} = 0b10\+\_\+110\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_aa913cb1f8625a238181987e906452f41}{OPCODE\+\_\+\+CUSTOM3}} = 0b11\+\_\+110\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a4bcf15ca993fb79745dda7bbc828b86a}{OPCODE\+\_\+48}} = 0b00\+\_\+111\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a90502e5cb149cac1eb8cf47f1f94ed49}{OPCODE\+\_\+64}} = 0b01\+\_\+111\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a9dd5dcfbc91d7957d1462f0bde6860ff}{OPCODE\+\_\+48\+\_\+}} = 0b10\+\_\+111\+\_\+11
+\item 
+parameter logic$<$ 6\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a8625a2e781d210ea480a33d7abe7606b}{OPCODE\+\_\+80}} = 0b11\+\_\+111\+\_\+11
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a217fd6c86f6c11ec79459459436b64f5}{FUNCT3\+\_\+\+JALR}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a3d5daf1502cfd2023ef640c11420c291}{FUNCT3\+\_\+\+BEQ}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ad8e86257d988a275aee3a28758e840f4}{FUNCT3\+\_\+\+BNE}} = 0b001
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a5543a9c262b910ff61114d4f09c35e7f}{FUNCT3\+\_\+\+BLT}} = 0b100
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a8761d89f0d2cafe24239589858f545e5}{FUNCT3\+\_\+\+BGE}} = 0b101
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_aaf95ddc63e94907e3b534c20b4831206}{FUNCT3\+\_\+\+BLTU}} = 0b110
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a4deb6b12b4b02aca656e3fcaf249b2b5}{FUNCT3\+\_\+\+BGEU}} = 0b111
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a8c166096b5ff649d3b57e42ce5e2e130}{FUNCT3\+\_\+\+LB}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a7ae9545d04d54a203d3b0e232832df85}{FUNCT3\+\_\+\+LH}} = 0b001
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a0e16bee14dcd75c518c307622a2d1088}{FUNCT3\+\_\+\+LW}} = 0b010
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ab41a509f5e694676496d2ddb74cb4f59}{FUNCT3\+\_\+\+LBU}} = 0b100
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a9610d9b5e73e3fd68884b2c66ae1a379}{FUNCT3\+\_\+\+LHU}} = 0b101
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a5a7fdc9a42047834123d3e2b55706484}{FUNCT3\+\_\+\+SB}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a44f9817906fab62e07cdbc72241517c9}{FUNCT3\+\_\+\+SH}} = 0b001
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a7b54344c8c029c14f31f883c3ac5368d}{FUNCT3\+\_\+\+SW}} = 0b010
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a8cf066779fa4a45245824b453126c5d5}{FUNCT3\+\_\+\+ADDI}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a9b51fc53575e95b95f6a8f176eca3b0c}{FUNCT3\+\_\+\+SLTI}} = 0b001
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a487667e746b348b21d9689677ab08bfc}{FUNCT3\+\_\+\+SLTIU}} = 0b011
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_aca9fe28f7719d3c24b7e19b447d9e1f9}{FUNCT3\+\_\+\+XORI}} = 0b100
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a169a464a0e39c0d78b08d8b13ac2b4d1}{FUNCT3\+\_\+\+ORI}} = 0b110
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_adef1cfa5bb1bdb07cb925c107c24ac33}{FUNCT3\+\_\+\+ANDI}} = 0b111
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ac6d0dfa5cd6d302e6591c1a7b72f6cbe}{FUNCT3\+\_\+\+SLLI}} = 0b001
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a6fc929f9082da24bb5c1268abd8b71aa}{FUNCT3\+\_\+\+SRLI}} = 0b101
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ae49abfce5066198cafffd275ba9b064e}{FUNCT3\+\_\+\+SRAI}} = 0b101
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a30aa9d4e8c9ee73ce5fe8c63d0c67707}{FUNCT3\+\_\+\+ADD}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_abcb4729ec19e60fa4e31624598bfafee}{FUNCT3\+\_\+\+SUB}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a5499489d3e6b95a95c8ee94408a36f87}{FUNCT3\+\_\+\+SLL}} = 0b001
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ab699c75bbb79b48955f13ed9f46cee59}{FUNCT3\+\_\+\+SLT}} = 0b010
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a072dfc518e500fbf40a2d84871797ea1}{FUNCT3\+\_\+\+SLTU}} = 0b011
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_aaab921fd837ff9f13d3a96ae9708e884}{FUNCT3\+\_\+\+XOR}} = 0b100
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ab12c5140b3e822b624ed71074786d4ad}{FUNCT3\+\_\+\+OR}} = 0b110
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a82c4b54c226a397cca5a055113d0bfe3}{FUNCT3\+\_\+\+AND}} = 0b111
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ac3a8cd1cd5df73e746803ca933db4f3a}{FUNCT3\+\_\+\+SRL}} = 0b101
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a11657c3d9080ded75dd9bba443045ce3}{FUNCT3\+\_\+\+SRA}} = 0b101
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_aa6207bab3de3d23e4a0ed969f2bf6d6a}{FUNCT3\+\_\+\+FENC}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a6b5194ee0d095aae7267cecbbf45f7f4}{FUNCT3\+\_\+\+FENCE\+\_\+\+TSO}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ad8f628f731f8604d20a9687ac06df3d1}{FUNCT3\+\_\+\+PAUSE}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a0fe393965651d11fece944e00147ca10}{FUNCT3\+\_\+\+ECALL}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a76ec926e7e82d916ff99c9b2e3c7db18}{FUNCT3\+\_\+\+EBREAK}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a0de930b20e18afa4371dd28629b16054}{FUNCT3\+\_\+\+LWU}} = 0b110
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a4f986f6df28cee7ba342e681a8ba831c}{FUNCT3\+\_\+\+LD}} = 0b011
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a1d180ae88a1dda68e0afc0572020b34c}{FUNCT3\+\_\+\+SD}} = 0b011
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a55d363dd15c51e4a85169e88b067bb1e}{FUNCT3\+\_\+\+SLLIW}} = 0b001
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a76923e07009815f48288098c43e4646d}{FUNCT3\+\_\+\+SRLIW}} = 0b101
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a3ccaafd231448f4049c3de49f806eb9f}{FUNCT3\+\_\+\+SRAIW}} = 0b101
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_acbdf7c9323aa9738740303fd00c516a3}{FUNCT3\+\_\+\+ADDIW}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a664dee841c34c608a77e6d3da8346789}{FUNCT3\+\_\+\+ADDW}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a48cf3f77b277eadf07b86b4423774e28}{FUNCT3\+\_\+\+SUBW}} = 0b000
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ab0f6f95decc8baacd8b08597c49ee8e5}{FUNCT3\+\_\+\+SLLW}} = 0b001
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a0c478bd8d1f9f9f3f3e1779da35d90d0}{FUNCT3\+\_\+\+SRLW}} = 0b101
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a230e9d0705f4d51ad556714cb3da7eb3}{FUNCT3\+\_\+\+SRAW}} = 0b101
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_acb045349f15d3d3f7af9d23726b596be}{FUNCT3\+\_\+\+AMO32}} = 0b010
+\item 
+parameter logic$<$ 2\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a827166f839101e684c70318e3365b63c}{FUNCT3\+\_\+\+AMO64}} = 0b011
+\item 
+parameter logic$<$ 4\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a0c7eae276c14a4c97db9f60e80a85c9e}{FUNCT5\+\_\+\+LR}} = 0b00010
+\item 
+parameter logic$<$ 4\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a4ba05c2c1850cffbcd153476bc1dc72d}{FUNCT5\+\_\+\+SC}} = 0b00011
+\item 
+parameter logic$<$ 4\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a8368de13681bc15afd6b9e166994aae6}{FUNCT5\+\_\+\+AMOSWAP}} = 0b00001
+\item 
+parameter logic$<$ 4\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_abd6e08ef2f4c1c86e2dbdff9b7420a0f}{FUNCT5\+\_\+\+AMOADD}} = 0b00000
+\item 
+parameter logic$<$ 4\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a6d8d61c235bac4b30fcf9c88870d3d04}{FUNCT5\+\_\+\+AMOXOR}} = 0b00100
+\item 
+parameter logic$<$ 4\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a2098c23adc2ac67cd70c4fabbb7b6ce8}{FUNCT5\+\_\+\+AMOAND}} = 0b01100
+\item 
+parameter logic$<$ 4\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a28539391b826ee3d1f78ee5b2453f0b1}{FUNCT5\+\_\+\+AMOOR}} = 0b01000
+\item 
+parameter logic$<$ 4\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_adda7aca811549df5c66e087cf6937355}{FUNCT5\+\_\+\+AMOMIN}} = 0b10000
+\item 
+parameter logic$<$ 4\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_ae499da6485ad7434822ec0e2161ea2d9}{FUNCT5\+\_\+\+AMOMAX}} = 0b10100
+\item 
+parameter logic$<$ 4\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a2603c9459f7761c75f7da7f993b77730}{FUNCT5\+\_\+\+AMOMINU}} = 0b11000
+\item 
+parameter logic$<$ 4\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a8ad581afa87c7f45121a76f9dfa0af66}{FUNCT5\+\_\+\+AMOMAXU}} = 0b11100
+\item 
+parameter logic$<$ 4\+:0 $>$ \mbox{\hyperlink{riscv__fixed__params_8svh_a155268fce5c2885a0de4d3a08d8ac4ba}{AMONOP}} = 0b11111
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a08151e66b1e0869c46a3c443508d2396}\label{riscv__fixed__params_8svh_a08151e66b1e0869c46a3c443508d2396}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!\_RVT\_FIXED\_PARAMS\_@{\_RVT\_FIXED\_PARAMS\_}}
+\index{\_RVT\_FIXED\_PARAMS\_@{\_RVT\_FIXED\_PARAMS\_}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{\_RVT\_FIXED\_PARAMS\_}{\_RVT\_FIXED\_PARAMS\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+RVT\+\_\+\+FIXED\+\_\+\+PARAMS\+\_\+}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a155268fce5c2885a0de4d3a08d8ac4ba}\label{riscv__fixed__params_8svh_a155268fce5c2885a0de4d3a08d8ac4ba}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!AMONOP@{AMONOP}}
+\index{AMONOP@{AMONOP}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{AMONOP}{AMONOP}}
+{\footnotesize\ttfamily parameter logic$<$4\+:0$>$ AMONOP = 0b11111}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a30aa9d4e8c9ee73ce5fe8c63d0c67707}\label{riscv__fixed__params_8svh_a30aa9d4e8c9ee73ce5fe8c63d0c67707}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_ADD@{FUNCT3\_ADD}}
+\index{FUNCT3\_ADD@{FUNCT3\_ADD}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_ADD}{FUNCT3\_ADD}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+ADD = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a8cf066779fa4a45245824b453126c5d5}\label{riscv__fixed__params_8svh_a8cf066779fa4a45245824b453126c5d5}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_ADDI@{FUNCT3\_ADDI}}
+\index{FUNCT3\_ADDI@{FUNCT3\_ADDI}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_ADDI}{FUNCT3\_ADDI}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+ADDI = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_acbdf7c9323aa9738740303fd00c516a3}\label{riscv__fixed__params_8svh_acbdf7c9323aa9738740303fd00c516a3}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_ADDIW@{FUNCT3\_ADDIW}}
+\index{FUNCT3\_ADDIW@{FUNCT3\_ADDIW}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_ADDIW}{FUNCT3\_ADDIW}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+ADDIW = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a664dee841c34c608a77e6d3da8346789}\label{riscv__fixed__params_8svh_a664dee841c34c608a77e6d3da8346789}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_ADDW@{FUNCT3\_ADDW}}
+\index{FUNCT3\_ADDW@{FUNCT3\_ADDW}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_ADDW}{FUNCT3\_ADDW}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+ADDW = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_acb045349f15d3d3f7af9d23726b596be}\label{riscv__fixed__params_8svh_acb045349f15d3d3f7af9d23726b596be}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_AMO32@{FUNCT3\_AMO32}}
+\index{FUNCT3\_AMO32@{FUNCT3\_AMO32}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_AMO32}{FUNCT3\_AMO32}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+AMO32 = 0b010}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a827166f839101e684c70318e3365b63c}\label{riscv__fixed__params_8svh_a827166f839101e684c70318e3365b63c}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_AMO64@{FUNCT3\_AMO64}}
+\index{FUNCT3\_AMO64@{FUNCT3\_AMO64}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_AMO64}{FUNCT3\_AMO64}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+AMO64 = 0b011}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a82c4b54c226a397cca5a055113d0bfe3}\label{riscv__fixed__params_8svh_a82c4b54c226a397cca5a055113d0bfe3}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_AND@{FUNCT3\_AND}}
+\index{FUNCT3\_AND@{FUNCT3\_AND}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_AND}{FUNCT3\_AND}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+AND = 0b111}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_adef1cfa5bb1bdb07cb925c107c24ac33}\label{riscv__fixed__params_8svh_adef1cfa5bb1bdb07cb925c107c24ac33}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_ANDI@{FUNCT3\_ANDI}}
+\index{FUNCT3\_ANDI@{FUNCT3\_ANDI}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_ANDI}{FUNCT3\_ANDI}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+ANDI = 0b111}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a3d5daf1502cfd2023ef640c11420c291}\label{riscv__fixed__params_8svh_a3d5daf1502cfd2023ef640c11420c291}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_BEQ@{FUNCT3\_BEQ}}
+\index{FUNCT3\_BEQ@{FUNCT3\_BEQ}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_BEQ}{FUNCT3\_BEQ}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+BEQ = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a8761d89f0d2cafe24239589858f545e5}\label{riscv__fixed__params_8svh_a8761d89f0d2cafe24239589858f545e5}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_BGE@{FUNCT3\_BGE}}
+\index{FUNCT3\_BGE@{FUNCT3\_BGE}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_BGE}{FUNCT3\_BGE}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+BGE = 0b101}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a4deb6b12b4b02aca656e3fcaf249b2b5}\label{riscv__fixed__params_8svh_a4deb6b12b4b02aca656e3fcaf249b2b5}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_BGEU@{FUNCT3\_BGEU}}
+\index{FUNCT3\_BGEU@{FUNCT3\_BGEU}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_BGEU}{FUNCT3\_BGEU}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+BGEU = 0b111}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a5543a9c262b910ff61114d4f09c35e7f}\label{riscv__fixed__params_8svh_a5543a9c262b910ff61114d4f09c35e7f}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_BLT@{FUNCT3\_BLT}}
+\index{FUNCT3\_BLT@{FUNCT3\_BLT}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_BLT}{FUNCT3\_BLT}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+BLT = 0b100}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_aaf95ddc63e94907e3b534c20b4831206}\label{riscv__fixed__params_8svh_aaf95ddc63e94907e3b534c20b4831206}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_BLTU@{FUNCT3\_BLTU}}
+\index{FUNCT3\_BLTU@{FUNCT3\_BLTU}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_BLTU}{FUNCT3\_BLTU}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+BLTU = 0b110}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ad8e86257d988a275aee3a28758e840f4}\label{riscv__fixed__params_8svh_ad8e86257d988a275aee3a28758e840f4}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_BNE@{FUNCT3\_BNE}}
+\index{FUNCT3\_BNE@{FUNCT3\_BNE}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_BNE}{FUNCT3\_BNE}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+BNE = 0b001}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a76ec926e7e82d916ff99c9b2e3c7db18}\label{riscv__fixed__params_8svh_a76ec926e7e82d916ff99c9b2e3c7db18}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_EBREAK@{FUNCT3\_EBREAK}}
+\index{FUNCT3\_EBREAK@{FUNCT3\_EBREAK}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_EBREAK}{FUNCT3\_EBREAK}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+EBREAK = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a0fe393965651d11fece944e00147ca10}\label{riscv__fixed__params_8svh_a0fe393965651d11fece944e00147ca10}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_ECALL@{FUNCT3\_ECALL}}
+\index{FUNCT3\_ECALL@{FUNCT3\_ECALL}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_ECALL}{FUNCT3\_ECALL}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+ECALL = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_aa6207bab3de3d23e4a0ed969f2bf6d6a}\label{riscv__fixed__params_8svh_aa6207bab3de3d23e4a0ed969f2bf6d6a}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_FENC@{FUNCT3\_FENC}}
+\index{FUNCT3\_FENC@{FUNCT3\_FENC}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_FENC}{FUNCT3\_FENC}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+FENC = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a6b5194ee0d095aae7267cecbbf45f7f4}\label{riscv__fixed__params_8svh_a6b5194ee0d095aae7267cecbbf45f7f4}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_FENCE\_TSO@{FUNCT3\_FENCE\_TSO}}
+\index{FUNCT3\_FENCE\_TSO@{FUNCT3\_FENCE\_TSO}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_FENCE\_TSO}{FUNCT3\_FENCE\_TSO}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+FENCE\+\_\+\+TSO = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a217fd6c86f6c11ec79459459436b64f5}\label{riscv__fixed__params_8svh_a217fd6c86f6c11ec79459459436b64f5}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_JALR@{FUNCT3\_JALR}}
+\index{FUNCT3\_JALR@{FUNCT3\_JALR}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_JALR}{FUNCT3\_JALR}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+JALR = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a8c166096b5ff649d3b57e42ce5e2e130}\label{riscv__fixed__params_8svh_a8c166096b5ff649d3b57e42ce5e2e130}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_LB@{FUNCT3\_LB}}
+\index{FUNCT3\_LB@{FUNCT3\_LB}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_LB}{FUNCT3\_LB}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+LB = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ab41a509f5e694676496d2ddb74cb4f59}\label{riscv__fixed__params_8svh_ab41a509f5e694676496d2ddb74cb4f59}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_LBU@{FUNCT3\_LBU}}
+\index{FUNCT3\_LBU@{FUNCT3\_LBU}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_LBU}{FUNCT3\_LBU}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+LBU = 0b100}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a4f986f6df28cee7ba342e681a8ba831c}\label{riscv__fixed__params_8svh_a4f986f6df28cee7ba342e681a8ba831c}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_LD@{FUNCT3\_LD}}
+\index{FUNCT3\_LD@{FUNCT3\_LD}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_LD}{FUNCT3\_LD}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+LD = 0b011}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a7ae9545d04d54a203d3b0e232832df85}\label{riscv__fixed__params_8svh_a7ae9545d04d54a203d3b0e232832df85}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_LH@{FUNCT3\_LH}}
+\index{FUNCT3\_LH@{FUNCT3\_LH}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_LH}{FUNCT3\_LH}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+LH = 0b001}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a9610d9b5e73e3fd68884b2c66ae1a379}\label{riscv__fixed__params_8svh_a9610d9b5e73e3fd68884b2c66ae1a379}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_LHU@{FUNCT3\_LHU}}
+\index{FUNCT3\_LHU@{FUNCT3\_LHU}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_LHU}{FUNCT3\_LHU}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+LHU = 0b101}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a0e16bee14dcd75c518c307622a2d1088}\label{riscv__fixed__params_8svh_a0e16bee14dcd75c518c307622a2d1088}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_LW@{FUNCT3\_LW}}
+\index{FUNCT3\_LW@{FUNCT3\_LW}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_LW}{FUNCT3\_LW}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+LW = 0b010}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a0de930b20e18afa4371dd28629b16054}\label{riscv__fixed__params_8svh_a0de930b20e18afa4371dd28629b16054}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_LWU@{FUNCT3\_LWU}}
+\index{FUNCT3\_LWU@{FUNCT3\_LWU}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_LWU}{FUNCT3\_LWU}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+LWU = 0b110}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ab12c5140b3e822b624ed71074786d4ad}\label{riscv__fixed__params_8svh_ab12c5140b3e822b624ed71074786d4ad}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_OR@{FUNCT3\_OR}}
+\index{FUNCT3\_OR@{FUNCT3\_OR}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_OR}{FUNCT3\_OR}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+OR = 0b110}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a169a464a0e39c0d78b08d8b13ac2b4d1}\label{riscv__fixed__params_8svh_a169a464a0e39c0d78b08d8b13ac2b4d1}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_ORI@{FUNCT3\_ORI}}
+\index{FUNCT3\_ORI@{FUNCT3\_ORI}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_ORI}{FUNCT3\_ORI}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+ORI = 0b110}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ad8f628f731f8604d20a9687ac06df3d1}\label{riscv__fixed__params_8svh_ad8f628f731f8604d20a9687ac06df3d1}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_PAUSE@{FUNCT3\_PAUSE}}
+\index{FUNCT3\_PAUSE@{FUNCT3\_PAUSE}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_PAUSE}{FUNCT3\_PAUSE}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+PAUSE = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a5a7fdc9a42047834123d3e2b55706484}\label{riscv__fixed__params_8svh_a5a7fdc9a42047834123d3e2b55706484}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SB@{FUNCT3\_SB}}
+\index{FUNCT3\_SB@{FUNCT3\_SB}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SB}{FUNCT3\_SB}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SB = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a1d180ae88a1dda68e0afc0572020b34c}\label{riscv__fixed__params_8svh_a1d180ae88a1dda68e0afc0572020b34c}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SD@{FUNCT3\_SD}}
+\index{FUNCT3\_SD@{FUNCT3\_SD}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SD}{FUNCT3\_SD}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SD = 0b011}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a44f9817906fab62e07cdbc72241517c9}\label{riscv__fixed__params_8svh_a44f9817906fab62e07cdbc72241517c9}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SH@{FUNCT3\_SH}}
+\index{FUNCT3\_SH@{FUNCT3\_SH}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SH}{FUNCT3\_SH}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SH = 0b001}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a5499489d3e6b95a95c8ee94408a36f87}\label{riscv__fixed__params_8svh_a5499489d3e6b95a95c8ee94408a36f87}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SLL@{FUNCT3\_SLL}}
+\index{FUNCT3\_SLL@{FUNCT3\_SLL}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SLL}{FUNCT3\_SLL}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SLL = 0b001}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ac6d0dfa5cd6d302e6591c1a7b72f6cbe}\label{riscv__fixed__params_8svh_ac6d0dfa5cd6d302e6591c1a7b72f6cbe}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SLLI@{FUNCT3\_SLLI}}
+\index{FUNCT3\_SLLI@{FUNCT3\_SLLI}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SLLI}{FUNCT3\_SLLI}}
+{\footnotesize\ttfamily parameter logic$<$ 2\+:0 $>$ FUNCT3\+\_\+\+SLLI = 0b001}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a55d363dd15c51e4a85169e88b067bb1e}\label{riscv__fixed__params_8svh_a55d363dd15c51e4a85169e88b067bb1e}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SLLIW@{FUNCT3\_SLLIW}}
+\index{FUNCT3\_SLLIW@{FUNCT3\_SLLIW}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SLLIW}{FUNCT3\_SLLIW}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SLLIW = 0b001}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ab0f6f95decc8baacd8b08597c49ee8e5}\label{riscv__fixed__params_8svh_ab0f6f95decc8baacd8b08597c49ee8e5}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SLLW@{FUNCT3\_SLLW}}
+\index{FUNCT3\_SLLW@{FUNCT3\_SLLW}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SLLW}{FUNCT3\_SLLW}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SLLW = 0b001}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ab699c75bbb79b48955f13ed9f46cee59}\label{riscv__fixed__params_8svh_ab699c75bbb79b48955f13ed9f46cee59}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SLT@{FUNCT3\_SLT}}
+\index{FUNCT3\_SLT@{FUNCT3\_SLT}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SLT}{FUNCT3\_SLT}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SLT = 0b010}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a9b51fc53575e95b95f6a8f176eca3b0c}\label{riscv__fixed__params_8svh_a9b51fc53575e95b95f6a8f176eca3b0c}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SLTI@{FUNCT3\_SLTI}}
+\index{FUNCT3\_SLTI@{FUNCT3\_SLTI}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SLTI}{FUNCT3\_SLTI}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SLTI = 0b001}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a487667e746b348b21d9689677ab08bfc}\label{riscv__fixed__params_8svh_a487667e746b348b21d9689677ab08bfc}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SLTIU@{FUNCT3\_SLTIU}}
+\index{FUNCT3\_SLTIU@{FUNCT3\_SLTIU}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SLTIU}{FUNCT3\_SLTIU}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SLTIU = 0b011}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a072dfc518e500fbf40a2d84871797ea1}\label{riscv__fixed__params_8svh_a072dfc518e500fbf40a2d84871797ea1}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SLTU@{FUNCT3\_SLTU}}
+\index{FUNCT3\_SLTU@{FUNCT3\_SLTU}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SLTU}{FUNCT3\_SLTU}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SLTU = 0b011}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a11657c3d9080ded75dd9bba443045ce3}\label{riscv__fixed__params_8svh_a11657c3d9080ded75dd9bba443045ce3}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SRA@{FUNCT3\_SRA}}
+\index{FUNCT3\_SRA@{FUNCT3\_SRA}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SRA}{FUNCT3\_SRA}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SRA = 0b101}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ae49abfce5066198cafffd275ba9b064e}\label{riscv__fixed__params_8svh_ae49abfce5066198cafffd275ba9b064e}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SRAI@{FUNCT3\_SRAI}}
+\index{FUNCT3\_SRAI@{FUNCT3\_SRAI}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SRAI}{FUNCT3\_SRAI}}
+{\footnotesize\ttfamily parameter logic$<$ 2\+:0 $>$ FUNCT3\+\_\+\+SRAI = 0b101}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a3ccaafd231448f4049c3de49f806eb9f}\label{riscv__fixed__params_8svh_a3ccaafd231448f4049c3de49f806eb9f}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SRAIW@{FUNCT3\_SRAIW}}
+\index{FUNCT3\_SRAIW@{FUNCT3\_SRAIW}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SRAIW}{FUNCT3\_SRAIW}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SRAIW = 0b101}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a230e9d0705f4d51ad556714cb3da7eb3}\label{riscv__fixed__params_8svh_a230e9d0705f4d51ad556714cb3da7eb3}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SRAW@{FUNCT3\_SRAW}}
+\index{FUNCT3\_SRAW@{FUNCT3\_SRAW}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SRAW}{FUNCT3\_SRAW}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SRAW = 0b101}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ac3a8cd1cd5df73e746803ca933db4f3a}\label{riscv__fixed__params_8svh_ac3a8cd1cd5df73e746803ca933db4f3a}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SRL@{FUNCT3\_SRL}}
+\index{FUNCT3\_SRL@{FUNCT3\_SRL}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SRL}{FUNCT3\_SRL}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SRL = 0b101}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a6fc929f9082da24bb5c1268abd8b71aa}\label{riscv__fixed__params_8svh_a6fc929f9082da24bb5c1268abd8b71aa}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SRLI@{FUNCT3\_SRLI}}
+\index{FUNCT3\_SRLI@{FUNCT3\_SRLI}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SRLI}{FUNCT3\_SRLI}}
+{\footnotesize\ttfamily parameter logic$<$ 2\+:0 $>$ FUNCT3\+\_\+\+SRLI = 0b101}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a76923e07009815f48288098c43e4646d}\label{riscv__fixed__params_8svh_a76923e07009815f48288098c43e4646d}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SRLIW@{FUNCT3\_SRLIW}}
+\index{FUNCT3\_SRLIW@{FUNCT3\_SRLIW}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SRLIW}{FUNCT3\_SRLIW}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SRLIW = 0b101}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a0c478bd8d1f9f9f3f3e1779da35d90d0}\label{riscv__fixed__params_8svh_a0c478bd8d1f9f9f3f3e1779da35d90d0}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SRLW@{FUNCT3\_SRLW}}
+\index{FUNCT3\_SRLW@{FUNCT3\_SRLW}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SRLW}{FUNCT3\_SRLW}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SRLW = 0b101}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_abcb4729ec19e60fa4e31624598bfafee}\label{riscv__fixed__params_8svh_abcb4729ec19e60fa4e31624598bfafee}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SUB@{FUNCT3\_SUB}}
+\index{FUNCT3\_SUB@{FUNCT3\_SUB}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SUB}{FUNCT3\_SUB}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SUB = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a48cf3f77b277eadf07b86b4423774e28}\label{riscv__fixed__params_8svh_a48cf3f77b277eadf07b86b4423774e28}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SUBW@{FUNCT3\_SUBW}}
+\index{FUNCT3\_SUBW@{FUNCT3\_SUBW}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SUBW}{FUNCT3\_SUBW}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SUBW = 0b000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a7b54344c8c029c14f31f883c3ac5368d}\label{riscv__fixed__params_8svh_a7b54344c8c029c14f31f883c3ac5368d}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_SW@{FUNCT3\_SW}}
+\index{FUNCT3\_SW@{FUNCT3\_SW}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_SW}{FUNCT3\_SW}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+SW = 0b010}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_aaab921fd837ff9f13d3a96ae9708e884}\label{riscv__fixed__params_8svh_aaab921fd837ff9f13d3a96ae9708e884}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_XOR@{FUNCT3\_XOR}}
+\index{FUNCT3\_XOR@{FUNCT3\_XOR}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_XOR}{FUNCT3\_XOR}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+XOR = 0b100}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_aca9fe28f7719d3c24b7e19b447d9e1f9}\label{riscv__fixed__params_8svh_aca9fe28f7719d3c24b7e19b447d9e1f9}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT3\_XORI@{FUNCT3\_XORI}}
+\index{FUNCT3\_XORI@{FUNCT3\_XORI}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT3\_XORI}{FUNCT3\_XORI}}
+{\footnotesize\ttfamily parameter logic$<$2\+:0$>$ FUNCT3\+\_\+\+XORI = 0b100}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_abd6e08ef2f4c1c86e2dbdff9b7420a0f}\label{riscv__fixed__params_8svh_abd6e08ef2f4c1c86e2dbdff9b7420a0f}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT5\_AMOADD@{FUNCT5\_AMOADD}}
+\index{FUNCT5\_AMOADD@{FUNCT5\_AMOADD}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT5\_AMOADD}{FUNCT5\_AMOADD}}
+{\footnotesize\ttfamily parameter logic$<$4\+:0$>$ FUNCT5\+\_\+\+AMOADD = 0b00000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a2098c23adc2ac67cd70c4fabbb7b6ce8}\label{riscv__fixed__params_8svh_a2098c23adc2ac67cd70c4fabbb7b6ce8}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT5\_AMOAND@{FUNCT5\_AMOAND}}
+\index{FUNCT5\_AMOAND@{FUNCT5\_AMOAND}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT5\_AMOAND}{FUNCT5\_AMOAND}}
+{\footnotesize\ttfamily parameter logic$<$4\+:0$>$ FUNCT5\+\_\+\+AMOAND = 0b01100}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ae499da6485ad7434822ec0e2161ea2d9}\label{riscv__fixed__params_8svh_ae499da6485ad7434822ec0e2161ea2d9}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT5\_AMOMAX@{FUNCT5\_AMOMAX}}
+\index{FUNCT5\_AMOMAX@{FUNCT5\_AMOMAX}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT5\_AMOMAX}{FUNCT5\_AMOMAX}}
+{\footnotesize\ttfamily parameter logic$<$4\+:0$>$ FUNCT5\+\_\+\+AMOMAX = 0b10100}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a8ad581afa87c7f45121a76f9dfa0af66}\label{riscv__fixed__params_8svh_a8ad581afa87c7f45121a76f9dfa0af66}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT5\_AMOMAXU@{FUNCT5\_AMOMAXU}}
+\index{FUNCT5\_AMOMAXU@{FUNCT5\_AMOMAXU}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT5\_AMOMAXU}{FUNCT5\_AMOMAXU}}
+{\footnotesize\ttfamily parameter logic$<$4\+:0$>$ FUNCT5\+\_\+\+AMOMAXU = 0b11100}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_adda7aca811549df5c66e087cf6937355}\label{riscv__fixed__params_8svh_adda7aca811549df5c66e087cf6937355}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT5\_AMOMIN@{FUNCT5\_AMOMIN}}
+\index{FUNCT5\_AMOMIN@{FUNCT5\_AMOMIN}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT5\_AMOMIN}{FUNCT5\_AMOMIN}}
+{\footnotesize\ttfamily parameter logic$<$4\+:0$>$ FUNCT5\+\_\+\+AMOMIN = 0b10000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a2603c9459f7761c75f7da7f993b77730}\label{riscv__fixed__params_8svh_a2603c9459f7761c75f7da7f993b77730}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT5\_AMOMINU@{FUNCT5\_AMOMINU}}
+\index{FUNCT5\_AMOMINU@{FUNCT5\_AMOMINU}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT5\_AMOMINU}{FUNCT5\_AMOMINU}}
+{\footnotesize\ttfamily parameter logic$<$4\+:0$>$ FUNCT5\+\_\+\+AMOMINU = 0b11000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a28539391b826ee3d1f78ee5b2453f0b1}\label{riscv__fixed__params_8svh_a28539391b826ee3d1f78ee5b2453f0b1}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT5\_AMOOR@{FUNCT5\_AMOOR}}
+\index{FUNCT5\_AMOOR@{FUNCT5\_AMOOR}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT5\_AMOOR}{FUNCT5\_AMOOR}}
+{\footnotesize\ttfamily parameter logic$<$4\+:0$>$ FUNCT5\+\_\+\+AMOOR = 0b01000}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a8368de13681bc15afd6b9e166994aae6}\label{riscv__fixed__params_8svh_a8368de13681bc15afd6b9e166994aae6}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT5\_AMOSWAP@{FUNCT5\_AMOSWAP}}
+\index{FUNCT5\_AMOSWAP@{FUNCT5\_AMOSWAP}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT5\_AMOSWAP}{FUNCT5\_AMOSWAP}}
+{\footnotesize\ttfamily parameter logic$<$4\+:0$>$ FUNCT5\+\_\+\+AMOSWAP = 0b00001}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a6d8d61c235bac4b30fcf9c88870d3d04}\label{riscv__fixed__params_8svh_a6d8d61c235bac4b30fcf9c88870d3d04}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT5\_AMOXOR@{FUNCT5\_AMOXOR}}
+\index{FUNCT5\_AMOXOR@{FUNCT5\_AMOXOR}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT5\_AMOXOR}{FUNCT5\_AMOXOR}}
+{\footnotesize\ttfamily parameter logic$<$4\+:0$>$ FUNCT5\+\_\+\+AMOXOR = 0b00100}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a0c7eae276c14a4c97db9f60e80a85c9e}\label{riscv__fixed__params_8svh_a0c7eae276c14a4c97db9f60e80a85c9e}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT5\_LR@{FUNCT5\_LR}}
+\index{FUNCT5\_LR@{FUNCT5\_LR}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT5\_LR}{FUNCT5\_LR}}
+{\footnotesize\ttfamily parameter logic$<$4\+:0$>$ FUNCT5\+\_\+\+LR = 0b00010}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a4ba05c2c1850cffbcd153476bc1dc72d}\label{riscv__fixed__params_8svh_a4ba05c2c1850cffbcd153476bc1dc72d}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!FUNCT5\_SC@{FUNCT5\_SC}}
+\index{FUNCT5\_SC@{FUNCT5\_SC}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{FUNCT5\_SC}{FUNCT5\_SC}}
+{\footnotesize\ttfamily parameter logic$<$4\+:0$>$ FUNCT5\+\_\+\+SC = 0b00011}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a4bcf15ca993fb79745dda7bbc828b86a}\label{riscv__fixed__params_8svh_a4bcf15ca993fb79745dda7bbc828b86a}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_48@{OPCODE\_48}}
+\index{OPCODE\_48@{OPCODE\_48}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_48}{OPCODE\_48}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+48 = 0b00\+\_\+111\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a9dd5dcfbc91d7957d1462f0bde6860ff}\label{riscv__fixed__params_8svh_a9dd5dcfbc91d7957d1462f0bde6860ff}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_48\_@{OPCODE\_48\_}}
+\index{OPCODE\_48\_@{OPCODE\_48\_}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_48\_}{OPCODE\_48\_}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+48\+\_\+ = 0b10\+\_\+111\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a90502e5cb149cac1eb8cf47f1f94ed49}\label{riscv__fixed__params_8svh_a90502e5cb149cac1eb8cf47f1f94ed49}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_64@{OPCODE\_64}}
+\index{OPCODE\_64@{OPCODE\_64}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_64}{OPCODE\_64}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+64 = 0b01\+\_\+111\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a8625a2e781d210ea480a33d7abe7606b}\label{riscv__fixed__params_8svh_a8625a2e781d210ea480a33d7abe7606b}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_80@{OPCODE\_80}}
+\index{OPCODE\_80@{OPCODE\_80}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_80}{OPCODE\_80}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+80 = 0b11\+\_\+111\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a1717f4925f9a8bb43f1c0edbe1d817c9}\label{riscv__fixed__params_8svh_a1717f4925f9a8bb43f1c0edbe1d817c9}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_AMO@{OPCODE\_AMO}}
+\index{OPCODE\_AMO@{OPCODE\_AMO}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_AMO}{OPCODE\_AMO}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+AMO = 0b01\+\_\+011\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_abff652b07bc698d035fdd5ec2673aaa0}\label{riscv__fixed__params_8svh_abff652b07bc698d035fdd5ec2673aaa0}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_AUIPC@{OPCODE\_AUIPC}}
+\index{OPCODE\_AUIPC@{OPCODE\_AUIPC}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_AUIPC}{OPCODE\_AUIPC}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+AUIPC = 0b00\+\_\+101\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_abebbaac726c83e67ce35250f0dc8037b}\label{riscv__fixed__params_8svh_abebbaac726c83e67ce35250f0dc8037b}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_CUSTOM0@{OPCODE\_CUSTOM0}}
+\index{OPCODE\_CUSTOM0@{OPCODE\_CUSTOM0}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_CUSTOM0}{OPCODE\_CUSTOM0}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+CUSTOM0 = 0b00\+\_\+010\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_acb8f21f8f720fb066084b3ad1724fdb8}\label{riscv__fixed__params_8svh_acb8f21f8f720fb066084b3ad1724fdb8}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_CUSTOM1@{OPCODE\_CUSTOM1}}
+\index{OPCODE\_CUSTOM1@{OPCODE\_CUSTOM1}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_CUSTOM1}{OPCODE\_CUSTOM1}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+CUSTOM1 = 0b01\+\_\+010\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a191a4c6ce779a8ec03d7b3a678291171}\label{riscv__fixed__params_8svh_a191a4c6ce779a8ec03d7b3a678291171}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_CUSTOM2@{OPCODE\_CUSTOM2}}
+\index{OPCODE\_CUSTOM2@{OPCODE\_CUSTOM2}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_CUSTOM2}{OPCODE\_CUSTOM2}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+CUSTOM2 = 0b10\+\_\+110\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_aa913cb1f8625a238181987e906452f41}\label{riscv__fixed__params_8svh_aa913cb1f8625a238181987e906452f41}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_CUSTOM3@{OPCODE\_CUSTOM3}}
+\index{OPCODE\_CUSTOM3@{OPCODE\_CUSTOM3}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_CUSTOM3}{OPCODE\_CUSTOM3}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+CUSTOM3 = 0b11\+\_\+110\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a0c2070d1b424b40f5864264e392e1335}\label{riscv__fixed__params_8svh_a0c2070d1b424b40f5864264e392e1335}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_JAL@{OPCODE\_JAL}}
+\index{OPCODE\_JAL@{OPCODE\_JAL}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_JAL}{OPCODE\_JAL}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+JAL = 0b11\+\_\+011\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a5796e8dbfdb552e5c9907b9667aa70da}\label{riscv__fixed__params_8svh_a5796e8dbfdb552e5c9907b9667aa70da}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_JALR@{OPCODE\_JALR}}
+\index{OPCODE\_JALR@{OPCODE\_JALR}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_JALR}{OPCODE\_JALR}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+JALR = 0b11\+\_\+001\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a4e23a7eacde6549b4adf3d5b7bff9c05}\label{riscv__fixed__params_8svh_a4e23a7eacde6549b4adf3d5b7bff9c05}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_LOAD@{OPCODE\_LOAD}}
+\index{OPCODE\_LOAD@{OPCODE\_LOAD}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_LOAD}{OPCODE\_LOAD}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+LOAD = 0b00\+\_\+000\+\_\+11}
+
+
+
+RISC-\/V opcodes. 
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_aae5a34921067aea32f2f4505ed266a71}\label{riscv__fixed__params_8svh_aae5a34921067aea32f2f4505ed266a71}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_LOAD\_FP@{OPCODE\_LOAD\_FP}}
+\index{OPCODE\_LOAD\_FP@{OPCODE\_LOAD\_FP}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_LOAD\_FP}{OPCODE\_LOAD\_FP}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+LOAD\+\_\+\+FP = 0b00\+\_\+001\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a9e9c1f4ca601aac022ff5ed1bf6e142c}\label{riscv__fixed__params_8svh_a9e9c1f4ca601aac022ff5ed1bf6e142c}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_LUI@{OPCODE\_LUI}}
+\index{OPCODE\_LUI@{OPCODE\_LUI}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_LUI}{OPCODE\_LUI}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+LUI = 0b01\+\_\+101\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a16f843eabdb840f91570753236ab46e8}\label{riscv__fixed__params_8svh_a16f843eabdb840f91570753236ab46e8}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_MADD@{OPCODE\_MADD}}
+\index{OPCODE\_MADD@{OPCODE\_MADD}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_MADD}{OPCODE\_MADD}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+MADD = 0b10\+\_\+000\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a0009520cae53e1ea77b4702077722512}\label{riscv__fixed__params_8svh_a0009520cae53e1ea77b4702077722512}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_MISC\_MEM@{OPCODE\_MISC\_MEM}}
+\index{OPCODE\_MISC\_MEM@{OPCODE\_MISC\_MEM}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_MISC\_MEM}{OPCODE\_MISC\_MEM}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+MISC\+\_\+\+MEM = 0b00\+\_\+011\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a09ed1fb0384e6d9f6d2b0ce76b3f7928}\label{riscv__fixed__params_8svh_a09ed1fb0384e6d9f6d2b0ce76b3f7928}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_MSUB@{OPCODE\_MSUB}}
+\index{OPCODE\_MSUB@{OPCODE\_MSUB}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_MSUB}{OPCODE\_MSUB}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+MSUB = 0b10\+\_\+001\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_acf9ea7c402798650b53b26c048b18d65}\label{riscv__fixed__params_8svh_acf9ea7c402798650b53b26c048b18d65}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_NMADD@{OPCODE\_NMADD}}
+\index{OPCODE\_NMADD@{OPCODE\_NMADD}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_NMADD}{OPCODE\_NMADD}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+NMADD = 0b10\+\_\+011\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ac52eebdd6db8d43c6cbc6a8ee2f6417d}\label{riscv__fixed__params_8svh_ac52eebdd6db8d43c6cbc6a8ee2f6417d}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_NMSUB@{OPCODE\_NMSUB}}
+\index{OPCODE\_NMSUB@{OPCODE\_NMSUB}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_NMSUB}{OPCODE\_NMSUB}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+NMSUB = 0b10\+\_\+010\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a295cab68eb4baf68e254921ae182c421}\label{riscv__fixed__params_8svh_a295cab68eb4baf68e254921ae182c421}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_OP@{OPCODE\_OP}}
+\index{OPCODE\_OP@{OPCODE\_OP}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_OP}{OPCODE\_OP}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+OP = 0b01\+\_\+100\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_aaf69f04b389505feafc7d475a98b90fb}\label{riscv__fixed__params_8svh_aaf69f04b389505feafc7d475a98b90fb}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_OP32@{OPCODE\_OP32}}
+\index{OPCODE\_OP32@{OPCODE\_OP32}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_OP32}{OPCODE\_OP32}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+OP32 = 0b01\+\_\+110\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ac40b5d3a35bdf244d743367201e4c9b2}\label{riscv__fixed__params_8svh_ac40b5d3a35bdf244d743367201e4c9b2}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_OP\_FP@{OPCODE\_OP\_FP}}
+\index{OPCODE\_OP\_FP@{OPCODE\_OP\_FP}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_OP\_FP}{OPCODE\_OP\_FP}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+OP\+\_\+\+FP = 0b10\+\_\+100\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ad465ae574455b19ee380ddfc9ea5d6ba}\label{riscv__fixed__params_8svh_ad465ae574455b19ee380ddfc9ea5d6ba}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_OP\_IMM@{OPCODE\_OP\_IMM}}
+\index{OPCODE\_OP\_IMM@{OPCODE\_OP\_IMM}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_OP\_IMM}{OPCODE\_OP\_IMM}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+OP\+\_\+\+IMM = 0b00\+\_\+100\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a67ce947ee51d4c1d6428cf3a42816162}\label{riscv__fixed__params_8svh_a67ce947ee51d4c1d6428cf3a42816162}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_OP\_IMM32@{OPCODE\_OP\_IMM32}}
+\index{OPCODE\_OP\_IMM32@{OPCODE\_OP\_IMM32}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_OP\_IMM32}{OPCODE\_OP\_IMM32}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+OP\+\_\+\+IMM32 = 0b00\+\_\+110\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_acad5c53e8144b4af56acdc9cf81c7710}\label{riscv__fixed__params_8svh_acad5c53e8144b4af56acdc9cf81c7710}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_OP\_V@{OPCODE\_OP\_V}}
+\index{OPCODE\_OP\_V@{OPCODE\_OP\_V}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_OP\_V}{OPCODE\_OP\_V}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+OP\+\_\+V = 0b10\+\_\+101\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_af510da1ae0c8a27d47b072cad9b03201}\label{riscv__fixed__params_8svh_af510da1ae0c8a27d47b072cad9b03201}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_OP\_VE@{OPCODE\_OP\_VE}}
+\index{OPCODE\_OP\_VE@{OPCODE\_OP\_VE}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_OP\_VE}{OPCODE\_OP\_VE}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+OP\+\_\+\+VE = 0b11\+\_\+101\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_ab93761506e04962a2d933b00ab47a24c}\label{riscv__fixed__params_8svh_ab93761506e04962a2d933b00ab47a24c}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_RESERVED@{OPCODE\_RESERVED}}
+\index{OPCODE\_RESERVED@{OPCODE\_RESERVED}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_RESERVED}{OPCODE\_RESERVED}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+RESERVED = 0b11\+\_\+010\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a8c370bf217bb8be41629cef5c4816e30}\label{riscv__fixed__params_8svh_a8c370bf217bb8be41629cef5c4816e30}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_STORE@{OPCODE\_STORE}}
+\index{OPCODE\_STORE@{OPCODE\_STORE}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_STORE}{OPCODE\_STORE}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+STORE = 0b01\+\_\+000\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a2b443165540a49a49780453982f54459}\label{riscv__fixed__params_8svh_a2b443165540a49a49780453982f54459}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_STORE\_FP@{OPCODE\_STORE\_FP}}
+\index{OPCODE\_STORE\_FP@{OPCODE\_STORE\_FP}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_STORE\_FP}{OPCODE\_STORE\_FP}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+STORE\+\_\+\+FP = 0b01\+\_\+001\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a7cda713c41426abc99e256f330244ad6}\label{riscv__fixed__params_8svh_a7cda713c41426abc99e256f330244ad6}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCODE\_SYSTEM@{OPCODE\_SYSTEM}}
+\index{OPCODE\_SYSTEM@{OPCODE\_SYSTEM}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCODE\_SYSTEM}{OPCODE\_SYSTEM}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCODE\+\_\+\+SYSTEM = 0b11\+\_\+100\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_adce03840262e1c770b2063c9e899a481}\label{riscv__fixed__params_8svh_adce03840262e1c770b2063c9e899a481}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!OPCOED\_BRANCH@{OPCOED\_BRANCH}}
+\index{OPCOED\_BRANCH@{OPCOED\_BRANCH}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{OPCOED\_BRANCH}{OPCOED\_BRANCH}}
+{\footnotesize\ttfamily parameter logic$<$6\+:0$>$ OPCOED\+\_\+\+BRANCH = 0b11\+\_\+000\+\_\+11}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a577bf170970b3ce01e0fbbe5a8ce26c5}\label{riscv__fixed__params_8svh_a577bf170970b3ce01e0fbbe5a8ce26c5}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!PRV\_LVL\_M@{PRV\_LVL\_M}}
+\index{PRV\_LVL\_M@{PRV\_LVL\_M}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{PRV\_LVL\_M}{PRV\_LVL\_M}}
+{\footnotesize\ttfamily parameter logic$<$1\+:0$>$ PRV\+\_\+\+LVL\+\_\+M = 0b11}
+
+
+
+Privilege Levels. 
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_aab8818273020f165d806317df19ffe79}\label{riscv__fixed__params_8svh_aab8818273020f165d806317df19ffe79}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!PRV\_LVL\_S@{PRV\_LVL\_S}}
+\index{PRV\_LVL\_S@{PRV\_LVL\_S}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{PRV\_LVL\_S}{PRV\_LVL\_S}}
+{\footnotesize\ttfamily parameter logic$<$1\+:0$>$ PRV\+\_\+\+LVL\+\_\+S = 0b01}
+
+\mbox{\Hypertarget{riscv__fixed__params_8svh_a0039a196a36b7ef9a68f699eac987e2f}\label{riscv__fixed__params_8svh_a0039a196a36b7ef9a68f699eac987e2f}} 
+\index{riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}!PRV\_LVL\_U@{PRV\_LVL\_U}}
+\index{PRV\_LVL\_U@{PRV\_LVL\_U}!riscv\_fixed\_params.svh@{riscv\_fixed\_params.svh}}
+\doxysubsubsection{\texorpdfstring{PRV\_LVL\_U}{PRV\_LVL\_U}}
+{\footnotesize\ttfamily parameter logic$<$1\+:0$>$ PRV\+\_\+\+LVL\+\_\+U = 0b00}
+

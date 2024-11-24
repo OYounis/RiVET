@@ -7,7 +7,7 @@ class rvt_cmp extends uvm_component;
 
   //! @brief Calls plain UVM component constructor.
   //! @see dv_macros.svh
-  `uvm_component_new()
+  `uvm_component_new();
 
   //! @brief UVM factory registry.
   `uvm_component_utils(rvt_cmp)

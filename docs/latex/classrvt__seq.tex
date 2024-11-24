@@ -1,0 +1,123 @@
+\hypertarget{classrvt__seq}{}\doxysection{rvt\+\_\+seq$<$ REQ, RSP $>$ Class Template Reference}
+\label{classrvt__seq}\index{rvt\_seq$<$ REQ, RSP $>$@{rvt\_seq$<$ REQ, RSP $>$}}
+
+
+Base sequence class. All sequences must be extended from this base class. Does not have a virtual sequencer set.  
+
+
+
+
+Inheritance diagram for rvt\+\_\+seq$<$ REQ, RSP $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classrvt__seq__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rvt\+\_\+seq$<$ REQ, RSP $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classrvt__seq__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual task \mbox{\hyperlink{classrvt__seq_a914f697b6e7af83ce976df70cb8d47d6}{pre\+\_\+start}} ()
+\begin{DoxyCompactList}\small\item\em Raise objection if starting\+\_\+phase != null and \mbox{\hyperlink{classrvt__seq_a44d9f67b50b5d8d1864db81c2b0a2dcf}{m\+\_\+set\+\_\+objections}} == 1. \end{DoxyCompactList}\item 
+virtual task \mbox{\hyperlink{classrvt__seq_aa305763dde309d17c5fbffda88228aed}{body}} ()
+\begin{DoxyCompactList}\small\item\em Main sequence body. When a new class extends this class, An implementation for this task must be provided. \end{DoxyCompactList}\item 
+virtual task \mbox{\hyperlink{classrvt__seq_ac852540fc414c85cd5b097cc6e64de95}{post\+\_\+start}} ()
+\begin{DoxyCompactList}\small\item\em Raise objection if starting\+\_\+phase != null and \mbox{\hyperlink{classrvt__seq_a44d9f67b50b5d8d1864db81c2b0a2dcf}{m\+\_\+set\+\_\+objections}} == 1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrvt__seq_aff27b2a34088da4bc8edc10e86997066}{uvm\+\_\+object\+\_\+new}} ()
+\begin{DoxyCompactList}\small\item\em Calls plain UVM object constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bit \mbox{\hyperlink{classrvt__seq_a44d9f67b50b5d8d1864db81c2b0a2dcf}{m\+\_\+set\+\_\+objections}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename REQ = rvt\+\_\+item, typename RSP = REQ$>$\newline
+class rvt\+\_\+seq$<$ REQ, RSP $>$}
+
+Base sequence class. All sequences must be extended from this base class. Does not have a virtual sequencer set. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em REQ} & Request item type. Defaults to $<$rvt\+\_\+item$>$ \\
+\hline
+{\em RSP} & Response item type. Defaults to REQ \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrvt__seq_aa305763dde309d17c5fbffda88228aed}\label{classrvt__seq_aa305763dde309d17c5fbffda88228aed}} 
+\index{rvt\_seq$<$ REQ, RSP $>$@{rvt\_seq$<$ REQ, RSP $>$}!body@{body}}
+\index{body@{body}!rvt\_seq$<$ REQ, RSP $>$@{rvt\_seq$<$ REQ, RSP $>$}}
+\doxysubsubsection{\texorpdfstring{body()}{body()}}
+{\footnotesize\ttfamily template$<$typename REQ  = rvt\+\_\+item, typename RSP  = REQ$>$ \\
+task \mbox{\hyperlink{classrvt__seq}{rvt\+\_\+seq}}$<$ REQ, RSP $>$\+::body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Main sequence body. When a new class extends this class, An implementation for this task must be provided. 
+
+\mbox{\Hypertarget{classrvt__seq_ac852540fc414c85cd5b097cc6e64de95}\label{classrvt__seq_ac852540fc414c85cd5b097cc6e64de95}} 
+\index{rvt\_seq$<$ REQ, RSP $>$@{rvt\_seq$<$ REQ, RSP $>$}!post\_start@{post\_start}}
+\index{post\_start@{post\_start}!rvt\_seq$<$ REQ, RSP $>$@{rvt\_seq$<$ REQ, RSP $>$}}
+\doxysubsubsection{\texorpdfstring{post\_start()}{post\_start()}}
+{\footnotesize\ttfamily template$<$typename REQ  = rvt\+\_\+item, typename RSP  = REQ$>$ \\
+task \mbox{\hyperlink{classrvt__seq}{rvt\+\_\+seq}}$<$ REQ, RSP $>$\+::post\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Raise objection if starting\+\_\+phase != null and \mbox{\hyperlink{classrvt__seq_a44d9f67b50b5d8d1864db81c2b0a2dcf}{m\+\_\+set\+\_\+objections}} == 1. 
+
+\mbox{\Hypertarget{classrvt__seq_a914f697b6e7af83ce976df70cb8d47d6}\label{classrvt__seq_a914f697b6e7af83ce976df70cb8d47d6}} 
+\index{rvt\_seq$<$ REQ, RSP $>$@{rvt\_seq$<$ REQ, RSP $>$}!pre\_start@{pre\_start}}
+\index{pre\_start@{pre\_start}!rvt\_seq$<$ REQ, RSP $>$@{rvt\_seq$<$ REQ, RSP $>$}}
+\doxysubsubsection{\texorpdfstring{pre\_start()}{pre\_start()}}
+{\footnotesize\ttfamily template$<$typename REQ  = rvt\+\_\+item, typename RSP  = REQ$>$ \\
+task \mbox{\hyperlink{classrvt__seq}{rvt\+\_\+seq}}$<$ REQ, RSP $>$\+::pre\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Raise objection if starting\+\_\+phase != null and \mbox{\hyperlink{classrvt__seq_a44d9f67b50b5d8d1864db81c2b0a2dcf}{m\+\_\+set\+\_\+objections}} == 1. 
+
+\mbox{\Hypertarget{classrvt__seq_aff27b2a34088da4bc8edc10e86997066}\label{classrvt__seq_aff27b2a34088da4bc8edc10e86997066}} 
+\index{rvt\_seq$<$ REQ, RSP $>$@{rvt\_seq$<$ REQ, RSP $>$}!uvm\_object\_new@{uvm\_object\_new}}
+\index{uvm\_object\_new@{uvm\_object\_new}!rvt\_seq$<$ REQ, RSP $>$@{rvt\_seq$<$ REQ, RSP $>$}}
+\doxysubsubsection{\texorpdfstring{uvm\_object\_new()}{uvm\_object\_new()}}
+{\footnotesize\ttfamily template$<$typename REQ  = rvt\+\_\+item, typename RSP  = REQ$>$ \\
+\mbox{\hyperlink{classrvt__seq}{rvt\+\_\+seq}}$<$ REQ, RSP $>$\+::uvm\+\_\+object\+\_\+new (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Calls plain UVM object constructor. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{dv__macros_8svh}{dv\+\_\+macros.\+svh}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrvt__seq_a44d9f67b50b5d8d1864db81c2b0a2dcf}\label{classrvt__seq_a44d9f67b50b5d8d1864db81c2b0a2dcf}} 
+\index{rvt\_seq$<$ REQ, RSP $>$@{rvt\_seq$<$ REQ, RSP $>$}!m\_set\_objections@{m\_set\_objections}}
+\index{m\_set\_objections@{m\_set\_objections}!rvt\_seq$<$ REQ, RSP $>$@{rvt\_seq$<$ REQ, RSP $>$}}
+\doxysubsubsection{\texorpdfstring{m\_set\_objections}{m\_set\_objections}}
+{\footnotesize\ttfamily template$<$typename REQ  = rvt\+\_\+item, typename RSP  = REQ$>$ \\
+bit \mbox{\hyperlink{classrvt__seq}{rvt\+\_\+seq}}$<$ REQ, RSP $>$\+::m\+\_\+set\+\_\+objections}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+base/common/\mbox{\hyperlink{rvt__seq_8svh}{rvt\+\_\+seq.\+svh}}\end{DoxyCompactItemize}

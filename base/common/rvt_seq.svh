@@ -14,13 +14,6 @@ class rvt_seq#(
   // @brief If this flag is set, The sequence will raise an objection on pre_start()
   bit m_set_objections;
 
-  //! @brief Calls plain UVM object constructor.
-  //! @see dv_macros.svh
-  `uvm_object_new()
-
-  //! @brief UVM factory registry.
-  `uvm_object_param_utils(rvt_seq#(REQ, RSP))
-
   //! @fn pre_start()
   //! @brief Raise objection if starting_phase != null and #m_set_objections == 1
   extern virtual task pre_start();
@@ -33,6 +26,13 @@ class rvt_seq#(
   //! @fn post_start()
   //! @brief Raise objection if starting_phase != null and #m_set_objections == 1
   extern virtual task post_start();
+
+  //! @brief Calls plain UVM object constructor.
+  //! @see dv_macros.svh
+  `uvm_object_new();
+
+  //! @brief UVM factory registry.
+  `uvm_object_param_utils(rvt_seq#(REQ, RSP))
 endclass : rvt_seq
 
 task rvt_seq::pre_start();

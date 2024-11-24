@@ -1,5 +1,6 @@
 class rvt_bfm#(
-  type REQ = rvt_item
+  type REQ = rvt_item,
+  tyep RSP = REQ
 ) extends rvt_obj;
   `uvm_object_param_utils(rvt_bfm#(REQ))
   `uvm_register_cb(rvt_bfm#(REQ), rvt_bfm_cb)
@@ -23,13 +24,15 @@ class rvt_bfm#(
     this.post_monitor();
   endtask : monitor
 
-  virtual function void check(rvt_item pkt); 
+  virtual function void check(rvt_item pkt);
     `uvm_do_callbacks(rvt_bfm#(REQ), rvt_bfm_cb, check(rvt_item pkt))
   endfunction
-  virtual function void cover(rvt_item pkt); 
+
+  virtual function void cover(rvt_item pkt);
     `uvm_do_callbacks(rvt_bfm#(REQ), rvt_bfm_cb, cover(rvt_item pkt))
   endfunction
-  virtual function void log  (rvt_item pkt); 
+
+  virtual function void log  (rvt_item pkt);
     `uvm_do_callbacks(rvt_bfm#(REQ), rvt_bfm_cb, log(rvt_item pkt))
   endfunction
 

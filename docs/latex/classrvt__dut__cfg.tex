@@ -1,0 +1,145 @@
+\hypertarget{classrvt__dut__cfg}{}\doxysection{rvt\+\_\+dut\+\_\+cfg Class Reference}
+\label{classrvt__dut__cfg}\index{rvt\_dut\_cfg@{rvt\_dut\_cfg}}
+
+
+virtual class containing design configuration parameters. A class extending this class should at least provide an implementation to \mbox{\hyperlink{classrvt__dut__cfg_acbf8b9cd0e79d3176d6f075d35f39edb}{rvt\+\_\+dut\+\_\+cfg\+::initialiaze()}} to parse the DUT specific parameters and add them to dut\+\_\+params.  
+
+
+
+
+Inheritance diagram for rvt\+\_\+dut\+\_\+cfg\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classrvt__dut__cfg__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rvt\+\_\+dut\+\_\+cfg\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{classrvt__dut__cfg__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bit \mbox{\hyperlink{classrvt__dut__cfg_acbf8b9cd0e79d3176d6f075d35f39edb}{initialiaze}} (string profile=\char`\"{}\char`\"{})=0
+\begin{DoxyCompactList}\small\item\em Initialiaze \#dut\+\_\+params with the core parameters It is expected that DUT has a set of configuration parameters. These parameters are declared in a text file. initialiaze should sample these parameters into the. \end{DoxyCompactList}\item 
+virtual bit \mbox{\hyperlink{classrvt__dut__cfg_a6896838afa9958d3c2c9a07441830376}{validate\+\_\+params}} (output string message\mbox{[}$\,$\mbox{]})=0
+\begin{DoxyCompactList}\small\item\em Checks that all the configured parameters are valid and that there are no conflits. \end{DoxyCompactList}\item 
+virtual bit \mbox{\hyperlink{classrvt__dut__cfg_ae1882ca0cb67726b93882021c4e746b8}{get\+\_\+param}} (string param, ref int value=0)
+\begin{DoxyCompactList}\small\item\em Get the value of the core configuration parameter. \end{DoxyCompactList}\item 
+virtual bit \mbox{\hyperlink{classrvt__dut__cfg_af24598397b798c31dd63d008be7e1580}{set\+\_\+param}} (string param, int value)
+\begin{DoxyCompactList}\small\item\em Set the value of the core configuration parameter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrvt__dut__cfg_af534f1f5da84056cf15317d4fe119ded}{uvm\+\_\+object\+\_\+utils\+\_\+begin}} (\mbox{\hyperlink{classrvt__dut__cfg}{rvt\+\_\+dut\+\_\+cfg}}) uvm\+\_\+field\+\_\+aa\+\_\+int\+\_\+string(dut\+\_\+params
+\begin{DoxyCompactList}\small\item\em UVM factory registry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+virtual class containing design configuration parameters. A class extending this class should at least provide an implementation to \mbox{\hyperlink{classrvt__dut__cfg_acbf8b9cd0e79d3176d6f075d35f39edb}{rvt\+\_\+dut\+\_\+cfg\+::initialiaze()}} to parse the DUT specific parameters and add them to dut\+\_\+params. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrvt__dut__cfg_ae1882ca0cb67726b93882021c4e746b8}\label{classrvt__dut__cfg_ae1882ca0cb67726b93882021c4e746b8}} 
+\index{rvt\_dut\_cfg@{rvt\_dut\_cfg}!get\_param@{get\_param}}
+\index{get\_param@{get\_param}!rvt\_dut\_cfg@{rvt\_dut\_cfg}}
+\doxysubsubsection{\texorpdfstring{get\_param()}{get\_param()}}
+{\footnotesize\ttfamily bit rvt\+\_\+dut\+\_\+cfg\+::get\+\_\+param (\begin{DoxyParamCaption}\item[{string}]{param,  }\item[{ref int}]{value = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the value of the core configuration parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em param} & -\/ Parameter name \\
+\hline
+\mbox{\texttt{ out}}  & {\em value} & -\/ Parameter value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ Parameter exists 
+
+0 -\/ Parameter does not exist 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrvt__dut__cfg_acbf8b9cd0e79d3176d6f075d35f39edb}\label{classrvt__dut__cfg_acbf8b9cd0e79d3176d6f075d35f39edb}} 
+\index{rvt\_dut\_cfg@{rvt\_dut\_cfg}!initialiaze@{initialiaze}}
+\index{initialiaze@{initialiaze}!rvt\_dut\_cfg@{rvt\_dut\_cfg}}
+\doxysubsubsection{\texorpdfstring{initialiaze()}{initialiaze()}}
+{\footnotesize\ttfamily rvt\+\_\+dut\+\_\+cfg\+::initialiaze (\begin{DoxyParamCaption}\item[{string}]{profile = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initialiaze \#dut\+\_\+params with the core parameters It is expected that DUT has a set of configuration parameters. These parameters are declared in a text file. initialiaze should sample these parameters into the. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em profile} & string variable that points to parameters text file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ Initialization is successful 
+
+0 -\/ Initialization failed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrvt__dut__cfg_af24598397b798c31dd63d008be7e1580}\label{classrvt__dut__cfg_af24598397b798c31dd63d008be7e1580}} 
+\index{rvt\_dut\_cfg@{rvt\_dut\_cfg}!set\_param@{set\_param}}
+\index{set\_param@{set\_param}!rvt\_dut\_cfg@{rvt\_dut\_cfg}}
+\doxysubsubsection{\texorpdfstring{set\_param()}{set\_param()}}
+{\footnotesize\ttfamily bit rvt\+\_\+dut\+\_\+cfg\+::set\+\_\+param (\begin{DoxyParamCaption}\item[{string}]{param,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the value of the core configuration parameter. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em param} & -\/ Parameter name \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & -\/ Parameter value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ Operation is successful 
+
+0 -\/ Operation failed due to parameter rules 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrvt__dut__cfg_af534f1f5da84056cf15317d4fe119ded}\label{classrvt__dut__cfg_af534f1f5da84056cf15317d4fe119ded}} 
+\index{rvt\_dut\_cfg@{rvt\_dut\_cfg}!uvm\_object\_utils\_begin@{uvm\_object\_utils\_begin}}
+\index{uvm\_object\_utils\_begin@{uvm\_object\_utils\_begin}!rvt\_dut\_cfg@{rvt\_dut\_cfg}}
+\doxysubsubsection{\texorpdfstring{uvm\_object\_utils\_begin()}{uvm\_object\_utils\_begin()}}
+{\footnotesize\ttfamily rvt\+\_\+dut\+\_\+cfg\+::uvm\+\_\+object\+\_\+utils\+\_\+begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrvt__dut__cfg}{rvt\+\_\+dut\+\_\+cfg}}}]{ }\end{DoxyParamCaption})}
+
+
+
+UVM factory registry. 
+
+\mbox{\Hypertarget{classrvt__dut__cfg_a6896838afa9958d3c2c9a07441830376}\label{classrvt__dut__cfg_a6896838afa9958d3c2c9a07441830376}} 
+\index{rvt\_dut\_cfg@{rvt\_dut\_cfg}!validate\_params@{validate\_params}}
+\index{validate\_params@{validate\_params}!rvt\_dut\_cfg@{rvt\_dut\_cfg}}
+\doxysubsubsection{\texorpdfstring{validate\_params()}{validate\_params()}}
+{\footnotesize\ttfamily rvt\+\_\+dut\+\_\+cfg\+::validate\+\_\+params (\begin{DoxyParamCaption}\item[{output string}]{message\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks that all the configured parameters are valid and that there are no conflits. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em message} & queue string of the status of all checks \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ Validation is successful 
+
+0 -\/ Validation failed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+base/configs/\mbox{\hyperlink{rvt__dut__cfg_8svh}{rvt\+\_\+dut\+\_\+cfg.\+svh}}\end{DoxyCompactItemize}

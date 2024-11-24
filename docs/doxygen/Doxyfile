@@ -13,7 +13,7 @@
 # TAG += value [value, ...]
 # Values that contain spaces should be placed between quotes (\" \").
 
-#---------------------------------------------------------------------------
+#--------------------------------------------------------------------------- 
 # Project related configuration options
 #---------------------------------------------------------------------------
 
@@ -51,14 +51,14 @@ PROJECT_BRIEF          = "A scalable environment for RISC processor verification
 # pixels and the maximum width should not exceed 200 pixels. Doxygen will copy
 # the logo to the output directory.
 
-PROJECT_LOGO           = ./logos/RISC-V_ Stacked_Black.png
+PROJECT_LOGO           = $(RiVT_HOME)/docs/logos/RISC-V_ Stacked_Black.png
 
 # The OUTPUT_DIRECTORY tag is used to specify the (relative or absolute) path
 # into which the generated documentation will be written. If a relative path is
 # entered, it will be relative to the location where doxygen was started. If
 # left blank the current directory will be used.
 
-OUTPUT_DIRECTORY       = 
+OUTPUT_DIRECTORY       = $(RiVT_HOME)/docs/
 
 # If the CREATE_SUBDIRS tag is set to YES then doxygen will create 4096 sub-
 # directories (in 2 levels) under the output directory of each output format and
@@ -936,7 +936,7 @@ FILE_PATTERNS          = *.c \
 # be searched for input files as well.
 # The default value is: NO.
 
-RECURSIVE              = NO
+RECURSIVE              = YES
 
 # The EXCLUDE tag can be used to specify files and/or directories that should be
 # excluded from the INPUT source files. This way you can easily exclude a
@@ -945,7 +945,7 @@ RECURSIVE              = NO
 # Note that relative paths are relative to the directory from which doxygen is
 # run.
 
-EXCLUDE                =
+EXCLUDE                = $(RiVT_HOME)/docs/doxygen $(RiVT_HOME)/docs/logos
 
 # The EXCLUDE_SYMLINKS tag can be used to select whether or not files or
 # directories that are symbolic links (a Unix file system feature) are excluded
@@ -1019,7 +1019,7 @@ IMAGE_PATH             =
 # need to set EXTENSION_MAPPING for the extension otherwise the files are not
 # properly processed by doxygen.
 
-INPUT_FILTER           = ./doxygen/idv_doxyfilter_sv.pl
+INPUT_FILTER           = $(RiVT_HOME)/docs/doxygen/idv_doxyfilter_sv.pl
 
 # The FILTER_PATTERNS tag can be used to specify filters on a per file pattern
 # basis. Doxygen will compare the file name with each pattern and apply the
@@ -1032,7 +1032,7 @@ INPUT_FILTER           = ./doxygen/idv_doxyfilter_sv.pl
 # need to set EXTENSION_MAPPING for the extension otherwise the files are not
 # properly processed by doxygen.
 
-FILTER_PATTERNS        = *.svh=./doxygen/idv_doxyfilter_sv.pl *.sv=./doxygen/idv_doxyfilter_sv.pl
+FILTER_PATTERNS        = *.svh=$(RiVT_HOME)/docs/doxygen/idv_doxyfilter_sv.pl *.sv=$(RiVT_HOME)/docs/doxygen/idv_doxyfilter_sv.pl
                          
 
 # If the FILTER_SOURCE_FILES tag is set to YES, the input filter (if set using
@@ -1277,7 +1277,7 @@ HTML_STYLESHEET        =
 # list). For an example see the documentation.
 # This tag requires that the tag GENERATE_HTML is set to YES.
 
-HTML_EXTRA_STYLESHEET  = ./doxygen/doxygen-awesome-css/doxygen-awesome.css
+HTML_EXTRA_STYLESHEET  = $(RiVT_HOME)/docs/doxygen/doxygen-awesome-css/doxygen-awesome.css
 
 # The HTML_EXTRA_FILES tag can be used to specify one or more extra images or
 # other source files which should be copied to the HTML output directory. Note

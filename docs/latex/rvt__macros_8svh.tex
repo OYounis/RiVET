@@ -1,0 +1,73 @@
+\hypertarget{rvt__macros_8svh}{}\doxysection{base/include/rvt\+\_\+macros.svh File Reference}
+\label{rvt__macros_8svh}\index{base/include/rvt\_macros.svh@{base/include/rvt\_macros.svh}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{rvt__macros_8svh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{rvt__macros_8svh_a1f3fff3c5e2bcc6763978670a27181f8}{RVT\+\_\+\+STRINGIFY}}(MSG\+\_\+)~\#MSG\+\_\+
+\item 
+\#define \mbox{\hyperlink{rvt__macros_8svh_a658377fff152ad86d81b2a7c4b8c6738}{AGNT\+\_\+\+ID}}~\$sformatf(\char`\"{}\mbox{[}AGNT/\%0s\mbox{]}\char`\"{}, get\+\_\+name())
+\item 
+\#define \mbox{\hyperlink{rvt__macros_8svh_a30bdb78f12a43fdce458d8d86f15f319}{RVT\+\_\+\+METHOD\+\_\+\+REQUIRES\+\_\+\+EXTENSION}}(METHOD\+\_\+)
+\item 
+\#define \mbox{\hyperlink{rvt__macros_8svh_a4afb7c4094b2eec2749f728452639436}{RVT\+\_\+\+SINGLETON\+\_\+\+UTILS}}(NAME\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{rvt__macros_8svh_a658377fff152ad86d81b2a7c4b8c6738}\label{rvt__macros_8svh_a658377fff152ad86d81b2a7c4b8c6738}} 
+\index{rvt\_macros.svh@{rvt\_macros.svh}!AGNT\_ID@{AGNT\_ID}}
+\index{AGNT\_ID@{AGNT\_ID}!rvt\_macros.svh@{rvt\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{AGNT\_ID}{AGNT\_ID}}
+{\footnotesize\ttfamily \#define AGNT\+\_\+\+ID~\$sformatf(\char`\"{}\mbox{[}AGNT/\%0s\mbox{]}\char`\"{}, get\+\_\+name())}
+
+Return a string of the agent ID. Used mainly in UVM message IDs \mbox{\Hypertarget{rvt__macros_8svh_a30bdb78f12a43fdce458d8d86f15f319}\label{rvt__macros_8svh_a30bdb78f12a43fdce458d8d86f15f319}} 
+\index{rvt\_macros.svh@{rvt\_macros.svh}!RVT\_METHOD\_REQUIRES\_EXTENSION@{RVT\_METHOD\_REQUIRES\_EXTENSION}}
+\index{RVT\_METHOD\_REQUIRES\_EXTENSION@{RVT\_METHOD\_REQUIRES\_EXTENSION}!rvt\_macros.svh@{rvt\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{RVT\_METHOD\_REQUIRES\_EXTENSION}{RVT\_METHOD\_REQUIRES\_EXTENSION}}
+{\footnotesize\ttfamily \#define RVT\+\_\+\+METHOD\+\_\+\+REQUIRES\+\_\+\+EXTENSION(\begin{DoxyParamCaption}\item[{}]{METHOD\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  uvm\_fatal(\$sformatf(\textcolor{stringliteral}{"{}[RVT/\%0s]"{}}, get\_name()), \(\backslash\)}
+\DoxyCodeLine{  \$sformatf(\textcolor{stringliteral}{"{}Method \%0s::\%0s requires an implementation in this extended class"{}}, get\_type\_name(), METHOD\_);}
+
+\end{DoxyCode}
+Return a string of the input \mbox{\Hypertarget{rvt__macros_8svh_a4afb7c4094b2eec2749f728452639436}\label{rvt__macros_8svh_a4afb7c4094b2eec2749f728452639436}} 
+\index{rvt\_macros.svh@{rvt\_macros.svh}!RVT\_SINGLETON\_UTILS@{RVT\_SINGLETON\_UTILS}}
+\index{RVT\_SINGLETON\_UTILS@{RVT\_SINGLETON\_UTILS}!rvt\_macros.svh@{rvt\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{RVT\_SINGLETON\_UTILS}{RVT\_SINGLETON\_UTILS}}
+{\footnotesize\ttfamily \#define RVT\+\_\+\+SINGLETON\+\_\+\+UTILS(\begin{DoxyParamCaption}\item[{}]{NAME\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \textcolor{keyword}{static} local NAME\_ singleton\_inst; \(\backslash\)}
+\DoxyCodeLine{  protected  \textcolor{keyword}{new} (\textcolor{keywordtype}{string} \mbox{\hyperlink{namespacealign__hex_a0a9933421ed6408481416e2465260aa1}{name}} = \mbox{\hyperlink{rvt__macros_8svh_a1f3fff3c5e2bcc6763978670a27181f8}{RVT\_STRINGIFY}}(NAME\_)) \{ \(\backslash\)}
+\DoxyCodeLine{    singleton\_inst = \textcolor{keyword}{new}(); \(\backslash\)}
+\DoxyCodeLine{  \} \(\backslash\)}
+\DoxyCodeLine{  static \textcolor{keyword}{virtual}  NAME\_ \textcolor{keyword}{get}() \{ \(\backslash\)}
+\DoxyCodeLine{   if(singleton\_inst == \textcolor{keyword}{null}) \{ \(\backslash\)}
+\DoxyCodeLine{    singleton\_inst = \textcolor{keyword}{new}(); \(\backslash\)}
+\DoxyCodeLine{    initialize();\(\backslash\)}
+\DoxyCodeLine{   \} \(\backslash\)}
+\DoxyCodeLine{   return singleton\_inst; \(\backslash\)}
+\DoxyCodeLine{  \} \(\backslash\)}
+\DoxyCodeLine{  virtual  \textcolor{keywordtype}{void} kill() \{ \(\backslash\)}
+\DoxyCodeLine{    singleton\_inst = \textcolor{keyword}{null}; \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{rvt__macros_8svh_a1f3fff3c5e2bcc6763978670a27181f8}\label{rvt__macros_8svh_a1f3fff3c5e2bcc6763978670a27181f8}} 
+\index{rvt\_macros.svh@{rvt\_macros.svh}!RVT\_STRINGIFY@{RVT\_STRINGIFY}}
+\index{RVT\_STRINGIFY@{RVT\_STRINGIFY}!rvt\_macros.svh@{rvt\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{RVT\_STRINGIFY}{RVT\_STRINGIFY}}
+{\footnotesize\ttfamily \#define RVT\+\_\+\+STRINGIFY(\begin{DoxyParamCaption}\item[{}]{MSG\+\_\+ }\end{DoxyParamCaption})~\#MSG\+\_\+}
+
+Return a string of the input 
