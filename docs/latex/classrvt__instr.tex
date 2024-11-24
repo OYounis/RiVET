@@ -1,0 +1,373 @@
+\hypertarget{classrvt__instr}{}\doxysection{rvt\+\_\+instr Class Reference}
+\label{classrvt__instr}\index{rvt\_instr@{rvt\_instr}}
+
+
+Inheritance diagram for rvt\+\_\+instr\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classrvt__instr__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rvt\+\_\+instr\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrvt__instr__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual logic$<$ 31\+:0 $>$ \mbox{\hyperlink{classrvt__instr_af3e5d5e3adce48b50f6f9930712a640f}{get\+Raw\+Instr}} ()
+\item 
+virtual \mbox{\hyperlink{classrvt__instr_a76d87326fcadc3d603bc19df5923e142}{set\+Raw\+Instr}} (logic$<$ 31\+:0 $>$ raw\+\_\+instr)
+\item 
+virtual \mbox{\hyperlink{classrvt__instr_aefeaf03573c19193f051d8d711212f7a}{sample\+Cov}} ()
+\item 
+virtual \mbox{\hyperlink{classrvt__instr_a50d9ac8b4dda67556afddf724fa97e8a}{decode}} ()
+\item 
+virtual bit \mbox{\hyperlink{classrvt__instr_a6fb4ccdbbb33878082dd6bb7e4c0980f}{has\+Rd}} ()
+\item 
+virtual bit \mbox{\hyperlink{classrvt__instr_ab345de2d954e943e60e05fa5fd69ff3a}{has\+Rs1}} ()
+\item 
+virtual bit \mbox{\hyperlink{classrvt__instr_a2c222ef6701e9af4572524941cac31fd}{has\+Rs2}} ()
+\item 
+virtual bit \mbox{\hyperlink{classrvt__instr_a1fc4ee0750e625b463ae6249067c54c9}{has\+Imm}} ()
+\item 
+virtual logic$<$ 31\+:0 $>$ \mbox{\hyperlink{classrvt__instr_a33ad4e39e16c7ee8ee20e02b1c0283cd}{get\+Imm}} ()
+\item 
+virtual bit \mbox{\hyperlink{classrvt__instr_aba77173eceef44fea1aa05dfa86c4595}{has\+Funct7}} ()
+\item 
+virtual logic$<$ 6\+:0 $>$ \mbox{\hyperlink{classrvt__instr_a88ed51ec56f7a291100b693f68ce37cf}{get\+Funct7}} ()
+\item 
+virtual bit \mbox{\hyperlink{classrvt__instr_a54d040a0db18ae4086b0263ce8d7191e}{has\+Funct5}} ()
+\item 
+virtual logic$<$ 4\+:0 $>$ \mbox{\hyperlink{classrvt__instr_abbc02c72be5de18338a0c543e63f3ea7}{get\+Funct5}} ()
+\item 
+virtual bit \mbox{\hyperlink{classrvt__instr_a58f95da2fc96000114c6f3f7d8724d4b}{has\+Funct3}} ()
+\item 
+virtual logic$<$ 2\+:0 $>$ \mbox{\hyperlink{classrvt__instr_aaa7d97fe5cef4a9e4afd924c8523bb93}{get\+Funct3}} ()
+\item 
+virtual \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52}{asm\+\_\+t}} \mbox{\hyperlink{classrvt__instr_ace80e3b2eb88ff6eee9895af7695ef36}{get\+Asm}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+rand \mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794}{format\+\_\+t}} \mbox{\hyperlink{classrvt__instr_a1dbd6d633cd77ee76eacfbe868353a82}{m\+\_\+format}}
+\item 
+rand \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52}{asm\+\_\+t}} \mbox{\hyperlink{classrvt__instr_a47d1dd966a6568cf252a1a4bddf1885b}{m\+\_\+asm}}
+\item 
+bit \mbox{\hyperlink{classrvt__instr_aec10f6cdc869fbfd9059cc2614abb94b}{m\+\_\+decoded}}
+\item 
+rand \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7d}{opcode\+\_\+t}} \mbox{\hyperlink{classrvt__instr_a8f7d862e829fcbe39898acd8d40b109c}{opcode}}
+\item 
+rand logic$<$ 2\+:0 $>$ \mbox{\hyperlink{classrvt__instr_ac3becb242f5e8d7333275357b46b862c}{funct3}}
+\item 
+rand logic$<$ 4\+:0 $>$ \mbox{\hyperlink{classrvt__instr_a00ca2283b504b254c00d6e2a225dc829}{funct5}}
+\item 
+rand logic$<$ 7\+:0 $>$ \mbox{\hyperlink{classrvt__instr_abcab07195173882556d9bdcb2cd77e27}{funct7}}
+\item 
+rand logic$<$ 4\+:0 $>$ \mbox{\hyperlink{classrvt__instr_ad55ce1e91009d157e049fe8e0cb908a3}{rs2}}
+\item 
+rand logic$<$ 4\+:0 $>$ \mbox{\hyperlink{classrvt__instr_ae14b87593026f3917b89c5826b54a0e5}{rs1}}
+\item 
+rand logic$<$ 4\+:0 $>$ \mbox{\hyperlink{classrvt__instr_a3c0e342e6adaada61895cb59d8089d8f}{rd}}
+\item 
+rand logic$<$ 31\+:0 $>$ \mbox{\hyperlink{classrvt__instr_aee709bb9e370634ea6939c223705db89}{imm}}
+\item 
+rand \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87}{amo\+\_\+t}} \mbox{\hyperlink{classrvt__instr_ae7490922ebfb5228a96ef594dda88df0}{amo}}
+\item 
+rand logic \mbox{\hyperlink{classrvt__instr_a83cd336fff6fe146bc669673d2ea3882}{aq}}
+\item 
+rand logic \mbox{\hyperlink{classrvt__instr_a799b851a3e018993ea75e5295aa9e8ff}{rl}}
+\item 
+rand fpo\+\_\+t \mbox{\hyperlink{classrvt__instr_a4c6418d4a8cae02bc2149ca26843341e}{fpo}}
+\item 
+rand logic$<$ 1\+:0 $>$ \mbox{\hyperlink{classrvt__instr_a676d0d9a5a7668f25a228c1ea325913f}{fmt}}
+\item 
+bit \mbox{\hyperlink{classrvt__instr_a0f502343a80359138832c64e86decc95}{m\+\_\+imm\+\_\+vld}}
+\item 
+bit \mbox{\hyperlink{classrvt__instr_a9d1ef142b96ec9344154c06ec4ef164b}{m\+\_\+rd\+\_\+vld}}
+\item 
+bit \mbox{\hyperlink{classrvt__instr_a477a7c7258d4a5017bec4055810056e3}{m\+\_\+rs1\+\_\+vld}}
+\item 
+bit \mbox{\hyperlink{classrvt__instr_a24ed39fead0cfff7a76ac76757a68d24}{m\+\_\+rs2\+\_\+vld}}
+\item 
+bit \mbox{\hyperlink{classrvt__instr_a0ad53662879a1c1582694fa56f3da0a1}{m\+\_\+funct3\+\_\+vld}}
+\item 
+bit \mbox{\hyperlink{classrvt__instr_a2fe8750efa4fa3ec30d53b6dcb334939}{m\+\_\+funct5\+\_\+vld}}
+\item 
+bit \mbox{\hyperlink{classrvt__instr_a10f5c64082259ec4cb769f766113894f}{m\+\_\+funct7\+\_\+vld}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structinstr__t}{instr\+\_\+t}} \mbox{\hyperlink{classrvt__instr_a67d61f6af47eda9105d26c4f8a2af788}{m\+\_\+instr}}
+\item 
+\mbox{\hyperlink{classrvt__instr__cov}{rvt\+\_\+instr\+\_\+cov}} \mbox{\hyperlink{classrvt__instr_a5c6f36f4e1a5882c607828b098cf19c0}{m\+\_\+cov}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+RISC-\/V instruction object. Contains all coverage and randomization related utilities. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrvt__instr_a50d9ac8b4dda67556afddf724fa97e8a}\label{classrvt__instr_a50d9ac8b4dda67556afddf724fa97e8a}} 
+\index{rvt\_instr@{rvt\_instr}!decode@{decode}}
+\index{decode@{decode}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily virtual rvt\+\_\+instr\+::decode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_ace80e3b2eb88ff6eee9895af7695ef36}\label{classrvt__instr_ace80e3b2eb88ff6eee9895af7695ef36}} 
+\index{rvt\_instr@{rvt\_instr}!getAsm@{getAsm}}
+\index{getAsm@{getAsm}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{getAsm()}{getAsm()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52}{asm\+\_\+t}} rvt\+\_\+instr\+::get\+Asm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_aaa7d97fe5cef4a9e4afd924c8523bb93}\label{classrvt__instr_aaa7d97fe5cef4a9e4afd924c8523bb93}} 
+\index{rvt\_instr@{rvt\_instr}!getFunct3@{getFunct3}}
+\index{getFunct3@{getFunct3}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{getFunct3()}{getFunct3()}}
+{\footnotesize\ttfamily virtual logic$<$2\+:0$>$ rvt\+\_\+instr\+::get\+Funct3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_abbc02c72be5de18338a0c543e63f3ea7}\label{classrvt__instr_abbc02c72be5de18338a0c543e63f3ea7}} 
+\index{rvt\_instr@{rvt\_instr}!getFunct5@{getFunct5}}
+\index{getFunct5@{getFunct5}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{getFunct5()}{getFunct5()}}
+{\footnotesize\ttfamily virtual logic$<$4\+:0$>$ rvt\+\_\+instr\+::get\+Funct5 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_a88ed51ec56f7a291100b693f68ce37cf}\label{classrvt__instr_a88ed51ec56f7a291100b693f68ce37cf}} 
+\index{rvt\_instr@{rvt\_instr}!getFunct7@{getFunct7}}
+\index{getFunct7@{getFunct7}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{getFunct7()}{getFunct7()}}
+{\footnotesize\ttfamily virtual logic$<$6\+:0$>$ rvt\+\_\+instr\+::get\+Funct7 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_a33ad4e39e16c7ee8ee20e02b1c0283cd}\label{classrvt__instr_a33ad4e39e16c7ee8ee20e02b1c0283cd}} 
+\index{rvt\_instr@{rvt\_instr}!getImm@{getImm}}
+\index{getImm@{getImm}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{getImm()}{getImm()}}
+{\footnotesize\ttfamily virtual logic$<$31\+:0$>$ rvt\+\_\+instr\+::get\+Imm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_af3e5d5e3adce48b50f6f9930712a640f}\label{classrvt__instr_af3e5d5e3adce48b50f6f9930712a640f}} 
+\index{rvt\_instr@{rvt\_instr}!getRawInstr@{getRawInstr}}
+\index{getRawInstr@{getRawInstr}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{getRawInstr()}{getRawInstr()}}
+{\footnotesize\ttfamily logic$<$ 31\+:0 $>$ rvt\+\_\+instr\+::get\+Raw\+Instr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_a58f95da2fc96000114c6f3f7d8724d4b}\label{classrvt__instr_a58f95da2fc96000114c6f3f7d8724d4b}} 
+\index{rvt\_instr@{rvt\_instr}!hasFunct3@{hasFunct3}}
+\index{hasFunct3@{hasFunct3}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{hasFunct3()}{hasFunct3()}}
+{\footnotesize\ttfamily virtual bit rvt\+\_\+instr\+::has\+Funct3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_a54d040a0db18ae4086b0263ce8d7191e}\label{classrvt__instr_a54d040a0db18ae4086b0263ce8d7191e}} 
+\index{rvt\_instr@{rvt\_instr}!hasFunct5@{hasFunct5}}
+\index{hasFunct5@{hasFunct5}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{hasFunct5()}{hasFunct5()}}
+{\footnotesize\ttfamily virtual bit rvt\+\_\+instr\+::has\+Funct5 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_aba77173eceef44fea1aa05dfa86c4595}\label{classrvt__instr_aba77173eceef44fea1aa05dfa86c4595}} 
+\index{rvt\_instr@{rvt\_instr}!hasFunct7@{hasFunct7}}
+\index{hasFunct7@{hasFunct7}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{hasFunct7()}{hasFunct7()}}
+{\footnotesize\ttfamily virtual bit rvt\+\_\+instr\+::has\+Funct7 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_a1fc4ee0750e625b463ae6249067c54c9}\label{classrvt__instr_a1fc4ee0750e625b463ae6249067c54c9}} 
+\index{rvt\_instr@{rvt\_instr}!hasImm@{hasImm}}
+\index{hasImm@{hasImm}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{hasImm()}{hasImm()}}
+{\footnotesize\ttfamily virtual bit rvt\+\_\+instr\+::has\+Imm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_a6fb4ccdbbb33878082dd6bb7e4c0980f}\label{classrvt__instr_a6fb4ccdbbb33878082dd6bb7e4c0980f}} 
+\index{rvt\_instr@{rvt\_instr}!hasRd@{hasRd}}
+\index{hasRd@{hasRd}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{hasRd()}{hasRd()}}
+{\footnotesize\ttfamily virtual bit rvt\+\_\+instr\+::has\+Rd (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_ab345de2d954e943e60e05fa5fd69ff3a}\label{classrvt__instr_ab345de2d954e943e60e05fa5fd69ff3a}} 
+\index{rvt\_instr@{rvt\_instr}!hasRs1@{hasRs1}}
+\index{hasRs1@{hasRs1}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{hasRs1()}{hasRs1()}}
+{\footnotesize\ttfamily virtual bit rvt\+\_\+instr\+::has\+Rs1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_a2c222ef6701e9af4572524941cac31fd}\label{classrvt__instr_a2c222ef6701e9af4572524941cac31fd}} 
+\index{rvt\_instr@{rvt\_instr}!hasRs2@{hasRs2}}
+\index{hasRs2@{hasRs2}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{hasRs2()}{hasRs2()}}
+{\footnotesize\ttfamily virtual bit rvt\+\_\+instr\+::has\+Rs2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_aefeaf03573c19193f051d8d711212f7a}\label{classrvt__instr_aefeaf03573c19193f051d8d711212f7a}} 
+\index{rvt\_instr@{rvt\_instr}!sampleCov@{sampleCov}}
+\index{sampleCov@{sampleCov}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{sampleCov()}{sampleCov()}}
+{\footnotesize\ttfamily rvt\+\_\+instr\+::sample\+Cov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__instr_a76d87326fcadc3d603bc19df5923e142}\label{classrvt__instr_a76d87326fcadc3d603bc19df5923e142}} 
+\index{rvt\_instr@{rvt\_instr}!setRawInstr@{setRawInstr}}
+\index{setRawInstr@{setRawInstr}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{setRawInstr()}{setRawInstr()}}
+{\footnotesize\ttfamily rvt\+\_\+instr\+::set\+Raw\+Instr (\begin{DoxyParamCaption}\item[{logic$<$ 31\+:0 $>$}]{raw\+\_\+instr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrvt__instr_ae7490922ebfb5228a96ef594dda88df0}\label{classrvt__instr_ae7490922ebfb5228a96ef594dda88df0}} 
+\index{rvt\_instr@{rvt\_instr}!amo@{amo}}
+\index{amo@{amo}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{amo}{amo}}
+{\footnotesize\ttfamily rand \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87}{amo\+\_\+t}} rvt\+\_\+instr\+::amo}
+
+\mbox{\Hypertarget{classrvt__instr_a83cd336fff6fe146bc669673d2ea3882}\label{classrvt__instr_a83cd336fff6fe146bc669673d2ea3882}} 
+\index{rvt\_instr@{rvt\_instr}!aq@{aq}}
+\index{aq@{aq}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{aq}{aq}}
+{\footnotesize\ttfamily rand logic rvt\+\_\+instr\+::aq}
+
+\mbox{\Hypertarget{classrvt__instr_a676d0d9a5a7668f25a228c1ea325913f}\label{classrvt__instr_a676d0d9a5a7668f25a228c1ea325913f}} 
+\index{rvt\_instr@{rvt\_instr}!fmt@{fmt}}
+\index{fmt@{fmt}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{fmt}{fmt}}
+{\footnotesize\ttfamily rand logic$<$1\+:0$>$ rvt\+\_\+instr\+::fmt}
+
+\mbox{\Hypertarget{classrvt__instr_a4c6418d4a8cae02bc2149ca26843341e}\label{classrvt__instr_a4c6418d4a8cae02bc2149ca26843341e}} 
+\index{rvt\_instr@{rvt\_instr}!fpo@{fpo}}
+\index{fpo@{fpo}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{fpo}{fpo}}
+{\footnotesize\ttfamily rand fpo\+\_\+t rvt\+\_\+instr\+::fpo}
+
+\mbox{\Hypertarget{classrvt__instr_ac3becb242f5e8d7333275357b46b862c}\label{classrvt__instr_ac3becb242f5e8d7333275357b46b862c}} 
+\index{rvt\_instr@{rvt\_instr}!funct3@{funct3}}
+\index{funct3@{funct3}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{funct3}{funct3}}
+{\footnotesize\ttfamily rand logic$<$2\+:0$>$ rvt\+\_\+instr\+::funct3}
+
+\mbox{\Hypertarget{classrvt__instr_a00ca2283b504b254c00d6e2a225dc829}\label{classrvt__instr_a00ca2283b504b254c00d6e2a225dc829}} 
+\index{rvt\_instr@{rvt\_instr}!funct5@{funct5}}
+\index{funct5@{funct5}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{funct5}{funct5}}
+{\footnotesize\ttfamily rand logic$<$4\+:0$>$ rvt\+\_\+instr\+::funct5}
+
+\mbox{\Hypertarget{classrvt__instr_abcab07195173882556d9bdcb2cd77e27}\label{classrvt__instr_abcab07195173882556d9bdcb2cd77e27}} 
+\index{rvt\_instr@{rvt\_instr}!funct7@{funct7}}
+\index{funct7@{funct7}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{funct7}{funct7}}
+{\footnotesize\ttfamily rand logic$<$7\+:0$>$ rvt\+\_\+instr\+::funct7}
+
+\mbox{\Hypertarget{classrvt__instr_aee709bb9e370634ea6939c223705db89}\label{classrvt__instr_aee709bb9e370634ea6939c223705db89}} 
+\index{rvt\_instr@{rvt\_instr}!imm@{imm}}
+\index{imm@{imm}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{imm}{imm}}
+{\footnotesize\ttfamily rand logic$<$31\+:0$>$ rvt\+\_\+instr\+::imm}
+
+\mbox{\Hypertarget{classrvt__instr_a47d1dd966a6568cf252a1a4bddf1885b}\label{classrvt__instr_a47d1dd966a6568cf252a1a4bddf1885b}} 
+\index{rvt\_instr@{rvt\_instr}!m\_asm@{m\_asm}}
+\index{m\_asm@{m\_asm}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{m\_asm}{m\_asm}}
+{\footnotesize\ttfamily rand \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52}{asm\+\_\+t}} rvt\+\_\+instr\+::m\+\_\+asm}
+
+\mbox{\Hypertarget{classrvt__instr_a5c6f36f4e1a5882c607828b098cf19c0}\label{classrvt__instr_a5c6f36f4e1a5882c607828b098cf19c0}} 
+\index{rvt\_instr@{rvt\_instr}!m\_cov@{m\_cov}}
+\index{m\_cov@{m\_cov}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{m\_cov}{m\_cov}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrvt__instr__cov}{rvt\+\_\+instr\+\_\+cov}} rvt\+\_\+instr\+::m\+\_\+cov\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrvt__instr_aec10f6cdc869fbfd9059cc2614abb94b}\label{classrvt__instr_aec10f6cdc869fbfd9059cc2614abb94b}} 
+\index{rvt\_instr@{rvt\_instr}!m\_decoded@{m\_decoded}}
+\index{m\_decoded@{m\_decoded}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{m\_decoded}{m\_decoded}}
+{\footnotesize\ttfamily bit rvt\+\_\+instr\+::m\+\_\+decoded}
+
+\mbox{\Hypertarget{classrvt__instr_a1dbd6d633cd77ee76eacfbe868353a82}\label{classrvt__instr_a1dbd6d633cd77ee76eacfbe868353a82}} 
+\index{rvt\_instr@{rvt\_instr}!m\_format@{m\_format}}
+\index{m\_format@{m\_format}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{m\_format}{m\_format}}
+{\footnotesize\ttfamily rand \mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794}{format\+\_\+t}} rvt\+\_\+instr\+::m\+\_\+format}
+
+\mbox{\Hypertarget{classrvt__instr_a0ad53662879a1c1582694fa56f3da0a1}\label{classrvt__instr_a0ad53662879a1c1582694fa56f3da0a1}} 
+\index{rvt\_instr@{rvt\_instr}!m\_funct3\_vld@{m\_funct3\_vld}}
+\index{m\_funct3\_vld@{m\_funct3\_vld}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{m\_funct3\_vld}{m\_funct3\_vld}}
+{\footnotesize\ttfamily bit rvt\+\_\+instr\+::m\+\_\+funct3\+\_\+vld}
+
+\mbox{\Hypertarget{classrvt__instr_a2fe8750efa4fa3ec30d53b6dcb334939}\label{classrvt__instr_a2fe8750efa4fa3ec30d53b6dcb334939}} 
+\index{rvt\_instr@{rvt\_instr}!m\_funct5\_vld@{m\_funct5\_vld}}
+\index{m\_funct5\_vld@{m\_funct5\_vld}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{m\_funct5\_vld}{m\_funct5\_vld}}
+{\footnotesize\ttfamily bit rvt\+\_\+instr\+::m\+\_\+funct5\+\_\+vld}
+
+\mbox{\Hypertarget{classrvt__instr_a10f5c64082259ec4cb769f766113894f}\label{classrvt__instr_a10f5c64082259ec4cb769f766113894f}} 
+\index{rvt\_instr@{rvt\_instr}!m\_funct7\_vld@{m\_funct7\_vld}}
+\index{m\_funct7\_vld@{m\_funct7\_vld}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{m\_funct7\_vld}{m\_funct7\_vld}}
+{\footnotesize\ttfamily bit rvt\+\_\+instr\+::m\+\_\+funct7\+\_\+vld}
+
+\mbox{\Hypertarget{classrvt__instr_a0f502343a80359138832c64e86decc95}\label{classrvt__instr_a0f502343a80359138832c64e86decc95}} 
+\index{rvt\_instr@{rvt\_instr}!m\_imm\_vld@{m\_imm\_vld}}
+\index{m\_imm\_vld@{m\_imm\_vld}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{m\_imm\_vld}{m\_imm\_vld}}
+{\footnotesize\ttfamily bit rvt\+\_\+instr\+::m\+\_\+imm\+\_\+vld}
+
+\mbox{\Hypertarget{classrvt__instr_a67d61f6af47eda9105d26c4f8a2af788}\label{classrvt__instr_a67d61f6af47eda9105d26c4f8a2af788}} 
+\index{rvt\_instr@{rvt\_instr}!m\_instr@{m\_instr}}
+\index{m\_instr@{m\_instr}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{m\_instr}{m\_instr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structinstr__t}{instr\+\_\+t}} rvt\+\_\+instr\+::m\+\_\+instr\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrvt__instr_a9d1ef142b96ec9344154c06ec4ef164b}\label{classrvt__instr_a9d1ef142b96ec9344154c06ec4ef164b}} 
+\index{rvt\_instr@{rvt\_instr}!m\_rd\_vld@{m\_rd\_vld}}
+\index{m\_rd\_vld@{m\_rd\_vld}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{m\_rd\_vld}{m\_rd\_vld}}
+{\footnotesize\ttfamily bit rvt\+\_\+instr\+::m\+\_\+rd\+\_\+vld}
+
+\mbox{\Hypertarget{classrvt__instr_a477a7c7258d4a5017bec4055810056e3}\label{classrvt__instr_a477a7c7258d4a5017bec4055810056e3}} 
+\index{rvt\_instr@{rvt\_instr}!m\_rs1\_vld@{m\_rs1\_vld}}
+\index{m\_rs1\_vld@{m\_rs1\_vld}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{m\_rs1\_vld}{m\_rs1\_vld}}
+{\footnotesize\ttfamily bit rvt\+\_\+instr\+::m\+\_\+rs1\+\_\+vld}
+
+\mbox{\Hypertarget{classrvt__instr_a24ed39fead0cfff7a76ac76757a68d24}\label{classrvt__instr_a24ed39fead0cfff7a76ac76757a68d24}} 
+\index{rvt\_instr@{rvt\_instr}!m\_rs2\_vld@{m\_rs2\_vld}}
+\index{m\_rs2\_vld@{m\_rs2\_vld}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{m\_rs2\_vld}{m\_rs2\_vld}}
+{\footnotesize\ttfamily bit rvt\+\_\+instr\+::m\+\_\+rs2\+\_\+vld}
+
+\mbox{\Hypertarget{classrvt__instr_a8f7d862e829fcbe39898acd8d40b109c}\label{classrvt__instr_a8f7d862e829fcbe39898acd8d40b109c}} 
+\index{rvt\_instr@{rvt\_instr}!opcode@{opcode}}
+\index{opcode@{opcode}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{opcode}{opcode}}
+{\footnotesize\ttfamily rand \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7d}{opcode\+\_\+t}} rvt\+\_\+instr\+::opcode}
+
+\mbox{\Hypertarget{classrvt__instr_a3c0e342e6adaada61895cb59d8089d8f}\label{classrvt__instr_a3c0e342e6adaada61895cb59d8089d8f}} 
+\index{rvt\_instr@{rvt\_instr}!rd@{rd}}
+\index{rd@{rd}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{rd}{rd}}
+{\footnotesize\ttfamily rand logic$<$4\+:0$>$ rvt\+\_\+instr\+::rd}
+
+\mbox{\Hypertarget{classrvt__instr_a799b851a3e018993ea75e5295aa9e8ff}\label{classrvt__instr_a799b851a3e018993ea75e5295aa9e8ff}} 
+\index{rvt\_instr@{rvt\_instr}!rl@{rl}}
+\index{rl@{rl}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{rl}{rl}}
+{\footnotesize\ttfamily rand logic rvt\+\_\+instr\+::rl}
+
+\mbox{\Hypertarget{classrvt__instr_ae14b87593026f3917b89c5826b54a0e5}\label{classrvt__instr_ae14b87593026f3917b89c5826b54a0e5}} 
+\index{rvt\_instr@{rvt\_instr}!rs1@{rs1}}
+\index{rs1@{rs1}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{rs1}{rs1}}
+{\footnotesize\ttfamily rand logic$<$4\+:0$>$ rvt\+\_\+instr\+::rs1}
+
+\mbox{\Hypertarget{classrvt__instr_ad55ce1e91009d157e049fe8e0cb908a3}\label{classrvt__instr_ad55ce1e91009d157e049fe8e0cb908a3}} 
+\index{rvt\_instr@{rvt\_instr}!rs2@{rs2}}
+\index{rs2@{rs2}!rvt\_instr@{rvt\_instr}}
+\doxysubsubsection{\texorpdfstring{rs2}{rs2}}
+{\footnotesize\ttfamily rand logic$<$4\+:0$>$ rvt\+\_\+instr\+::rs2}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+base/riscv/\mbox{\hyperlink{rvt__instr_8svh}{rvt\+\_\+instr.\+svh}}\end{DoxyCompactItemize}

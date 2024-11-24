@@ -13,12 +13,11 @@ class rvt_cfg extends rvt_obj;
 
   //! @brief Calls plain UVM object constructor.
   //! @see dv_macros.svh
-  `uvm_object_new()
+  `uvm_object_new();
 
   //! @brief UVM factory registry.
   `uvm_object_utils_begin(rvt_cfg)
     `uvm_field_aa_int_string(sub_en, UVM_DEFAULT)
     `uvm_field_enum(uvm_active_passive_enum, is_active, UVM_DEFAULT)
   `uvm_object_utils_end
-
 endclass : rvt_cfg

@@ -1,0 +1,222 @@
+\hypertarget{classrvt__mem__cfg}{}\doxysection{rvt\+\_\+mem\+\_\+cfg$<$ XLEN, ADDR $>$ Class Template Reference}
+\label{classrvt__mem__cfg}\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+
+
+Inheritance diagram for rvt\+\_\+mem\+\_\+cfg$<$ XLEN, ADDR $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{classrvt__mem__cfg__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rvt\+\_\+mem\+\_\+cfg$<$ XLEN, ADDR $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{classrvt__mem__cfg__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6}{opsize\+\_\+e}} \{ \mbox{\hyperlink{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6a37aaf516005933a73551f4d076bb1122}{BYTE}}
+, \mbox{\hyperlink{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6aca961e87f57e5b82b3e681ca38ef4580}{HALF}}
+, \mbox{\hyperlink{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6afa8bd8d68540949b625ef24f1d6affb6}{FULL}}
+, \mbox{\hyperlink{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6aa287171fc7faf95c7709bb75b26a2d29}{DOUBLE}}
+ \}
+\item 
+enum \mbox{\hyperlink{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7}{opcode\+\_\+e}} \{ \mbox{\hyperlink{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7a0623b77bf7ccf1dd276badf392b9d854}{READ}}
+, \mbox{\hyperlink{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7a739e2b9840e02263dd116109df4412d5}{WRITE}}
+, \mbox{\hyperlink{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7a791d056aa327961a70c4d2f74ad04c70}{NOOP}}
+ \}
+\item 
+typedef bit$<$ XLEN-\/1 \+:0 $>$ \mbox{\hyperlink{classrvt__mem__cfg_ae7c348fe23ed38e13b9e8ca9b9c56b93}{data\+\_\+t}}
+\item 
+typedef bit$<$ ADDR-\/1 \+:0 $>$ \mbox{\hyperlink{classrvt__mem__cfg_a07e7aba330aa934b047e946f26e12397}{addr\+\_\+t}}
+\item 
+typedef bit$<$ \mbox{\hyperlink{classrvt__mem__cfg_abeba3b019aedbab651785ef72fe06a57}{BYTE\+\_\+\+ADDR}}-\/1 \+:0 $>$ \mbox{\hyperlink{classrvt__mem__cfg_aafe81c274604eb7a4c5122388985ee3b}{baddr\+\_\+t}}
+\item 
+typedef bit$<$ BYTE\+\_\+\+COUNT-\/1 \+:0 $>$\mbox{[}8\mbox{]} \mbox{\hyperlink{classrvt__mem__cfg_aab97ba84295df262473c4710c99d0967}{word\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrvt__mem__cfg_a09653d33dd1a15aaf02d1e51ee45c6cc}{uvm\+\_\+object\+\_\+new}} () parameter int BYTE\+\_\+\+COUNT
+\item 
+\mbox{\hyperlink{classrvt__mem__cfg_a309399dfa54a8d7d259f32ca98643e23}{uvm\+\_\+object\+\_\+param\+\_\+utils\+\_\+begin}} (\mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ T, REQ, RSP, XLEN, ADDR $>$) \mbox{\hyperlink{classrvt__mem__cfg_a6bd7209b7120c10762ed4ed4289d33ee}{uvm\+\_\+field\+\_\+int}}(\mbox{\hyperlink{classrvt__mem__cfg_a945b30c47dbf4e3044fc66265cdb05b1}{xlen}}
+\item 
+UVM\+\_\+\+DEFAULT \mbox{\hyperlink{classrvt__mem__cfg_a6bd7209b7120c10762ed4ed4289d33ee}{uvm\+\_\+field\+\_\+int}} (\mbox{\hyperlink{classrvt__mem__cfg_af4672e839a22e9bc6f596a7f51d7bb31}{addr}}, UVM\+\_\+\+DEFAULT) uvm\+\_\+field\+\_\+int(\mbox{\hyperlink{classrvt__mem__cfg_aff0b677e0752112184862e3a557c2498}{byte\+\_\+count}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+parameter int \mbox{\hyperlink{classrvt__mem__cfg_abeba3b019aedbab651785ef72fe06a57}{BYTE\+\_\+\+ADDR}} = \$clog2(BYTE\+\_\+\+COUNT)
+\item 
+int \mbox{\hyperlink{classrvt__mem__cfg_a945b30c47dbf4e3044fc66265cdb05b1}{xlen}} = XLEN
+\item 
+int \mbox{\hyperlink{classrvt__mem__cfg_af4672e839a22e9bc6f596a7f51d7bb31}{addr}} = ADDR
+\item 
+int \mbox{\hyperlink{classrvt__mem__cfg_aff0b677e0752112184862e3a557c2498}{byte\+\_\+count}} = BYTE\+\_\+\+COUNT
+\item 
+int \mbox{\hyperlink{classrvt__mem__cfg_afc1b02e661ede454c28e1842765637fd}{byte\+\_\+addr}} = \mbox{\hyperlink{classrvt__mem__cfg_abeba3b019aedbab651785ef72fe06a57}{BYTE\+\_\+\+ADDR}}
+\item 
+\mbox{\hyperlink{classrvt__bfm}{rvt\+\_\+bfm}} \mbox{\hyperlink{classrvt__mem__cfg_a6e2d86dd476a9c700a23f6b65363317c}{bfm}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrvt__mem__cfg_a07e7aba330aa934b047e946f26e12397}\label{classrvt__mem__cfg_a07e7aba330aa934b047e946f26e12397}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!addr\_t@{addr\_t}}
+\index{addr\_t@{addr\_t}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{addr\_t}{addr\_t}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+typedef bit$<$ADDR-\/1 \+:0$>$ \mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::\mbox{\hyperlink{classrvt__mem__cfg_a07e7aba330aa934b047e946f26e12397}{addr\+\_\+t}}}
+
+\mbox{\Hypertarget{classrvt__mem__cfg_aafe81c274604eb7a4c5122388985ee3b}\label{classrvt__mem__cfg_aafe81c274604eb7a4c5122388985ee3b}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!baddr\_t@{baddr\_t}}
+\index{baddr\_t@{baddr\_t}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{baddr\_t}{baddr\_t}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+typedef bit$<$\mbox{\hyperlink{classrvt__mem__cfg_abeba3b019aedbab651785ef72fe06a57}{BYTE\+\_\+\+ADDR}}-\/1 \+:0$>$ \mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::\mbox{\hyperlink{classrvt__mem__cfg_aafe81c274604eb7a4c5122388985ee3b}{baddr\+\_\+t}}}
+
+\mbox{\Hypertarget{classrvt__mem__cfg_ae7c348fe23ed38e13b9e8ca9b9c56b93}\label{classrvt__mem__cfg_ae7c348fe23ed38e13b9e8ca9b9c56b93}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!data\_t@{data\_t}}
+\index{data\_t@{data\_t}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{data\_t}{data\_t}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+typedef bit$<$XLEN-\/1 \+:0$>$ \mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::\mbox{\hyperlink{classrvt__mem__cfg_ae7c348fe23ed38e13b9e8ca9b9c56b93}{data\+\_\+t}}}
+
+\mbox{\Hypertarget{classrvt__mem__cfg_aab97ba84295df262473c4710c99d0967}\label{classrvt__mem__cfg_aab97ba84295df262473c4710c99d0967}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!word\_t@{word\_t}}
+\index{word\_t@{word\_t}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{word\_t}{word\_t}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+typedef bit$<$BYTE\+\_\+\+COUNT-\/1 \+:0$>$ \mbox{[}8\mbox{]} \mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::\mbox{\hyperlink{classrvt__mem__cfg_aab97ba84295df262473c4710c99d0967}{word\+\_\+t}}}
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7}\label{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!opcode\_e@{opcode\_e}}
+\index{opcode\_e@{opcode\_e}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{opcode\_e}{opcode\_e}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+enum \mbox{\hyperlink{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7}{rvt\+\_\+mem\+\_\+cfg\+::opcode\+\_\+e}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{READ@{READ}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!READ@{READ}}}\mbox{\Hypertarget{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7a0623b77bf7ccf1dd276badf392b9d854}\label{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7a0623b77bf7ccf1dd276badf392b9d854}} 
+READ&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRITE@{WRITE}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!WRITE@{WRITE}}}\mbox{\Hypertarget{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7a739e2b9840e02263dd116109df4412d5}\label{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7a739e2b9840e02263dd116109df4412d5}} 
+WRITE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NOOP@{NOOP}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!NOOP@{NOOP}}}\mbox{\Hypertarget{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7a791d056aa327961a70c4d2f74ad04c70}\label{classrvt__mem__cfg_abdf268a8445155f90aff106b07ac1fc7a791d056aa327961a70c4d2f74ad04c70}} 
+NOOP&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6}\label{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!opsize\_e@{opsize\_e}}
+\index{opsize\_e@{opsize\_e}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{opsize\_e}{opsize\_e}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+enum \mbox{\hyperlink{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6}{rvt\+\_\+mem\+\_\+cfg\+::opsize\+\_\+e}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BYTE@{BYTE}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!BYTE@{BYTE}}}\mbox{\Hypertarget{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6a37aaf516005933a73551f4d076bb1122}\label{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6a37aaf516005933a73551f4d076bb1122}} 
+BYTE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HALF@{HALF}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!HALF@{HALF}}}\mbox{\Hypertarget{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6aca961e87f57e5b82b3e681ca38ef4580}\label{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6aca961e87f57e5b82b3e681ca38ef4580}} 
+HALF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FULL@{FULL}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!FULL@{FULL}}}\mbox{\Hypertarget{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6afa8bd8d68540949b625ef24f1d6affb6}\label{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6afa8bd8d68540949b625ef24f1d6affb6}} 
+FULL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOUBLE@{DOUBLE}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!DOUBLE@{DOUBLE}}}\mbox{\Hypertarget{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6aa287171fc7faf95c7709bb75b26a2d29}\label{classrvt__mem__cfg_ac02da74a79bc693dff5315496b7163f6aa287171fc7faf95c7709bb75b26a2d29}} 
+DOUBLE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrvt__mem__cfg_a6bd7209b7120c10762ed4ed4289d33ee}\label{classrvt__mem__cfg_a6bd7209b7120c10762ed4ed4289d33ee}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!uvm\_field\_int@{uvm\_field\_int}}
+\index{uvm\_field\_int@{uvm\_field\_int}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{uvm\_field\_int()}{uvm\_field\_int()}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+UVM\+\_\+\+DEFAULT \mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::uvm\+\_\+field\+\_\+int (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrvt__mem__cfg_af4672e839a22e9bc6f596a7f51d7bb31}{addr}}}]{,  }\item[{UVM\+\_\+\+DEFAULT}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrvt__mem__cfg_a09653d33dd1a15aaf02d1e51ee45c6cc}\label{classrvt__mem__cfg_a09653d33dd1a15aaf02d1e51ee45c6cc}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!uvm\_object\_new@{uvm\_object\_new}}
+\index{uvm\_object\_new@{uvm\_object\_new}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{uvm\_object\_new()}{uvm\_object\_new()}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+\mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::uvm\+\_\+object\+\_\+new (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrvt__mem__cfg_a309399dfa54a8d7d259f32ca98643e23}\label{classrvt__mem__cfg_a309399dfa54a8d7d259f32ca98643e23}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!uvm\_object\_param\_utils\_begin@{uvm\_object\_param\_utils\_begin}}
+\index{uvm\_object\_param\_utils\_begin@{uvm\_object\_param\_utils\_begin}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{uvm\_object\_param\_utils\_begin()}{uvm\_object\_param\_utils\_begin()}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+\mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::uvm\+\_\+object\+\_\+param\+\_\+utils\+\_\+begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ T, REQ, RSP, XLEN, ADDR $>$}]{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrvt__mem__cfg_af4672e839a22e9bc6f596a7f51d7bb31}\label{classrvt__mem__cfg_af4672e839a22e9bc6f596a7f51d7bb31}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!addr@{addr}}
+\index{addr@{addr}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{addr}{addr}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+int \mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::addr = ADDR}
+
+\mbox{\Hypertarget{classrvt__mem__cfg_a6e2d86dd476a9c700a23f6b65363317c}\label{classrvt__mem__cfg_a6e2d86dd476a9c700a23f6b65363317c}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!bfm@{bfm}}
+\index{bfm@{bfm}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{bfm}{bfm}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+\mbox{\hyperlink{classrvt__bfm}{rvt\+\_\+bfm}} \mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::bfm}
+
+\mbox{\Hypertarget{classrvt__mem__cfg_abeba3b019aedbab651785ef72fe06a57}\label{classrvt__mem__cfg_abeba3b019aedbab651785ef72fe06a57}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!BYTE\_ADDR@{BYTE\_ADDR}}
+\index{BYTE\_ADDR@{BYTE\_ADDR}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{BYTE\_ADDR}{BYTE\_ADDR}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+parameter int \mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::BYTE\+\_\+\+ADDR = \$clog2(BYTE\+\_\+\+COUNT)}
+
+\mbox{\Hypertarget{classrvt__mem__cfg_afc1b02e661ede454c28e1842765637fd}\label{classrvt__mem__cfg_afc1b02e661ede454c28e1842765637fd}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!byte\_addr@{byte\_addr}}
+\index{byte\_addr@{byte\_addr}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{byte\_addr}{byte\_addr}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+int \mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::byte\+\_\+addr = \mbox{\hyperlink{classrvt__mem__cfg_abeba3b019aedbab651785ef72fe06a57}{BYTE\+\_\+\+ADDR}}}
+
+\mbox{\Hypertarget{classrvt__mem__cfg_aff0b677e0752112184862e3a557c2498}\label{classrvt__mem__cfg_aff0b677e0752112184862e3a557c2498}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!byte\_count@{byte\_count}}
+\index{byte\_count@{byte\_count}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{byte\_count}{byte\_count}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+int \mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::byte\+\_\+count = BYTE\+\_\+\+COUNT}
+
+\mbox{\Hypertarget{classrvt__mem__cfg_a945b30c47dbf4e3044fc66265cdb05b1}\label{classrvt__mem__cfg_a945b30c47dbf4e3044fc66265cdb05b1}} 
+\index{rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}!xlen@{xlen}}
+\index{xlen@{xlen}!rvt\_mem\_cfg$<$ XLEN, ADDR $>$@{rvt\_mem\_cfg$<$ XLEN, ADDR $>$}}
+\doxysubsubsection{\texorpdfstring{xlen}{xlen}}
+{\footnotesize\ttfamily template$<$parameter int XLEN = 32, parameter int ADDR = 32$>$ \\
+int \mbox{\hyperlink{classrvt__mem__cfg}{rvt\+\_\+mem\+\_\+cfg}}$<$ XLEN, ADDR $>$\+::xlen = XLEN}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+models/memory/\mbox{\hyperlink{rvt__mem__cfg_8svh}{rvt\+\_\+mem\+\_\+cfg.\+svh}}\end{DoxyCompactItemize}

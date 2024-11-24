@@ -1,0 +1,1787 @@
+\hypertarget{riscv__types_8svh}{}\doxysection{base/riscv/riscv\+\_\+types.svh File Reference}
+\label{riscv__types_8svh}\index{base/riscv/riscv\_types.svh@{base/riscv/riscv\_types.svh}}
+
+
+Typedefs for RISC-\/V ISA instructions.  
+
+
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{riscv__types_8svh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+union \mbox{\hyperlink{structpacked}{packed}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{riscv__types_8svh_a227eff7b21c8a6c7c9c1544322e60f56}{\+\_\+\+RVT\+\_\+\+TYPES\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{riscv__types_8svh_a1b32a9e5af0b3712687e59818db9b561}{rtype\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{riscv__types_8svh_a0ee0de44030d55f950ccb3aafec84172}{itype\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{riscv__types_8svh_a574cfaf367ae08f1888fa31c94a33e92}{stype\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{riscv__types_8svh_ac290f78acd5bcd60a8468f68191436eb}{utype\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{riscv__types_8svh_ab9173cf2883b95a595458d4f00bf2470}{btype\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{riscv__types_8svh_ab249adf753086fa3ab2779dbe2bfb683}{jtype\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{riscv__types_8svh_aab7faa3d41c41daeb7dec2f610e28b84}{atype\+\_\+t}}
+\item 
+typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{riscv__types_8svh_a1abcf905a0d20e99005a1d717ff00164}{ftype\+\_\+t}}
+\item 
+typedef union \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{riscv__types_8svh_a387c7781b2f8b4812ddc0ecc71ae409c}{instr\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7}{prv\+\_\+lvl\+\_\+t}} \{ \mbox{\hyperlink{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7ac134a8da8015ccc0162965a178bf1e7d}{Prv\+LvlM}} = 0b11
+, \mbox{\hyperlink{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7a31960cefe3c2394afb365525cd3d3aa2}{Prv\+LvlS}} = 0b01
+, \mbox{\hyperlink{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7a1e5144b445e1e3a4ed77ec3c7442cd8c}{Prv\+LvlU}} = 0b00
+ \}
+\item 
+enum \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7d}{opcode\+\_\+t}} \{ \newline
+\mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da5e4602e4dd4601a4be15b18fae9143a9}{Opcode\+Load}} = OPCODE\+\_\+\+LOAD
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da3139d757dd462ec1e24d3b48f07e0bb4}{Opcode\+Load\+Fp}} = OPCODE\+\_\+\+LOAD\+\_\+\+FP
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da1c55da043819cfd047aa88fad177309d}{Opcode\+Custom0}} = OPCODE\+\_\+\+CUSTOM0
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da797e08988817896970ee73d681e84d39}{Opcode\+Misc\+Mem}} = OPCODE\+\_\+\+MISC\+\_\+\+MEM
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da6e4764f99de0af1a57c83762a5b8c28f}{Opcode\+Op\+Imm}} = OPCODE\+\_\+\+OP\+\_\+\+IMM
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dae701ba4a5673271bb25d9cd043ac0bf0}{Opcode\+Auipc}} = OPCODE\+\_\+\+AUIPC
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da58ac7d6006da1ce48f774d306464fef4}{Opcode\+Op\+Imm32}} = OPCODE\+\_\+\+OP\+\_\+\+IMM32
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da1c858a6e4cea51d2758194b0e7a7b7c4}{Opcode48}} = OPCODE\+\_\+48
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da1038f31abec3086716588e216e2ff84a}{Opcode\+Store}} = OPCODE\+\_\+\+STORE
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dabbe43adbf3cf82d02264818f0824685e}{Opcode\+Stote\+Fp}} = OPCODE\+\_\+\+STORE\+\_\+\+FP
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da15d23cbfc0edb9db3162b89fc00853fb}{Opcode\+Custom1}} = OPCODE\+\_\+\+CUSTOM1
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da9d826a8c5aebd01dd734e97f3064fa6b}{Opcode\+Amo}} = OPCODE\+\_\+\+AMO
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da9f14439c0877673be15cb6499f5e60e8}{Opcode\+Op}} = OPCODE\+\_\+\+OP
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da3c42ea899f51a3ae643baad4511c60a3}{Opcode\+Lui}} = OPCODE\+\_\+\+LUI
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da443fc5ad28f81dc6304985678d41f9d5}{Opcode\+Op32}} = OPCODE\+\_\+\+OP32
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da6fad30d7aab98ad5451a2acaba88b2ba}{Opcode64}} = OPCODE\+\_\+64
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da38610e2cb9330d1311a4948dd3f8c032}{Opcode\+Madd}} = OPCODE\+\_\+\+MADD
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da6781515da94e40f7ef9feb9594e7e9a7}{Opcode\+Msub}} = OPCODE\+\_\+\+MSUB
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da67881f500488b1c26a4573710107c4e1}{Opcode\+Nmsub}} = OPCODE\+\_\+\+NMSUB
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da32d42e3fcb0abb942f4ac1cb4ebf43be}{Opcode\+Nmadd}} = OPCODE\+\_\+\+NMADD
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da9d0f13177242164a3d6b349b81b7f755}{Opcode\+Op\+Fp}} = OPCODE\+\_\+\+OP\+\_\+\+FP
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dab05c22055799d28dfb83ef665de0cbdf}{Opcode\+OpV}} = OPCODE\+\_\+\+OP\+\_\+V
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dadbe26baaf5fe441233dd995c97e58e0f}{Opcode\+Custom2}} = OPCODE\+\_\+\+CUSTOM2
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dac646d3adfc10f671e5e79805365964a3}{Opcode48\+\_\+}} = OPCODE\+\_\+48\+\_\+
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dacb79957b5a0bb4e8d228d21a4e9a0529}{Opcode\+Branch}} = OPCOED\+\_\+\+BRANCH
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da6323b85f7c4d14092bf5a3306104215d}{Opcode\+Jalr}} = OPCODE\+\_\+\+JALR
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7daf7f8ec0923cd7ae3e2c9f9c87c5a6676}{Opcode\+Reserved}} = OPCODE\+\_\+\+RESERVED
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da390ccdf3e20fc36c02dd8fd41776e4ec}{Opcode\+Jal}} = OPCODE\+\_\+\+JAL
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dade816dc01d2872d62151b960867109f5}{Opcode\+System}} = OPCODE\+\_\+\+SYSTEM
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da4ff7431f6c675bc2c26d93fa7bff8867}{Opcode\+Op\+Ve}} = OPCODE\+\_\+\+OP\+\_\+\+VE
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da204a0394dabdb827c767eaaab5c3b3e1}{Opcode\+Custom3}} = OPCODE\+\_\+\+CUSTOM3
+, \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da7b4b063d57095dcde2f24dab91ba4d55}{Opcode80}} = OPCODE\+\_\+80
+ \}
+\begin{DoxyCompactList}\small\item\em Enum definition for RISC-\/V instruction opcodes. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87}{amo\+\_\+t}} \{ \newline
+\mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a77ba3d2ebe48260bd5f2acc26b6c1ce1}{Amo\+Lr}} = FUNCT5\+\_\+\+LR
+, \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87ac1d9bb3d5b7d754de30610d5f8024c0e}{Amo\+Sc}} = FUNCT5\+\_\+\+SC
+, \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87accc144ef23669be8bac1f5b590fb695d}{Amo\+Swap}} = FUNCT5\+\_\+\+AMOSWAP
+, \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a9f3c36b31e8f11c84664c196de563c49}{Amo\+Add}} = FUNCT5\+\_\+\+AMOADD
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a86a92c2c78d151a6fc5c35a38fff331d}{Amo\+And}} = FUNCT5\+\_\+\+AMOAND
+, \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a4d6025eac7a047008a07d677453bab34}{Amo\+Or}} = FUNCT5\+\_\+\+AMOOR
+, \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a0f08130b5505492b666b62f32ad7f4aa}{AMOXor}} = FUNCT5\+\_\+\+AMOXOR
+, \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87ad79908f871cd0f1932575428bcdd1cfe}{Amo\+Max}} = FUNCT5\+\_\+\+AMOMAX
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a4e99db30f531c766f97f5c079bd0d7c6}{Amo\+MaxU}} = FUNCT5\+\_\+\+AMOMAXU
+, \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87aab27f97785f1b20f41bf40d7ee37c54f}{Amo\+Min}} = FUNCT5\+\_\+\+AMOMIN
+, \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87abac611e5f6da307160e33585d97bbd70}{Amo\+MinU}} = FUNCT5\+\_\+\+AMOMINU
+, \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87ab6279ec48c8ea0b9653ae75e5584dca0}{Amo\+Nop}} = AMONOP
+ \}
+\begin{DoxyCompactList}\small\item\em Enum definition for RISC-\/V Atomic instructions. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35b}{rv\+\_\+ext\+\_\+t}} \{ \newline
+\mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba0a5f000aac4ba1af0d3a6cf41b3d8688}{RVExt\+Unknown}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba6f67bcac2e92fad7b53ff6cae9c4f89f}{RVExtI}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba31d9bbc20dc19a4322061a8f6034b9b7}{Rv\+ExtE}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba42b554c614bd1c3ed44f1d30e4486cea}{Rv\+ExtM}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bad1de4960c59762f5abf7f03f9f75301e}{Rv\+ExtA}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba1a0809010ff292da20ba1180bc2fc324}{Rv\+ExtB}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba5ef00392316e23bcaec0347a71c15110}{Rv\+ExtC}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bace4045a02eabdfca3b47a56122755d0c}{Rv\+ExtD}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bad79be5e9b4f7fcc125ac7cb1201880ca}{Rv\+ExtF}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba91132c039f2352acc26aa59f5b9ff1ae}{Rv\+ExtG}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bacc083f506b62222b67e29171bd72629a}{Rv\+ExtH}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bac5986fba540eebca868e1c5ab6357fc8}{Rv\+ExtJ}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba9cc5710ecc3cb3325f07f45f556da137}{Rv\+ExtL}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba3246b22aa98c58262a842daccd11d07a}{Rv\+ExtN}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba8cf0b79264f0cf6794c7250cf47b5a5e}{Rv\+ExtP}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba03735d8b3c8c9f4a6df0855441491cc1}{Rv\+ExtQ}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bac0bec55f42673899cac5999b1ca3765b}{Rv\+ExtS}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba119a1a851dd1f6ed1d29cb309a09e28f}{Rv\+ExtT}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba10afe37731541366ccadfda195d93c4a}{Rv\+ExtV}}
+, \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba46e213a2026ff881aa441bc133f4512c}{Rv\+Ext\+Zfh}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba8b6de36550e042d8998ff0c7e269580d}{Rv\+Ext\+Zawrs}}
+ \}
+\item 
+enum \mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794}{format\+\_\+t}} \{ \newline
+\mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a045b1c190001e8d92525a03f98a61de5}{Format\+Unknown}}
+, \mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794af024a4c037273ceaee6e4c9d8238764c}{FormatR}}
+, \mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794ad50aa80423e6120fb71d996c1d381c9f}{FormatI}}
+, \mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a59f74c837dc211cf0b10c17f2e5d71fd}{FormatS}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a9a347fe13678c858532cba198305cebe}{FormatU}}
+, \mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a7680e5c82736a9b2d9d0a24f30d95258}{FormatB}}
+, \mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a812435f665a68b4a97cb004113d14916}{FormatJ}}
+, \mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a49e70a7822bb964827050d3da1dc7f27}{FormatA}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a89a851b08effbb9c41453a033846630e}{FormatF}}
+ \}
+\item 
+enum \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52}{asm\+\_\+t}} \{ \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a924a1e6cec1796dee2ef3e3fd80f056c}{LUI}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af2175add5dd5efab417a971036bc537c}{AUIPC}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a233cb6709087f6c0642372ef5dd78a3a}{JAL}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a979a6068ecbbf97a36ff68b09b2b18ed}{JALR}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a10a57057de688acb1267e6e84e82c612}{BEQ}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a47b77783113a840ba70ba77ffca11bcd}{BNE}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ab047e071dca78ab8e54400681a12817e}{BLT}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5e4f325db9df3a0c4c8dd305922b1d06}{BGE}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a38354de79d6507254b70c5d2c527acae}{BLTU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a218870a6f7a32bcfddf61ffa29081286}{BGEU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aec61e49978c3f59c943a3c0dc00ce94c}{LB}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aadab8e0111f669b137544a4ecce92997}{LH}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afb8dc6a60882be011a142162e88ddf4d}{LW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa5977e1c7e10f67525f6b5ad7034546d}{LBU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aee5904f3f96379562d46d974c3f9c80a}{LHU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad3000f705564090d2acd1d320ccc5135}{SB}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a34e6a4455b0bead95a23e814f7c06bfd}{SH}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a247b880fc48dc1c74961ba58ae0f68a2}{SW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6e87b0a8efa92e9deea49ff2921b45a8}{ADDI}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad3e10f290b0e57e4c711af4ff7974bf8}{SLTI}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6f3b05d2a173a249f6855c63b0aebff0}{SLTIU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a432042c51792646ca29ab2bfbe712ed2}{XORI}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acdb39f8c8d5518820b97eef455eb240b}{ORI}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a06dc2369420445e6e3a51e7cec426352}{ANDI}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8e5dc51e02e4cc63577bcad38d739722}{SLLI}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a53046fc822b9ec795e45d8c9cdaa3391}{SRLI}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ac994234b5f914ad8329598c5b624850a}{SRAI}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acfcf145f2788bf340ff3f3098bc54909}{ADD}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a12b733d4941495e86811fe6ceeeff9da}{SUB}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ac5497b80cebf0d58c6fb5896d8a16e81}{SLL}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afcb9fddfa2b50746b441b94c476c6332}{SLT}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a460979647d3d464fb4a178b0f472c24a}{SLTU}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ac62338ffb5de22369c75caa565b5da1a}{XOR}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad54966cc8630eae4fdbc112e34e57c52}{SRL}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a59fcbef6ae00f2b7c9cd9f22877678a9}{SRA}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a96727447c0ad447987df1c6415aef074}{OR}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a865555c9f2e0458a7078486aa1b3254f}{AND}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ac9c04652d7bde83489037a941f229e65}{FENCE}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a248a6028a94962432ff05b2a265abec2}{FENCE\+\_\+\+TSO}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a56b36d0d0bb01b339cf1041adc08e262}{PAUSE}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ab1e9b8f4ae9f7932a3a1dbaa300ac3e3}{ECALL}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5296ba8364ad398895e35ca2c4aac91e}{EBREAK}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a63ad373a7e5c985bd7e54ece4b14a64f}{LWU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a24a5a956f8abcaacbde751c49c7d5001}{LD}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8268cafd51299d814aba050e5f54f1ac}{SD}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a7c2e4ac9d7c03ae1ecf199611bdfacc0}{ADDIW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa74d09200b57d65949d0316594aedb11}{SLLIW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9b4ff992f8617c6cc1f37969b92c5cfe}{SRLIW}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6442b8ee0917bf8d4e32cecfec46c61f}{SRAIW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a3b7f416d8281c8b8f784cbc985fad9e4}{ADDW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a411f9f42fbb74878ab7fc91f0b82d60c}{SUBW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acd71f550166e2e739562cc69b78caeff}{SLLW}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a60410211d1ac028cf790108bb4718e62}{SRLW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af3805b03d1e82dc9032a2eb259c7a161}{SRAW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a086ab1f2f4dac104b6826ebe0eaba8fd}{MUL}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6b375d42d236e11186117ce88be2f357}{MULH}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2da618be1c3d667ba308f1072762f3b1}{MULHSU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4bbe77ef569b311f572d69bb50e440b2}{MULHU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8565f0d60c3ba6d468661c49d86e9744}{DIV}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a46a7db7797b0a758d8c27e83b27f9f13}{DIVU}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6fa560d597fa4329bfbfecaa750f9d51}{REM}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aba6ec0dc409f6cc45f87b9580cac5916}{REMU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8b322b305aabc9b03f66d3e28d254502}{MULW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aee1a5f0f6313a8c96049f6d9d8777ada}{DIVW}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae2313156f823f90190c00e1a14eee678}{DIVUW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abe565ebe3f7f7cf55e596c79e25b346c}{REMW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9da347af9b794a8b57c6ff85e3751733}{REMUW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aecbc093fd90b8b767fa397dbb16afcba}{LR\+\_\+W}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a159bd377de5d3b67b696a6af9c89fa5a}{SC\+\_\+W}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ab74650ace8b12b43fc72732eeef641af}{AMOSWAP\+\_\+W}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a1aa0be0708cb66bfcc1be52d7005221d}{AMOADD\+\_\+W}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa2ceff008318a77bf812a5cdf919d3f2}{AMOXOR\+\_\+W}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2251aa80250cfed0e101a41858eb9737}{AMOAND\+\_\+W}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a77cb8aa7900c10e6ae7050e6e6b5cf83}{AMOOR\+\_\+W}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a1fcbd7a9e064f0dd51b0096f3f2ee24a}{AMOMIN\+\_\+W}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8baee9ffe5a443cacad68b66ea062fe7}{AMOMAX\+\_\+W}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a00312d180f99307dac84a7e26871da4b}{AMOMINU\+\_\+W}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a43787a03be0ba085ecc484b6a65ebe72}{AMOMAXU\+\_\+W}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52adbda180712e2e4436c968fb1a557ddb7}{LR\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2d424cbfeb0b76d15e52623e7dd2b1f6}{SC\+\_\+D}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a34fadecdc1edce0c005c577d619765b3}{AMOSWAP\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0c413061e1facb616cf73be5b9f59e64}{AMOADD\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae26a81b46ac505df8ba539a41cfa3be2}{AMOXOR\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6e662e6c5865f2a8fe6f367b34e4e299}{AMOAND\+\_\+D}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acc6b820231374ff32c7f7662760dd38c}{AMOOR\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a03e615becca57e7333fb012e0e94f724}{AMOMIN\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aee7c6250415a31927adca684657a21fd}{AMOMAX\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4158543debe6c12f154b71dae7f852d0}{AMOMINU\+\_\+D}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a07cce54708e3ec30ad83c43e5417e1f1}{AMOMAXU\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a964b4631843be1b55cfc43dd8f2f6b83}{FLD}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a747235a096e9aeaf4851b090139af84d}{FSD}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a097cdcd4a7461e30a749dd41ebd40b57}{FMADD\+\_\+D}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a97a6e931ed22f0a2ad11f52fa4acc854}{FMSUB\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae5bc2845972789aa0c494854710a1e6d}{FNMSUB\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a30be9c473f92d0b19aa27f13c08761ed}{FNMADD\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afa772f294626845e3b0060d6cdea1eda}{FADD\+\_\+D}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a88085ef8d576ecd094a20587be3c0900}{FSUB\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5787ae1684e7599c5e7d23836ce9ea6d}{FMUL\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae750c99f00e53b64cce65cb566cf455c}{FDIV\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af0e2129c5967cc56e730a779d31a53dc}{FSQRT\+\_\+D}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afd31fc179ecb3a0d4bed153107274296}{FSGNJ\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5d689e6b82ec539f84b77ece9cca5c18}{FSGNJN\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2bb3866268edb952c715541382d25424}{FSGNJX\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5e9835f5a61110ad941672ec67debf65}{FMIN\+\_\+D}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4e6e7b4b1617a812dc6cd6933b03f8de}{FMAX\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a17db4f0d4e4e00de03ea99e4240fcc24}{FCVT\+\_\+\+S\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abcc5c317fe31b784bb2037016eff2ccd}{FCVT\+\_\+\+D\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a09afe46b591d8b8dc942acd452f928d0}{FEQ\+\_\+D}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a3d6e16703aa3224267d96450940cbb1d}{FLT\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a004d1474d06018c2b85080b7318622b8}{FLE\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af4cfa1a8334b8b352bc23891b974b704}{FCLASS\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aaaee65fd491e6650798b4decd3d9d673}{FCVT\+\_\+\+W\+\_\+D}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a91f4455f8892255789d1353b87b8fd60}{FCVT\+\_\+\+WU\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a911fe1a00e56010808b2d0155492f291}{FCVT\+\_\+\+D\+\_\+W}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4304e8214683aac984c277ad0d4e448c}{FCVT\+\_\+\+D\+\_\+\+WU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa87808cb75616d94226c5cd50e6c854f}{FCVT\+\_\+\+L\+\_\+D}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0a021c1ded7cdcc56c6e60c8df7a63bb}{FCVT\+\_\+\+LU\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af868903d9bd2552229baa6c9bbde4f8c}{FMV\+\_\+\+X\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a244b6d3a99e913c0d76950624eee5f2e}{FCVT\+\_\+\+D\+\_\+L}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2e83454437312a8d44e77a3fb7619523}{FCVT\+\_\+\+D\+\_\+\+LU}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a7b901e0d7d208f8fba64a08fe2652ad3}{FMV\+\_\+\+D\+\_\+X}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a87cf86ac538d9887e2374848ee796ae6}{FLW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae9674250c55e8231a7b989e7b66c9adb}{FSW}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a00bc9c400c575b5eae584ecde3c5d54d}{FMADD\+\_\+S}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0223bb42e58a52228526825bdb322324}{FMSUB\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a10cb8b79e2e9b91045996a2dcf46205c}{FNMSUB\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af23bdb981eb4f58edff708d4b162af44}{FNMADD\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a69db652d7d71826295ee37748c692f0e}{FADD\+\_\+S}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a479a248fdff40af7f0e4be260e72d96c}{FSUB\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aef65b19508b16a59757dbf7eb1ce8d91}{FMUL\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aad41b07035ad4c5d1db5c73eef6fed6d}{FDIV\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0f7a85a20bb1f3f2769c501f6e13d049}{FSQRT\+\_\+S}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9cb7cb4f32d2cdf936192749a4af9b81}{FSGNJ\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a21667fc0d1732b16666ce7bb9b247bb3}{FSGNJN\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a40c8118ed0fc216c1bd91cffd58085da}{FSGNJX\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aeb7f5ede4e0ba01b308f9005010abede}{FMIN\+\_\+S}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0f021c01fff7838dad6286d79a52907a}{FMAX\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a99741b34d1c8bd56e1eb8842648e28ee}{FCVT\+\_\+\+W\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae6f1f0a33ca2f79752e00bb97e33b4f8}{FCVT\+\_\+\+WU\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a536275d59af307d0b0c6c669431acb39}{FMV\+\_\+\+X\+\_\+W}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acd2c84a24bdc98bd2b22610dce12a812}{FEQ\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6640ef7994fb149d38447b3268062ac1}{FLT\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a17c7bd48d2d89882d608a30cea57cdc1}{FLE\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a440eb1bc18935189767f15d218090076}{FCLASS\+\_\+S}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a53fa863e7bac095613ec5c2b872e970d}{FCVT\+\_\+\+S\+\_\+W}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a43f47f292f05ce7dd286c70dd3980c17}{FCVT\+\_\+\+S\+\_\+\+WU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a455113a06fce04d74eb55bd5557627eb}{FMV\+\_\+\+W\+\_\+X}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aff591077f832ebed8e94bf801cd1e07a}{FCVT\+\_\+\+L\+\_\+S}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a17a15b69a6d9844b4e113437da08c5f3}{FCVT\+\_\+\+LU\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abfc752c5241bcf3168635b2a30e8442f}{FCVT\+\_\+\+S\+\_\+L}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aaa32b95bca62696719b96b2dc24b4b64}{FCVT\+\_\+\+S\+\_\+\+LU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6ac967545945d97e31d56b0ab588bf2e}{FLQ}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a78567ebfee1ff4137610c507c6a997a2}{FSQ}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4eb838d18056befba624f21a0b9e61ed}{FMADD\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a263e7c1f4981983d0fcf259286f48277}{FMSUB\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6975f028f9d4487aa6675d85a1ecc5ee}{FNMSUB\+\_\+Q}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad7ab2d719101abfc2796c7c9f764d068}{FNMADD\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abf8308128b93e11575ac2abd956202de}{FADD\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af7d3bfaa5f7b3cd405b15a10e064f9d6}{FSUB\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aeb502306bb2c708c47697a6214329191}{FMUL\+\_\+Q}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a18ee7178cdfa5e418642533232691eee}{FDIV\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8ffbdcd98eeb2b8f06c709927ec453bd}{FSQRT\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad9764a8737b43a6e8482086832ef42c1}{FSGNJ\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a51e083fc62e4dfd2c32afbd6a85c5c9c}{FSGNJN\+\_\+Q}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ace364b71c4892aa65b8f172f36ecb283}{FSGNJX\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9c08eefeef4012ba299f1b2ea6b557ab}{FMIN\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5b144063ba4ed4c6eb3945fd5bc6f274}{FMAX\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af868c67e1a5bff04046f9ba8c609314a}{FCVT\+\_\+\+S\+\_\+Q}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afccb5e7e52a51c44bd139c1ee29bbece}{FCVT\+\_\+\+Q\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a208ca799c9b47851ae1206feeec24a1c}{FCVT\+\_\+\+D\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae0e686d20443cd9ad1ecdf2a2b9031d4}{FCVT\+\_\+\+Q\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af518bcc96a6ac7e94ca811e93b54de59}{FEQ\+\_\+Q}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a88fe157945da40203544938bcab10934}{FLT\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2c21d393688fd46821b7eff567da4009}{FLE\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4cc78a6c70813f8600bc4b1ed501337d}{FCLASS\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abe825e9af4ac3ef4785296aa02a27bf9}{FCVT\+\_\+\+W\+\_\+Q}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5b094a1f34b4df1b5dfd5f1e45e43ee0}{FCVT\+\_\+\+WU\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5ac0c329fcc370173c521b46e510aef7}{FCVT\+\_\+\+Q\+\_\+W}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9f18bbe86c24fca1121276f7e5b72b4c}{FCVT\+\_\+\+Q\+\_\+\+WU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aacdcd1e9eeecd44739466c05c289f749}{FCVT\+\_\+\+L\+\_\+Q}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a21ac317146be079d88d6cd9bf8ec6a3b}{FCVT\+\_\+\+LU\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4098342608b4b6e709fa8e2a45acc49c}{FCVT\+\_\+\+Q\+\_\+L}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a1c61f3499b6f043fcd60b7f78b7c9e63}{FCVT\+\_\+\+Q\+\_\+\+LU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa1290e6f90987b81f1a8cc4ec46b7b6b}{FLH}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9a3e7a320669349e39231b1682ae05e0}{FSH}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a91b0a398a0b6a9f0d35029dbe976b905}{FMADD\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a60d9eb32c78f03c699a11c416f1880ae}{FMSUB\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a00c315e54cdc27e568824413915319bc}{FNMSUB\+\_\+H}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0115a99df3b084177d640db670af9fd3}{FNMADD\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a124ce6b00ed415f437c5ba8ceb973c73}{FADD\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6c5157b7b75220a814d6fd7dce98eee3}{FSUB\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a557dfd2609a5654c278edae8e35ab2fb}{FMUL\+\_\+H}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52adfee813f4a473178d5b196d7ff1ced82}{FDIV\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52adb930cbd125283bf250b39820376d434}{FSQRT\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a11e3bc5dd2ea9966c48104e60b76d35e}{FSGNJ\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4aaad8b8b15c559ed13729905f230730}{FSGNJN\+\_\+H}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0234b1fe84bd7e0deb0aa06f658771eb}{FSGNJX\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a7cb75e4ca32f34a0be8f133e54976582}{FMIN\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afbe9e0d15b048037da047bbe0b55edba}{FMAX\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a74042b8e4279f70e4d729eb196b0041d}{FCVT\+\_\+\+S\+\_\+H}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a53e8df14df9384ce97b82b68b956e8ff}{FCVT\+\_\+\+H\+\_\+S}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a62304fd8ef1736be6509ea9b119aceee}{FCVT\+\_\+\+D\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aaad018eaa959e7ad3d072558d667eb91}{FCVT\+\_\+\+H\+\_\+D}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4274a079baedc663b6e66eb72fc51109}{FCVT\+\_\+\+Q\+\_\+H}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af188d08e03cca01c61312f48f5857477}{FCVT\+\_\+\+H\+\_\+Q}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aebaed75685efc113cd91c15c47126041}{FEQ\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2ba5b318a904cf5af4382323495e5201}{FLT\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52adb7a278c548e821dc1302b5223542e5f}{FLE\+\_\+H}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a17ad14cfa60fec9d23abfc47c234d35c}{FCLASS\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ab279f37b8748a1535f27199f0f9b2c43}{FCVT\+\_\+\+W\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aaa939cd5b21383d80e9a3862fa5ca613}{FCVT\+\_\+\+WU\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a7f89677cc30f4dfa547ddee88e8e0262}{FMV\+\_\+\+X\+\_\+H}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aab40b3355cea0221792b561681c830d1}{FCVT\+\_\+\+H\+\_\+W}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a305df55de7edeb4371cbc74265151025}{FCVT\+\_\+\+H\+\_\+\+WU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aee333571e81d2129ea4102926135137a}{FMV\+\_\+\+H\+\_\+X}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a996902738454eaf5f0bf9260d664c266}{FCVT\+\_\+\+L\+\_\+H}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8af01d960e919e99d01a4db634839919}{FCVT\+\_\+\+LU\+\_\+H}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8e6cc31f0b053631c009b9211db7fabb}{FCVT\+\_\+\+H\+\_\+L}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a60041caf300b1099b5806ed0f3ae1cb7}{FCVT\+\_\+\+H\+\_\+\+LU}}
+, \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae069b7f19bc88d6402bfa977e19da29d}{WRS\+\_\+\+NTO}}
+, \newline
+\mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a92840c1a764a8b3c938175495f5172fb}{WRS\+\_\+\+STO}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+automatic logic$<$ 19\+:0 $>$ \mbox{\hyperlink{riscv__types_8svh_a15aa21cee0598963e06ffeff5a5988f5}{sort\+\_\+jtype\+\_\+imm}} (logic$<$ 19\+:0 $>$ imm)
+\item 
+automatic logic$<$ 19\+:0 $>$ \mbox{\hyperlink{riscv__types_8svh_a87363982a3d82af6673cd9833d55e942}{sort\+\_\+btype\+\_\+imm}} (\mbox{\hyperlink{structbtype__t}{btype\+\_\+t}} instr)
+\item 
+automatic logic$<$ 12\+:0 $>$ \mbox{\hyperlink{riscv__types_8svh_a88545e1f39fa8ef2323f227112f222ba}{sort\+\_\+stype\+\_\+imm}} (\mbox{\hyperlink{structstype__t}{stype\+\_\+t}} instr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Typedefs for RISC-\/V ISA instructions. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{riscv__types_8svh_a227eff7b21c8a6c7c9c1544322e60f56}\label{riscv__types_8svh_a227eff7b21c8a6c7c9c1544322e60f56}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!\_RVT\_TYPES\_@{\_RVT\_TYPES\_}}
+\index{\_RVT\_TYPES\_@{\_RVT\_TYPES\_}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{\_RVT\_TYPES\_}{\_RVT\_TYPES\_}}
+{\footnotesize\ttfamily \#define \+\_\+\+RVT\+\_\+\+TYPES\+\_\+}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{riscv__types_8svh_aab7faa3d41c41daeb7dec2f610e28b84}\label{riscv__types_8svh_aab7faa3d41c41daeb7dec2f610e28b84}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!atype\_t@{atype\_t}}
+\index{atype\_t@{atype\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{atype\_t}{atype\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{structatype__t}{atype\+\_\+t}}}
+
+\mbox{\Hypertarget{riscv__types_8svh_ab9173cf2883b95a595458d4f00bf2470}\label{riscv__types_8svh_ab9173cf2883b95a595458d4f00bf2470}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!btype\_t@{btype\_t}}
+\index{btype\_t@{btype\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{btype\_t}{btype\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{structbtype__t}{btype\+\_\+t}}}
+
+\mbox{\Hypertarget{riscv__types_8svh_a1abcf905a0d20e99005a1d717ff00164}\label{riscv__types_8svh_a1abcf905a0d20e99005a1d717ff00164}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!ftype\_t@{ftype\_t}}
+\index{ftype\_t@{ftype\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{ftype\_t}{ftype\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{structftype__t}{ftype\+\_\+t}}}
+
+\mbox{\Hypertarget{riscv__types_8svh_a387c7781b2f8b4812ddc0ecc71ae409c}\label{riscv__types_8svh_a387c7781b2f8b4812ddc0ecc71ae409c}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!instr\_t@{instr\_t}}
+\index{instr\_t@{instr\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{instr\_t}{instr\_t}}
+{\footnotesize\ttfamily typedef union \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{structinstr__t}{instr\+\_\+t}}}
+
+\mbox{\Hypertarget{riscv__types_8svh_a0ee0de44030d55f950ccb3aafec84172}\label{riscv__types_8svh_a0ee0de44030d55f950ccb3aafec84172}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!itype\_t@{itype\_t}}
+\index{itype\_t@{itype\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{itype\_t}{itype\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{structitype__t}{itype\+\_\+t}}}
+
+\mbox{\Hypertarget{riscv__types_8svh_ab249adf753086fa3ab2779dbe2bfb683}\label{riscv__types_8svh_ab249adf753086fa3ab2779dbe2bfb683}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!jtype\_t@{jtype\_t}}
+\index{jtype\_t@{jtype\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{jtype\_t}{jtype\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{structjtype__t}{jtype\+\_\+t}}}
+
+\mbox{\Hypertarget{riscv__types_8svh_a1b32a9e5af0b3712687e59818db9b561}\label{riscv__types_8svh_a1b32a9e5af0b3712687e59818db9b561}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!rtype\_t@{rtype\_t}}
+\index{rtype\_t@{rtype\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{rtype\_t}{rtype\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{structrtype__t}{rtype\+\_\+t}}}
+
+\mbox{\Hypertarget{riscv__types_8svh_a574cfaf367ae08f1888fa31c94a33e92}\label{riscv__types_8svh_a574cfaf367ae08f1888fa31c94a33e92}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!stype\_t@{stype\_t}}
+\index{stype\_t@{stype\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{stype\_t}{stype\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{structstype__t}{stype\+\_\+t}}}
+
+\mbox{\Hypertarget{riscv__types_8svh_ac290f78acd5bcd60a8468f68191436eb}\label{riscv__types_8svh_ac290f78acd5bcd60a8468f68191436eb}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!utype\_t@{utype\_t}}
+\index{utype\_t@{utype\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{utype\_t}{utype\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structpacked}{packed}} \mbox{\hyperlink{structutype__t}{utype\+\_\+t}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!amo\_t@{amo\_t}}
+\index{amo\_t@{amo\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{amo\_t}{amo\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87}{amo\+\_\+t}}}
+
+
+
+Enum definition for RISC-\/V Atomic instructions. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AmoLr@{AmoLr}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AmoLr@{AmoLr}}}\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a77ba3d2ebe48260bd5f2acc26b6c1ce1}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a77ba3d2ebe48260bd5f2acc26b6c1ce1}} 
+Amo\+Lr&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AmoSc@{AmoSc}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AmoSc@{AmoSc}}}\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87ac1d9bb3d5b7d754de30610d5f8024c0e}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87ac1d9bb3d5b7d754de30610d5f8024c0e}} 
+Amo\+Sc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AmoSwap@{AmoSwap}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AmoSwap@{AmoSwap}}}\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87accc144ef23669be8bac1f5b590fb695d}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87accc144ef23669be8bac1f5b590fb695d}} 
+Amo\+Swap&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AmoAdd@{AmoAdd}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AmoAdd@{AmoAdd}}}\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a9f3c36b31e8f11c84664c196de563c49}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a9f3c36b31e8f11c84664c196de563c49}} 
+Amo\+Add&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AmoAnd@{AmoAnd}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AmoAnd@{AmoAnd}}}\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a86a92c2c78d151a6fc5c35a38fff331d}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a86a92c2c78d151a6fc5c35a38fff331d}} 
+Amo\+And&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AmoOr@{AmoOr}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AmoOr@{AmoOr}}}\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a4d6025eac7a047008a07d677453bab34}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a4d6025eac7a047008a07d677453bab34}} 
+Amo\+Or&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOXor@{AMOXor}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOXor@{AMOXor}}}\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a0f08130b5505492b666b62f32ad7f4aa}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a0f08130b5505492b666b62f32ad7f4aa}} 
+AMOXor&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AmoMax@{AmoMax}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AmoMax@{AmoMax}}}\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87ad79908f871cd0f1932575428bcdd1cfe}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87ad79908f871cd0f1932575428bcdd1cfe}} 
+Amo\+Max&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AmoMaxU@{AmoMaxU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AmoMaxU@{AmoMaxU}}}\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a4e99db30f531c766f97f5c079bd0d7c6}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87a4e99db30f531c766f97f5c079bd0d7c6}} 
+Amo\+MaxU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AmoMin@{AmoMin}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AmoMin@{AmoMin}}}\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87aab27f97785f1b20f41bf40d7ee37c54f}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87aab27f97785f1b20f41bf40d7ee37c54f}} 
+Amo\+Min&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AmoMinU@{AmoMinU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AmoMinU@{AmoMinU}}}\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87abac611e5f6da307160e33585d97bbd70}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87abac611e5f6da307160e33585d97bbd70}} 
+Amo\+MinU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AmoNop@{AmoNop}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AmoNop@{AmoNop}}}\mbox{\Hypertarget{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87ab6279ec48c8ea0b9653ae75e5584dca0}\label{riscv__types_8svh_ac6e1ebad5df5820eac001659501f6a87ab6279ec48c8ea0b9653ae75e5584dca0}} 
+Amo\+Nop&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!asm\_t@{asm\_t}}
+\index{asm\_t@{asm\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{asm\_t}{asm\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52}{asm\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LUI@{LUI}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!LUI@{LUI}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a924a1e6cec1796dee2ef3e3fd80f056c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a924a1e6cec1796dee2ef3e3fd80f056c}} 
+LUI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AUIPC@{AUIPC}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AUIPC@{AUIPC}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af2175add5dd5efab417a971036bc537c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af2175add5dd5efab417a971036bc537c}} 
+AUIPC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JAL@{JAL}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!JAL@{JAL}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a233cb6709087f6c0642372ef5dd78a3a}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a233cb6709087f6c0642372ef5dd78a3a}} 
+JAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{JALR@{JALR}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!JALR@{JALR}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a979a6068ecbbf97a36ff68b09b2b18ed}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a979a6068ecbbf97a36ff68b09b2b18ed}} 
+JALR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BEQ@{BEQ}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!BEQ@{BEQ}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a10a57057de688acb1267e6e84e82c612}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a10a57057de688acb1267e6e84e82c612}} 
+BEQ&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BNE@{BNE}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!BNE@{BNE}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a47b77783113a840ba70ba77ffca11bcd}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a47b77783113a840ba70ba77ffca11bcd}} 
+BNE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLT@{BLT}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!BLT@{BLT}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ab047e071dca78ab8e54400681a12817e}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ab047e071dca78ab8e54400681a12817e}} 
+BLT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BGE@{BGE}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!BGE@{BGE}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5e4f325db9df3a0c4c8dd305922b1d06}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5e4f325db9df3a0c4c8dd305922b1d06}} 
+BGE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BLTU@{BLTU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!BLTU@{BLTU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a38354de79d6507254b70c5d2c527acae}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a38354de79d6507254b70c5d2c527acae}} 
+BLTU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BGEU@{BGEU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!BGEU@{BGEU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a218870a6f7a32bcfddf61ffa29081286}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a218870a6f7a32bcfddf61ffa29081286}} 
+BGEU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LB@{LB}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!LB@{LB}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aec61e49978c3f59c943a3c0dc00ce94c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aec61e49978c3f59c943a3c0dc00ce94c}} 
+LB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LH@{LH}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!LH@{LH}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aadab8e0111f669b137544a4ecce92997}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aadab8e0111f669b137544a4ecce92997}} 
+LH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LW@{LW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!LW@{LW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afb8dc6a60882be011a142162e88ddf4d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afb8dc6a60882be011a142162e88ddf4d}} 
+LW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LBU@{LBU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!LBU@{LBU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa5977e1c7e10f67525f6b5ad7034546d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa5977e1c7e10f67525f6b5ad7034546d}} 
+LBU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LHU@{LHU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!LHU@{LHU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aee5904f3f96379562d46d974c3f9c80a}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aee5904f3f96379562d46d974c3f9c80a}} 
+LHU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SB@{SB}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SB@{SB}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad3000f705564090d2acd1d320ccc5135}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad3000f705564090d2acd1d320ccc5135}} 
+SB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SH@{SH}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SH@{SH}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a34e6a4455b0bead95a23e814f7c06bfd}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a34e6a4455b0bead95a23e814f7c06bfd}} 
+SH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SW@{SW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SW@{SW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a247b880fc48dc1c74961ba58ae0f68a2}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a247b880fc48dc1c74961ba58ae0f68a2}} 
+SW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADDI@{ADDI}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!ADDI@{ADDI}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6e87b0a8efa92e9deea49ff2921b45a8}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6e87b0a8efa92e9deea49ff2921b45a8}} 
+ADDI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLTI@{SLTI}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SLTI@{SLTI}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad3e10f290b0e57e4c711af4ff7974bf8}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad3e10f290b0e57e4c711af4ff7974bf8}} 
+SLTI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLTIU@{SLTIU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SLTIU@{SLTIU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6f3b05d2a173a249f6855c63b0aebff0}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6f3b05d2a173a249f6855c63b0aebff0}} 
+SLTIU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XORI@{XORI}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!XORI@{XORI}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a432042c51792646ca29ab2bfbe712ed2}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a432042c51792646ca29ab2bfbe712ed2}} 
+XORI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ORI@{ORI}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!ORI@{ORI}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acdb39f8c8d5518820b97eef455eb240b}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acdb39f8c8d5518820b97eef455eb240b}} 
+ORI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ANDI@{ANDI}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!ANDI@{ANDI}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a06dc2369420445e6e3a51e7cec426352}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a06dc2369420445e6e3a51e7cec426352}} 
+ANDI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLLI@{SLLI}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SLLI@{SLLI}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8e5dc51e02e4cc63577bcad38d739722}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8e5dc51e02e4cc63577bcad38d739722}} 
+SLLI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SRLI@{SRLI}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SRLI@{SRLI}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a53046fc822b9ec795e45d8c9cdaa3391}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a53046fc822b9ec795e45d8c9cdaa3391}} 
+SRLI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SRAI@{SRAI}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SRAI@{SRAI}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ac994234b5f914ad8329598c5b624850a}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ac994234b5f914ad8329598c5b624850a}} 
+SRAI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADD@{ADD}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!ADD@{ADD}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acfcf145f2788bf340ff3f3098bc54909}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acfcf145f2788bf340ff3f3098bc54909}} 
+ADD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUB@{SUB}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SUB@{SUB}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a12b733d4941495e86811fe6ceeeff9da}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a12b733d4941495e86811fe6ceeeff9da}} 
+SUB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLL@{SLL}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SLL@{SLL}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ac5497b80cebf0d58c6fb5896d8a16e81}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ac5497b80cebf0d58c6fb5896d8a16e81}} 
+SLL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLT@{SLT}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SLT@{SLT}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afcb9fddfa2b50746b441b94c476c6332}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afcb9fddfa2b50746b441b94c476c6332}} 
+SLT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLTU@{SLTU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SLTU@{SLTU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a460979647d3d464fb4a178b0f472c24a}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a460979647d3d464fb4a178b0f472c24a}} 
+SLTU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XOR@{XOR}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!XOR@{XOR}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ac62338ffb5de22369c75caa565b5da1a}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ac62338ffb5de22369c75caa565b5da1a}} 
+XOR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SRL@{SRL}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SRL@{SRL}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad54966cc8630eae4fdbc112e34e57c52}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad54966cc8630eae4fdbc112e34e57c52}} 
+SRL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SRA@{SRA}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SRA@{SRA}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a59fcbef6ae00f2b7c9cd9f22877678a9}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a59fcbef6ae00f2b7c9cd9f22877678a9}} 
+SRA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OR@{OR}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OR@{OR}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a96727447c0ad447987df1c6415aef074}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a96727447c0ad447987df1c6415aef074}} 
+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AND@{AND}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AND@{AND}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a865555c9f2e0458a7078486aa1b3254f}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a865555c9f2e0458a7078486aa1b3254f}} 
+AND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FENCE@{FENCE}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FENCE@{FENCE}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ac9c04652d7bde83489037a941f229e65}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ac9c04652d7bde83489037a941f229e65}} 
+FENCE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FENCE\_TSO@{FENCE\_TSO}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FENCE\_TSO@{FENCE\_TSO}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a248a6028a94962432ff05b2a265abec2}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a248a6028a94962432ff05b2a265abec2}} 
+FENCE\+\_\+\+TSO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PAUSE@{PAUSE}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!PAUSE@{PAUSE}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a56b36d0d0bb01b339cf1041adc08e262}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a56b36d0d0bb01b339cf1041adc08e262}} 
+PAUSE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ECALL@{ECALL}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!ECALL@{ECALL}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ab1e9b8f4ae9f7932a3a1dbaa300ac3e3}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ab1e9b8f4ae9f7932a3a1dbaa300ac3e3}} 
+ECALL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EBREAK@{EBREAK}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!EBREAK@{EBREAK}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5296ba8364ad398895e35ca2c4aac91e}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5296ba8364ad398895e35ca2c4aac91e}} 
+EBREAK&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LWU@{LWU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!LWU@{LWU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a63ad373a7e5c985bd7e54ece4b14a64f}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a63ad373a7e5c985bd7e54ece4b14a64f}} 
+LWU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LD@{LD}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!LD@{LD}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a24a5a956f8abcaacbde751c49c7d5001}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a24a5a956f8abcaacbde751c49c7d5001}} 
+LD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SD@{SD}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SD@{SD}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8268cafd51299d814aba050e5f54f1ac}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8268cafd51299d814aba050e5f54f1ac}} 
+SD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADDIW@{ADDIW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!ADDIW@{ADDIW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a7c2e4ac9d7c03ae1ecf199611bdfacc0}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a7c2e4ac9d7c03ae1ecf199611bdfacc0}} 
+ADDIW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLLIW@{SLLIW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SLLIW@{SLLIW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa74d09200b57d65949d0316594aedb11}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa74d09200b57d65949d0316594aedb11}} 
+SLLIW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SRLIW@{SRLIW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SRLIW@{SRLIW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9b4ff992f8617c6cc1f37969b92c5cfe}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9b4ff992f8617c6cc1f37969b92c5cfe}} 
+SRLIW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SRAIW@{SRAIW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SRAIW@{SRAIW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6442b8ee0917bf8d4e32cecfec46c61f}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6442b8ee0917bf8d4e32cecfec46c61f}} 
+SRAIW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ADDW@{ADDW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!ADDW@{ADDW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a3b7f416d8281c8b8f784cbc985fad9e4}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a3b7f416d8281c8b8f784cbc985fad9e4}} 
+ADDW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SUBW@{SUBW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SUBW@{SUBW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a411f9f42fbb74878ab7fc91f0b82d60c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a411f9f42fbb74878ab7fc91f0b82d60c}} 
+SUBW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SLLW@{SLLW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SLLW@{SLLW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acd71f550166e2e739562cc69b78caeff}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acd71f550166e2e739562cc69b78caeff}} 
+SLLW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SRLW@{SRLW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SRLW@{SRLW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a60410211d1ac028cf790108bb4718e62}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a60410211d1ac028cf790108bb4718e62}} 
+SRLW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SRAW@{SRAW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SRAW@{SRAW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af3805b03d1e82dc9032a2eb259c7a161}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af3805b03d1e82dc9032a2eb259c7a161}} 
+SRAW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MUL@{MUL}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!MUL@{MUL}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a086ab1f2f4dac104b6826ebe0eaba8fd}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a086ab1f2f4dac104b6826ebe0eaba8fd}} 
+MUL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MULH@{MULH}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!MULH@{MULH}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6b375d42d236e11186117ce88be2f357}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6b375d42d236e11186117ce88be2f357}} 
+MULH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MULHSU@{MULHSU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!MULHSU@{MULHSU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2da618be1c3d667ba308f1072762f3b1}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2da618be1c3d667ba308f1072762f3b1}} 
+MULHSU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MULHU@{MULHU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!MULHU@{MULHU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4bbe77ef569b311f572d69bb50e440b2}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4bbe77ef569b311f572d69bb50e440b2}} 
+MULHU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIV@{DIV}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!DIV@{DIV}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8565f0d60c3ba6d468661c49d86e9744}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8565f0d60c3ba6d468661c49d86e9744}} 
+DIV&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIVU@{DIVU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!DIVU@{DIVU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a46a7db7797b0a758d8c27e83b27f9f13}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a46a7db7797b0a758d8c27e83b27f9f13}} 
+DIVU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REM@{REM}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!REM@{REM}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6fa560d597fa4329bfbfecaa750f9d51}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6fa560d597fa4329bfbfecaa750f9d51}} 
+REM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REMU@{REMU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!REMU@{REMU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aba6ec0dc409f6cc45f87b9580cac5916}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aba6ec0dc409f6cc45f87b9580cac5916}} 
+REMU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MULW@{MULW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!MULW@{MULW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8b322b305aabc9b03f66d3e28d254502}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8b322b305aabc9b03f66d3e28d254502}} 
+MULW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIVW@{DIVW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!DIVW@{DIVW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aee1a5f0f6313a8c96049f6d9d8777ada}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aee1a5f0f6313a8c96049f6d9d8777ada}} 
+DIVW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DIVUW@{DIVUW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!DIVUW@{DIVUW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae2313156f823f90190c00e1a14eee678}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae2313156f823f90190c00e1a14eee678}} 
+DIVUW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REMW@{REMW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!REMW@{REMW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abe565ebe3f7f7cf55e596c79e25b346c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abe565ebe3f7f7cf55e596c79e25b346c}} 
+REMW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{REMUW@{REMUW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!REMUW@{REMUW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9da347af9b794a8b57c6ff85e3751733}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9da347af9b794a8b57c6ff85e3751733}} 
+REMUW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LR\_W@{LR\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!LR\_W@{LR\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aecbc093fd90b8b767fa397dbb16afcba}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aecbc093fd90b8b767fa397dbb16afcba}} 
+LR\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SC\_W@{SC\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SC\_W@{SC\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a159bd377de5d3b67b696a6af9c89fa5a}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a159bd377de5d3b67b696a6af9c89fa5a}} 
+SC\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOSWAP\_W@{AMOSWAP\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOSWAP\_W@{AMOSWAP\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ab74650ace8b12b43fc72732eeef641af}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ab74650ace8b12b43fc72732eeef641af}} 
+AMOSWAP\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOADD\_W@{AMOADD\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOADD\_W@{AMOADD\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a1aa0be0708cb66bfcc1be52d7005221d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a1aa0be0708cb66bfcc1be52d7005221d}} 
+AMOADD\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOXOR\_W@{AMOXOR\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOXOR\_W@{AMOXOR\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa2ceff008318a77bf812a5cdf919d3f2}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa2ceff008318a77bf812a5cdf919d3f2}} 
+AMOXOR\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOAND\_W@{AMOAND\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOAND\_W@{AMOAND\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2251aa80250cfed0e101a41858eb9737}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2251aa80250cfed0e101a41858eb9737}} 
+AMOAND\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOOR\_W@{AMOOR\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOOR\_W@{AMOOR\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a77cb8aa7900c10e6ae7050e6e6b5cf83}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a77cb8aa7900c10e6ae7050e6e6b5cf83}} 
+AMOOR\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOMIN\_W@{AMOMIN\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOMIN\_W@{AMOMIN\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a1fcbd7a9e064f0dd51b0096f3f2ee24a}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a1fcbd7a9e064f0dd51b0096f3f2ee24a}} 
+AMOMIN\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOMAX\_W@{AMOMAX\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOMAX\_W@{AMOMAX\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8baee9ffe5a443cacad68b66ea062fe7}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8baee9ffe5a443cacad68b66ea062fe7}} 
+AMOMAX\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOMINU\_W@{AMOMINU\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOMINU\_W@{AMOMINU\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a00312d180f99307dac84a7e26871da4b}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a00312d180f99307dac84a7e26871da4b}} 
+AMOMINU\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOMAXU\_W@{AMOMAXU\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOMAXU\_W@{AMOMAXU\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a43787a03be0ba085ecc484b6a65ebe72}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a43787a03be0ba085ecc484b6a65ebe72}} 
+AMOMAXU\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LR\_D@{LR\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!LR\_D@{LR\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52adbda180712e2e4436c968fb1a557ddb7}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52adbda180712e2e4436c968fb1a557ddb7}} 
+LR\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SC\_D@{SC\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!SC\_D@{SC\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2d424cbfeb0b76d15e52623e7dd2b1f6}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2d424cbfeb0b76d15e52623e7dd2b1f6}} 
+SC\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOSWAP\_D@{AMOSWAP\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOSWAP\_D@{AMOSWAP\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a34fadecdc1edce0c005c577d619765b3}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a34fadecdc1edce0c005c577d619765b3}} 
+AMOSWAP\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOADD\_D@{AMOADD\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOADD\_D@{AMOADD\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0c413061e1facb616cf73be5b9f59e64}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0c413061e1facb616cf73be5b9f59e64}} 
+AMOADD\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOXOR\_D@{AMOXOR\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOXOR\_D@{AMOXOR\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae26a81b46ac505df8ba539a41cfa3be2}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae26a81b46ac505df8ba539a41cfa3be2}} 
+AMOXOR\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOAND\_D@{AMOAND\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOAND\_D@{AMOAND\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6e662e6c5865f2a8fe6f367b34e4e299}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6e662e6c5865f2a8fe6f367b34e4e299}} 
+AMOAND\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOOR\_D@{AMOOR\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOOR\_D@{AMOOR\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acc6b820231374ff32c7f7662760dd38c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acc6b820231374ff32c7f7662760dd38c}} 
+AMOOR\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOMIN\_D@{AMOMIN\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOMIN\_D@{AMOMIN\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a03e615becca57e7333fb012e0e94f724}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a03e615becca57e7333fb012e0e94f724}} 
+AMOMIN\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOMAX\_D@{AMOMAX\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOMAX\_D@{AMOMAX\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aee7c6250415a31927adca684657a21fd}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aee7c6250415a31927adca684657a21fd}} 
+AMOMAX\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOMINU\_D@{AMOMINU\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOMINU\_D@{AMOMINU\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4158543debe6c12f154b71dae7f852d0}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4158543debe6c12f154b71dae7f852d0}} 
+AMOMINU\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AMOMAXU\_D@{AMOMAXU\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!AMOMAXU\_D@{AMOMAXU\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a07cce54708e3ec30ad83c43e5417e1f1}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a07cce54708e3ec30ad83c43e5417e1f1}} 
+AMOMAXU\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLD@{FLD}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FLD@{FLD}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a964b4631843be1b55cfc43dd8f2f6b83}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a964b4631843be1b55cfc43dd8f2f6b83}} 
+FLD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSD@{FSD}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSD@{FSD}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a747235a096e9aeaf4851b090139af84d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a747235a096e9aeaf4851b090139af84d}} 
+FSD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMADD\_D@{FMADD\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMADD\_D@{FMADD\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a097cdcd4a7461e30a749dd41ebd40b57}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a097cdcd4a7461e30a749dd41ebd40b57}} 
+FMADD\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMSUB\_D@{FMSUB\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMSUB\_D@{FMSUB\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a97a6e931ed22f0a2ad11f52fa4acc854}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a97a6e931ed22f0a2ad11f52fa4acc854}} 
+FMSUB\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FNMSUB\_D@{FNMSUB\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FNMSUB\_D@{FNMSUB\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae5bc2845972789aa0c494854710a1e6d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae5bc2845972789aa0c494854710a1e6d}} 
+FNMSUB\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FNMADD\_D@{FNMADD\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FNMADD\_D@{FNMADD\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a30be9c473f92d0b19aa27f13c08761ed}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a30be9c473f92d0b19aa27f13c08761ed}} 
+FNMADD\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FADD\_D@{FADD\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FADD\_D@{FADD\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afa772f294626845e3b0060d6cdea1eda}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afa772f294626845e3b0060d6cdea1eda}} 
+FADD\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSUB\_D@{FSUB\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSUB\_D@{FSUB\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a88085ef8d576ecd094a20587be3c0900}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a88085ef8d576ecd094a20587be3c0900}} 
+FSUB\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMUL\_D@{FMUL\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMUL\_D@{FMUL\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5787ae1684e7599c5e7d23836ce9ea6d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5787ae1684e7599c5e7d23836ce9ea6d}} 
+FMUL\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FDIV\_D@{FDIV\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FDIV\_D@{FDIV\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae750c99f00e53b64cce65cb566cf455c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae750c99f00e53b64cce65cb566cf455c}} 
+FDIV\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSQRT\_D@{FSQRT\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSQRT\_D@{FSQRT\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af0e2129c5967cc56e730a779d31a53dc}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af0e2129c5967cc56e730a779d31a53dc}} 
+FSQRT\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSGNJ\_D@{FSGNJ\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSGNJ\_D@{FSGNJ\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afd31fc179ecb3a0d4bed153107274296}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afd31fc179ecb3a0d4bed153107274296}} 
+FSGNJ\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSGNJN\_D@{FSGNJN\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSGNJN\_D@{FSGNJN\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5d689e6b82ec539f84b77ece9cca5c18}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5d689e6b82ec539f84b77ece9cca5c18}} 
+FSGNJN\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSGNJX\_D@{FSGNJX\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSGNJX\_D@{FSGNJX\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2bb3866268edb952c715541382d25424}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2bb3866268edb952c715541382d25424}} 
+FSGNJX\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMIN\_D@{FMIN\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMIN\_D@{FMIN\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5e9835f5a61110ad941672ec67debf65}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5e9835f5a61110ad941672ec67debf65}} 
+FMIN\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMAX\_D@{FMAX\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMAX\_D@{FMAX\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4e6e7b4b1617a812dc6cd6933b03f8de}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4e6e7b4b1617a812dc6cd6933b03f8de}} 
+FMAX\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_S\_D@{FCVT\_S\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_S\_D@{FCVT\_S\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a17db4f0d4e4e00de03ea99e4240fcc24}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a17db4f0d4e4e00de03ea99e4240fcc24}} 
+FCVT\+\_\+\+S\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_D\_S@{FCVT\_D\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_D\_S@{FCVT\_D\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abcc5c317fe31b784bb2037016eff2ccd}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abcc5c317fe31b784bb2037016eff2ccd}} 
+FCVT\+\_\+\+D\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FEQ\_D@{FEQ\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FEQ\_D@{FEQ\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a09afe46b591d8b8dc942acd452f928d0}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a09afe46b591d8b8dc942acd452f928d0}} 
+FEQ\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLT\_D@{FLT\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FLT\_D@{FLT\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a3d6e16703aa3224267d96450940cbb1d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a3d6e16703aa3224267d96450940cbb1d}} 
+FLT\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLE\_D@{FLE\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FLE\_D@{FLE\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a004d1474d06018c2b85080b7318622b8}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a004d1474d06018c2b85080b7318622b8}} 
+FLE\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCLASS\_D@{FCLASS\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCLASS\_D@{FCLASS\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af4cfa1a8334b8b352bc23891b974b704}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af4cfa1a8334b8b352bc23891b974b704}} 
+FCLASS\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_W\_D@{FCVT\_W\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_W\_D@{FCVT\_W\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aaaee65fd491e6650798b4decd3d9d673}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aaaee65fd491e6650798b4decd3d9d673}} 
+FCVT\+\_\+\+W\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_WU\_D@{FCVT\_WU\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_WU\_D@{FCVT\_WU\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a91f4455f8892255789d1353b87b8fd60}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a91f4455f8892255789d1353b87b8fd60}} 
+FCVT\+\_\+\+WU\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_D\_W@{FCVT\_D\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_D\_W@{FCVT\_D\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a911fe1a00e56010808b2d0155492f291}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a911fe1a00e56010808b2d0155492f291}} 
+FCVT\+\_\+\+D\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_D\_WU@{FCVT\_D\_WU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_D\_WU@{FCVT\_D\_WU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4304e8214683aac984c277ad0d4e448c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4304e8214683aac984c277ad0d4e448c}} 
+FCVT\+\_\+\+D\+\_\+\+WU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_L\_D@{FCVT\_L\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_L\_D@{FCVT\_L\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa87808cb75616d94226c5cd50e6c854f}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa87808cb75616d94226c5cd50e6c854f}} 
+FCVT\+\_\+\+L\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_LU\_D@{FCVT\_LU\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_LU\_D@{FCVT\_LU\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0a021c1ded7cdcc56c6e60c8df7a63bb}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0a021c1ded7cdcc56c6e60c8df7a63bb}} 
+FCVT\+\_\+\+LU\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMV\_X\_D@{FMV\_X\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMV\_X\_D@{FMV\_X\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af868903d9bd2552229baa6c9bbde4f8c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af868903d9bd2552229baa6c9bbde4f8c}} 
+FMV\+\_\+\+X\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_D\_L@{FCVT\_D\_L}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_D\_L@{FCVT\_D\_L}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a244b6d3a99e913c0d76950624eee5f2e}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a244b6d3a99e913c0d76950624eee5f2e}} 
+FCVT\+\_\+\+D\+\_\+L&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_D\_LU@{FCVT\_D\_LU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_D\_LU@{FCVT\_D\_LU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2e83454437312a8d44e77a3fb7619523}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2e83454437312a8d44e77a3fb7619523}} 
+FCVT\+\_\+\+D\+\_\+\+LU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMV\_D\_X@{FMV\_D\_X}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMV\_D\_X@{FMV\_D\_X}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a7b901e0d7d208f8fba64a08fe2652ad3}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a7b901e0d7d208f8fba64a08fe2652ad3}} 
+FMV\+\_\+\+D\+\_\+X&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLW@{FLW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FLW@{FLW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a87cf86ac538d9887e2374848ee796ae6}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a87cf86ac538d9887e2374848ee796ae6}} 
+FLW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSW@{FSW}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSW@{FSW}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae9674250c55e8231a7b989e7b66c9adb}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae9674250c55e8231a7b989e7b66c9adb}} 
+FSW&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMADD\_S@{FMADD\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMADD\_S@{FMADD\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a00bc9c400c575b5eae584ecde3c5d54d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a00bc9c400c575b5eae584ecde3c5d54d}} 
+FMADD\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMSUB\_S@{FMSUB\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMSUB\_S@{FMSUB\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0223bb42e58a52228526825bdb322324}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0223bb42e58a52228526825bdb322324}} 
+FMSUB\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FNMSUB\_S@{FNMSUB\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FNMSUB\_S@{FNMSUB\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a10cb8b79e2e9b91045996a2dcf46205c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a10cb8b79e2e9b91045996a2dcf46205c}} 
+FNMSUB\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FNMADD\_S@{FNMADD\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FNMADD\_S@{FNMADD\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af23bdb981eb4f58edff708d4b162af44}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af23bdb981eb4f58edff708d4b162af44}} 
+FNMADD\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FADD\_S@{FADD\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FADD\_S@{FADD\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a69db652d7d71826295ee37748c692f0e}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a69db652d7d71826295ee37748c692f0e}} 
+FADD\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSUB\_S@{FSUB\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSUB\_S@{FSUB\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a479a248fdff40af7f0e4be260e72d96c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a479a248fdff40af7f0e4be260e72d96c}} 
+FSUB\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMUL\_S@{FMUL\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMUL\_S@{FMUL\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aef65b19508b16a59757dbf7eb1ce8d91}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aef65b19508b16a59757dbf7eb1ce8d91}} 
+FMUL\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FDIV\_S@{FDIV\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FDIV\_S@{FDIV\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aad41b07035ad4c5d1db5c73eef6fed6d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aad41b07035ad4c5d1db5c73eef6fed6d}} 
+FDIV\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSQRT\_S@{FSQRT\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSQRT\_S@{FSQRT\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0f7a85a20bb1f3f2769c501f6e13d049}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0f7a85a20bb1f3f2769c501f6e13d049}} 
+FSQRT\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSGNJ\_S@{FSGNJ\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSGNJ\_S@{FSGNJ\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9cb7cb4f32d2cdf936192749a4af9b81}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9cb7cb4f32d2cdf936192749a4af9b81}} 
+FSGNJ\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSGNJN\_S@{FSGNJN\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSGNJN\_S@{FSGNJN\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a21667fc0d1732b16666ce7bb9b247bb3}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a21667fc0d1732b16666ce7bb9b247bb3}} 
+FSGNJN\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSGNJX\_S@{FSGNJX\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSGNJX\_S@{FSGNJX\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a40c8118ed0fc216c1bd91cffd58085da}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a40c8118ed0fc216c1bd91cffd58085da}} 
+FSGNJX\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMIN\_S@{FMIN\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMIN\_S@{FMIN\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aeb7f5ede4e0ba01b308f9005010abede}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aeb7f5ede4e0ba01b308f9005010abede}} 
+FMIN\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMAX\_S@{FMAX\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMAX\_S@{FMAX\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0f021c01fff7838dad6286d79a52907a}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0f021c01fff7838dad6286d79a52907a}} 
+FMAX\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_W\_S@{FCVT\_W\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_W\_S@{FCVT\_W\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a99741b34d1c8bd56e1eb8842648e28ee}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a99741b34d1c8bd56e1eb8842648e28ee}} 
+FCVT\+\_\+\+W\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_WU\_S@{FCVT\_WU\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_WU\_S@{FCVT\_WU\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae6f1f0a33ca2f79752e00bb97e33b4f8}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae6f1f0a33ca2f79752e00bb97e33b4f8}} 
+FCVT\+\_\+\+WU\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMV\_X\_W@{FMV\_X\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMV\_X\_W@{FMV\_X\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a536275d59af307d0b0c6c669431acb39}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a536275d59af307d0b0c6c669431acb39}} 
+FMV\+\_\+\+X\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FEQ\_S@{FEQ\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FEQ\_S@{FEQ\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acd2c84a24bdc98bd2b22610dce12a812}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52acd2c84a24bdc98bd2b22610dce12a812}} 
+FEQ\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLT\_S@{FLT\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FLT\_S@{FLT\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6640ef7994fb149d38447b3268062ac1}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6640ef7994fb149d38447b3268062ac1}} 
+FLT\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLE\_S@{FLE\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FLE\_S@{FLE\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a17c7bd48d2d89882d608a30cea57cdc1}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a17c7bd48d2d89882d608a30cea57cdc1}} 
+FLE\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCLASS\_S@{FCLASS\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCLASS\_S@{FCLASS\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a440eb1bc18935189767f15d218090076}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a440eb1bc18935189767f15d218090076}} 
+FCLASS\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_S\_W@{FCVT\_S\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_S\_W@{FCVT\_S\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a53fa863e7bac095613ec5c2b872e970d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a53fa863e7bac095613ec5c2b872e970d}} 
+FCVT\+\_\+\+S\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_S\_WU@{FCVT\_S\_WU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_S\_WU@{FCVT\_S\_WU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a43f47f292f05ce7dd286c70dd3980c17}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a43f47f292f05ce7dd286c70dd3980c17}} 
+FCVT\+\_\+\+S\+\_\+\+WU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMV\_W\_X@{FMV\_W\_X}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMV\_W\_X@{FMV\_W\_X}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a455113a06fce04d74eb55bd5557627eb}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a455113a06fce04d74eb55bd5557627eb}} 
+FMV\+\_\+\+W\+\_\+X&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_L\_S@{FCVT\_L\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_L\_S@{FCVT\_L\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aff591077f832ebed8e94bf801cd1e07a}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aff591077f832ebed8e94bf801cd1e07a}} 
+FCVT\+\_\+\+L\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_LU\_S@{FCVT\_LU\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_LU\_S@{FCVT\_LU\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a17a15b69a6d9844b4e113437da08c5f3}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a17a15b69a6d9844b4e113437da08c5f3}} 
+FCVT\+\_\+\+LU\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_S\_L@{FCVT\_S\_L}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_S\_L@{FCVT\_S\_L}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abfc752c5241bcf3168635b2a30e8442f}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abfc752c5241bcf3168635b2a30e8442f}} 
+FCVT\+\_\+\+S\+\_\+L&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_S\_LU@{FCVT\_S\_LU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_S\_LU@{FCVT\_S\_LU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aaa32b95bca62696719b96b2dc24b4b64}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aaa32b95bca62696719b96b2dc24b4b64}} 
+FCVT\+\_\+\+S\+\_\+\+LU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLQ@{FLQ}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FLQ@{FLQ}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6ac967545945d97e31d56b0ab588bf2e}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6ac967545945d97e31d56b0ab588bf2e}} 
+FLQ&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSQ@{FSQ}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSQ@{FSQ}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a78567ebfee1ff4137610c507c6a997a2}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a78567ebfee1ff4137610c507c6a997a2}} 
+FSQ&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMADD\_Q@{FMADD\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMADD\_Q@{FMADD\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4eb838d18056befba624f21a0b9e61ed}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4eb838d18056befba624f21a0b9e61ed}} 
+FMADD\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMSUB\_Q@{FMSUB\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMSUB\_Q@{FMSUB\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a263e7c1f4981983d0fcf259286f48277}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a263e7c1f4981983d0fcf259286f48277}} 
+FMSUB\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FNMSUB\_Q@{FNMSUB\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FNMSUB\_Q@{FNMSUB\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6975f028f9d4487aa6675d85a1ecc5ee}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6975f028f9d4487aa6675d85a1ecc5ee}} 
+FNMSUB\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FNMADD\_Q@{FNMADD\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FNMADD\_Q@{FNMADD\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad7ab2d719101abfc2796c7c9f764d068}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad7ab2d719101abfc2796c7c9f764d068}} 
+FNMADD\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FADD\_Q@{FADD\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FADD\_Q@{FADD\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abf8308128b93e11575ac2abd956202de}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abf8308128b93e11575ac2abd956202de}} 
+FADD\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSUB\_Q@{FSUB\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSUB\_Q@{FSUB\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af7d3bfaa5f7b3cd405b15a10e064f9d6}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af7d3bfaa5f7b3cd405b15a10e064f9d6}} 
+FSUB\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMUL\_Q@{FMUL\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMUL\_Q@{FMUL\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aeb502306bb2c708c47697a6214329191}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aeb502306bb2c708c47697a6214329191}} 
+FMUL\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FDIV\_Q@{FDIV\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FDIV\_Q@{FDIV\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a18ee7178cdfa5e418642533232691eee}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a18ee7178cdfa5e418642533232691eee}} 
+FDIV\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSQRT\_Q@{FSQRT\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSQRT\_Q@{FSQRT\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8ffbdcd98eeb2b8f06c709927ec453bd}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8ffbdcd98eeb2b8f06c709927ec453bd}} 
+FSQRT\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSGNJ\_Q@{FSGNJ\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSGNJ\_Q@{FSGNJ\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad9764a8737b43a6e8482086832ef42c1}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ad9764a8737b43a6e8482086832ef42c1}} 
+FSGNJ\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSGNJN\_Q@{FSGNJN\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSGNJN\_Q@{FSGNJN\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a51e083fc62e4dfd2c32afbd6a85c5c9c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a51e083fc62e4dfd2c32afbd6a85c5c9c}} 
+FSGNJN\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSGNJX\_Q@{FSGNJX\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSGNJX\_Q@{FSGNJX\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ace364b71c4892aa65b8f172f36ecb283}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ace364b71c4892aa65b8f172f36ecb283}} 
+FSGNJX\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMIN\_Q@{FMIN\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMIN\_Q@{FMIN\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9c08eefeef4012ba299f1b2ea6b557ab}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9c08eefeef4012ba299f1b2ea6b557ab}} 
+FMIN\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMAX\_Q@{FMAX\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMAX\_Q@{FMAX\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5b144063ba4ed4c6eb3945fd5bc6f274}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5b144063ba4ed4c6eb3945fd5bc6f274}} 
+FMAX\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_S\_Q@{FCVT\_S\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_S\_Q@{FCVT\_S\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af868c67e1a5bff04046f9ba8c609314a}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af868c67e1a5bff04046f9ba8c609314a}} 
+FCVT\+\_\+\+S\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_Q\_S@{FCVT\_Q\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_Q\_S@{FCVT\_Q\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afccb5e7e52a51c44bd139c1ee29bbece}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afccb5e7e52a51c44bd139c1ee29bbece}} 
+FCVT\+\_\+\+Q\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_D\_Q@{FCVT\_D\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_D\_Q@{FCVT\_D\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a208ca799c9b47851ae1206feeec24a1c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a208ca799c9b47851ae1206feeec24a1c}} 
+FCVT\+\_\+\+D\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_Q\_D@{FCVT\_Q\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_Q\_D@{FCVT\_Q\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae0e686d20443cd9ad1ecdf2a2b9031d4}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae0e686d20443cd9ad1ecdf2a2b9031d4}} 
+FCVT\+\_\+\+Q\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FEQ\_Q@{FEQ\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FEQ\_Q@{FEQ\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af518bcc96a6ac7e94ca811e93b54de59}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af518bcc96a6ac7e94ca811e93b54de59}} 
+FEQ\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLT\_Q@{FLT\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FLT\_Q@{FLT\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a88fe157945da40203544938bcab10934}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a88fe157945da40203544938bcab10934}} 
+FLT\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLE\_Q@{FLE\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FLE\_Q@{FLE\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2c21d393688fd46821b7eff567da4009}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2c21d393688fd46821b7eff567da4009}} 
+FLE\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCLASS\_Q@{FCLASS\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCLASS\_Q@{FCLASS\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4cc78a6c70813f8600bc4b1ed501337d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4cc78a6c70813f8600bc4b1ed501337d}} 
+FCLASS\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_W\_Q@{FCVT\_W\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_W\_Q@{FCVT\_W\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abe825e9af4ac3ef4785296aa02a27bf9}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52abe825e9af4ac3ef4785296aa02a27bf9}} 
+FCVT\+\_\+\+W\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_WU\_Q@{FCVT\_WU\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_WU\_Q@{FCVT\_WU\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5b094a1f34b4df1b5dfd5f1e45e43ee0}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5b094a1f34b4df1b5dfd5f1e45e43ee0}} 
+FCVT\+\_\+\+WU\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_Q\_W@{FCVT\_Q\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_Q\_W@{FCVT\_Q\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5ac0c329fcc370173c521b46e510aef7}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a5ac0c329fcc370173c521b46e510aef7}} 
+FCVT\+\_\+\+Q\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_Q\_WU@{FCVT\_Q\_WU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_Q\_WU@{FCVT\_Q\_WU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9f18bbe86c24fca1121276f7e5b72b4c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9f18bbe86c24fca1121276f7e5b72b4c}} 
+FCVT\+\_\+\+Q\+\_\+\+WU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_L\_Q@{FCVT\_L\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_L\_Q@{FCVT\_L\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aacdcd1e9eeecd44739466c05c289f749}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aacdcd1e9eeecd44739466c05c289f749}} 
+FCVT\+\_\+\+L\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_LU\_Q@{FCVT\_LU\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_LU\_Q@{FCVT\_LU\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a21ac317146be079d88d6cd9bf8ec6a3b}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a21ac317146be079d88d6cd9bf8ec6a3b}} 
+FCVT\+\_\+\+LU\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_Q\_L@{FCVT\_Q\_L}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_Q\_L@{FCVT\_Q\_L}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4098342608b4b6e709fa8e2a45acc49c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4098342608b4b6e709fa8e2a45acc49c}} 
+FCVT\+\_\+\+Q\+\_\+L&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_Q\_LU@{FCVT\_Q\_LU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_Q\_LU@{FCVT\_Q\_LU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a1c61f3499b6f043fcd60b7f78b7c9e63}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a1c61f3499b6f043fcd60b7f78b7c9e63}} 
+FCVT\+\_\+\+Q\+\_\+\+LU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLH@{FLH}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FLH@{FLH}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa1290e6f90987b81f1a8cc4ec46b7b6b}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aa1290e6f90987b81f1a8cc4ec46b7b6b}} 
+FLH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSH@{FSH}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSH@{FSH}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9a3e7a320669349e39231b1682ae05e0}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a9a3e7a320669349e39231b1682ae05e0}} 
+FSH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMADD\_H@{FMADD\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMADD\_H@{FMADD\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a91b0a398a0b6a9f0d35029dbe976b905}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a91b0a398a0b6a9f0d35029dbe976b905}} 
+FMADD\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMSUB\_H@{FMSUB\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMSUB\_H@{FMSUB\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a60d9eb32c78f03c699a11c416f1880ae}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a60d9eb32c78f03c699a11c416f1880ae}} 
+FMSUB\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FNMSUB\_H@{FNMSUB\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FNMSUB\_H@{FNMSUB\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a00c315e54cdc27e568824413915319bc}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a00c315e54cdc27e568824413915319bc}} 
+FNMSUB\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FNMADD\_H@{FNMADD\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FNMADD\_H@{FNMADD\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0115a99df3b084177d640db670af9fd3}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0115a99df3b084177d640db670af9fd3}} 
+FNMADD\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FADD\_H@{FADD\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FADD\_H@{FADD\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a124ce6b00ed415f437c5ba8ceb973c73}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a124ce6b00ed415f437c5ba8ceb973c73}} 
+FADD\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSUB\_H@{FSUB\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSUB\_H@{FSUB\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6c5157b7b75220a814d6fd7dce98eee3}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a6c5157b7b75220a814d6fd7dce98eee3}} 
+FSUB\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMUL\_H@{FMUL\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMUL\_H@{FMUL\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a557dfd2609a5654c278edae8e35ab2fb}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a557dfd2609a5654c278edae8e35ab2fb}} 
+FMUL\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FDIV\_H@{FDIV\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FDIV\_H@{FDIV\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52adfee813f4a473178d5b196d7ff1ced82}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52adfee813f4a473178d5b196d7ff1ced82}} 
+FDIV\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSQRT\_H@{FSQRT\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSQRT\_H@{FSQRT\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52adb930cbd125283bf250b39820376d434}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52adb930cbd125283bf250b39820376d434}} 
+FSQRT\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSGNJ\_H@{FSGNJ\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSGNJ\_H@{FSGNJ\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a11e3bc5dd2ea9966c48104e60b76d35e}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a11e3bc5dd2ea9966c48104e60b76d35e}} 
+FSGNJ\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSGNJN\_H@{FSGNJN\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSGNJN\_H@{FSGNJN\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4aaad8b8b15c559ed13729905f230730}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4aaad8b8b15c559ed13729905f230730}} 
+FSGNJN\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FSGNJX\_H@{FSGNJX\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FSGNJX\_H@{FSGNJX\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0234b1fe84bd7e0deb0aa06f658771eb}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a0234b1fe84bd7e0deb0aa06f658771eb}} 
+FSGNJX\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMIN\_H@{FMIN\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMIN\_H@{FMIN\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a7cb75e4ca32f34a0be8f133e54976582}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a7cb75e4ca32f34a0be8f133e54976582}} 
+FMIN\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMAX\_H@{FMAX\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMAX\_H@{FMAX\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afbe9e0d15b048037da047bbe0b55edba}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52afbe9e0d15b048037da047bbe0b55edba}} 
+FMAX\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_S\_H@{FCVT\_S\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_S\_H@{FCVT\_S\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a74042b8e4279f70e4d729eb196b0041d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a74042b8e4279f70e4d729eb196b0041d}} 
+FCVT\+\_\+\+S\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_H\_S@{FCVT\_H\_S}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_H\_S@{FCVT\_H\_S}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a53e8df14df9384ce97b82b68b956e8ff}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a53e8df14df9384ce97b82b68b956e8ff}} 
+FCVT\+\_\+\+H\+\_\+S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_D\_H@{FCVT\_D\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_D\_H@{FCVT\_D\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a62304fd8ef1736be6509ea9b119aceee}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a62304fd8ef1736be6509ea9b119aceee}} 
+FCVT\+\_\+\+D\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_H\_D@{FCVT\_H\_D}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_H\_D@{FCVT\_H\_D}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aaad018eaa959e7ad3d072558d667eb91}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aaad018eaa959e7ad3d072558d667eb91}} 
+FCVT\+\_\+\+H\+\_\+D&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_Q\_H@{FCVT\_Q\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_Q\_H@{FCVT\_Q\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4274a079baedc663b6e66eb72fc51109}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a4274a079baedc663b6e66eb72fc51109}} 
+FCVT\+\_\+\+Q\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_H\_Q@{FCVT\_H\_Q}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_H\_Q@{FCVT\_H\_Q}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af188d08e03cca01c61312f48f5857477}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52af188d08e03cca01c61312f48f5857477}} 
+FCVT\+\_\+\+H\+\_\+Q&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FEQ\_H@{FEQ\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FEQ\_H@{FEQ\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aebaed75685efc113cd91c15c47126041}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aebaed75685efc113cd91c15c47126041}} 
+FEQ\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLT\_H@{FLT\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FLT\_H@{FLT\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2ba5b318a904cf5af4382323495e5201}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a2ba5b318a904cf5af4382323495e5201}} 
+FLT\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FLE\_H@{FLE\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FLE\_H@{FLE\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52adb7a278c548e821dc1302b5223542e5f}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52adb7a278c548e821dc1302b5223542e5f}} 
+FLE\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCLASS\_H@{FCLASS\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCLASS\_H@{FCLASS\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a17ad14cfa60fec9d23abfc47c234d35c}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a17ad14cfa60fec9d23abfc47c234d35c}} 
+FCLASS\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_W\_H@{FCVT\_W\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_W\_H@{FCVT\_W\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ab279f37b8748a1535f27199f0f9b2c43}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ab279f37b8748a1535f27199f0f9b2c43}} 
+FCVT\+\_\+\+W\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_WU\_H@{FCVT\_WU\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_WU\_H@{FCVT\_WU\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aaa939cd5b21383d80e9a3862fa5ca613}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aaa939cd5b21383d80e9a3862fa5ca613}} 
+FCVT\+\_\+\+WU\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMV\_X\_H@{FMV\_X\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMV\_X\_H@{FMV\_X\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a7f89677cc30f4dfa547ddee88e8e0262}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a7f89677cc30f4dfa547ddee88e8e0262}} 
+FMV\+\_\+\+X\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_H\_W@{FCVT\_H\_W}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_H\_W@{FCVT\_H\_W}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aab40b3355cea0221792b561681c830d1}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aab40b3355cea0221792b561681c830d1}} 
+FCVT\+\_\+\+H\+\_\+W&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_H\_WU@{FCVT\_H\_WU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_H\_WU@{FCVT\_H\_WU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a305df55de7edeb4371cbc74265151025}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a305df55de7edeb4371cbc74265151025}} 
+FCVT\+\_\+\+H\+\_\+\+WU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FMV\_H\_X@{FMV\_H\_X}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FMV\_H\_X@{FMV\_H\_X}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aee333571e81d2129ea4102926135137a}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52aee333571e81d2129ea4102926135137a}} 
+FMV\+\_\+\+H\+\_\+X&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_L\_H@{FCVT\_L\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_L\_H@{FCVT\_L\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a996902738454eaf5f0bf9260d664c266}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a996902738454eaf5f0bf9260d664c266}} 
+FCVT\+\_\+\+L\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_LU\_H@{FCVT\_LU\_H}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_LU\_H@{FCVT\_LU\_H}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8af01d960e919e99d01a4db634839919}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8af01d960e919e99d01a4db634839919}} 
+FCVT\+\_\+\+LU\+\_\+H&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_H\_L@{FCVT\_H\_L}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_H\_L@{FCVT\_H\_L}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8e6cc31f0b053631c009b9211db7fabb}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a8e6cc31f0b053631c009b9211db7fabb}} 
+FCVT\+\_\+\+H\+\_\+L&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FCVT\_H\_LU@{FCVT\_H\_LU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FCVT\_H\_LU@{FCVT\_H\_LU}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a60041caf300b1099b5806ed0f3ae1cb7}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a60041caf300b1099b5806ed0f3ae1cb7}} 
+FCVT\+\_\+\+H\+\_\+\+LU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRS\_NTO@{WRS\_NTO}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!WRS\_NTO@{WRS\_NTO}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae069b7f19bc88d6402bfa977e19da29d}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52ae069b7f19bc88d6402bfa977e19da29d}} 
+WRS\+\_\+\+NTO&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRS\_STO@{WRS\_STO}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!WRS\_STO@{WRS\_STO}}}\mbox{\Hypertarget{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a92840c1a764a8b3c938175495f5172fb}\label{riscv__types_8svh_a3e40e8d7e69e16206d4ed11a9c7cac52a92840c1a764a8b3c938175495f5172fb}} 
+WRS\+\_\+\+STO&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794}\label{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!format\_t@{format\_t}}
+\index{format\_t@{format\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{format\_t}{format\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794}{format\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FormatUnknown@{FormatUnknown}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FormatUnknown@{FormatUnknown}}}\mbox{\Hypertarget{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a045b1c190001e8d92525a03f98a61de5}\label{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a045b1c190001e8d92525a03f98a61de5}} 
+Format\+Unknown&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FormatR@{FormatR}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FormatR@{FormatR}}}\mbox{\Hypertarget{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794af024a4c037273ceaee6e4c9d8238764c}\label{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794af024a4c037273ceaee6e4c9d8238764c}} 
+FormatR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FormatI@{FormatI}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FormatI@{FormatI}}}\mbox{\Hypertarget{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794ad50aa80423e6120fb71d996c1d381c9f}\label{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794ad50aa80423e6120fb71d996c1d381c9f}} 
+FormatI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FormatS@{FormatS}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FormatS@{FormatS}}}\mbox{\Hypertarget{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a59f74c837dc211cf0b10c17f2e5d71fd}\label{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a59f74c837dc211cf0b10c17f2e5d71fd}} 
+FormatS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FormatU@{FormatU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FormatU@{FormatU}}}\mbox{\Hypertarget{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a9a347fe13678c858532cba198305cebe}\label{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a9a347fe13678c858532cba198305cebe}} 
+FormatU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FormatB@{FormatB}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FormatB@{FormatB}}}\mbox{\Hypertarget{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a7680e5c82736a9b2d9d0a24f30d95258}\label{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a7680e5c82736a9b2d9d0a24f30d95258}} 
+FormatB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FormatJ@{FormatJ}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FormatJ@{FormatJ}}}\mbox{\Hypertarget{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a812435f665a68b4a97cb004113d14916}\label{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a812435f665a68b4a97cb004113d14916}} 
+FormatJ&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FormatA@{FormatA}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FormatA@{FormatA}}}\mbox{\Hypertarget{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a49e70a7822bb964827050d3da1dc7f27}\label{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a49e70a7822bb964827050d3da1dc7f27}} 
+FormatA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FormatF@{FormatF}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!FormatF@{FormatF}}}\mbox{\Hypertarget{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a89a851b08effbb9c41453a033846630e}\label{riscv__types_8svh_a7f2d5efe3b72f18c665b57201b20d794a89a851b08effbb9c41453a033846630e}} 
+FormatF&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7d}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7d}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!opcode\_t@{opcode\_t}}
+\index{opcode\_t@{opcode\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{opcode\_t}{opcode\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7d}{opcode\+\_\+t}}}
+
+
+
+Enum definition for RISC-\/V instruction opcodes. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeLoad@{OpcodeLoad}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeLoad@{OpcodeLoad}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da5e4602e4dd4601a4be15b18fae9143a9}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da5e4602e4dd4601a4be15b18fae9143a9}} 
+Opcode\+Load&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeLoadFp@{OpcodeLoadFp}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeLoadFp@{OpcodeLoadFp}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da3139d757dd462ec1e24d3b48f07e0bb4}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da3139d757dd462ec1e24d3b48f07e0bb4}} 
+Opcode\+Load\+Fp&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeCustom0@{OpcodeCustom0}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeCustom0@{OpcodeCustom0}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da1c55da043819cfd047aa88fad177309d}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da1c55da043819cfd047aa88fad177309d}} 
+Opcode\+Custom0&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeMiscMem@{OpcodeMiscMem}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeMiscMem@{OpcodeMiscMem}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da797e08988817896970ee73d681e84d39}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da797e08988817896970ee73d681e84d39}} 
+Opcode\+Misc\+Mem&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeOpImm@{OpcodeOpImm}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeOpImm@{OpcodeOpImm}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da6e4764f99de0af1a57c83762a5b8c28f}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da6e4764f99de0af1a57c83762a5b8c28f}} 
+Opcode\+Op\+Imm&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeAuipc@{OpcodeAuipc}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeAuipc@{OpcodeAuipc}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dae701ba4a5673271bb25d9cd043ac0bf0}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dae701ba4a5673271bb25d9cd043ac0bf0}} 
+Opcode\+Auipc&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeOpImm32@{OpcodeOpImm32}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeOpImm32@{OpcodeOpImm32}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da58ac7d6006da1ce48f774d306464fef4}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da58ac7d6006da1ce48f774d306464fef4}} 
+Opcode\+Op\+Imm32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Opcode48@{Opcode48}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!Opcode48@{Opcode48}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da1c858a6e4cea51d2758194b0e7a7b7c4}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da1c858a6e4cea51d2758194b0e7a7b7c4}} 
+Opcode48&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeStore@{OpcodeStore}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeStore@{OpcodeStore}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da1038f31abec3086716588e216e2ff84a}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da1038f31abec3086716588e216e2ff84a}} 
+Opcode\+Store&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeStoteFp@{OpcodeStoteFp}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeStoteFp@{OpcodeStoteFp}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dabbe43adbf3cf82d02264818f0824685e}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dabbe43adbf3cf82d02264818f0824685e}} 
+Opcode\+Stote\+Fp&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeCustom1@{OpcodeCustom1}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeCustom1@{OpcodeCustom1}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da15d23cbfc0edb9db3162b89fc00853fb}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da15d23cbfc0edb9db3162b89fc00853fb}} 
+Opcode\+Custom1&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeAmo@{OpcodeAmo}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeAmo@{OpcodeAmo}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da9d826a8c5aebd01dd734e97f3064fa6b}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da9d826a8c5aebd01dd734e97f3064fa6b}} 
+Opcode\+Amo&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeOp@{OpcodeOp}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeOp@{OpcodeOp}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da9f14439c0877673be15cb6499f5e60e8}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da9f14439c0877673be15cb6499f5e60e8}} 
+Opcode\+Op&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeLui@{OpcodeLui}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeLui@{OpcodeLui}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da3c42ea899f51a3ae643baad4511c60a3}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da3c42ea899f51a3ae643baad4511c60a3}} 
+Opcode\+Lui&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeOp32@{OpcodeOp32}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeOp32@{OpcodeOp32}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da443fc5ad28f81dc6304985678d41f9d5}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da443fc5ad28f81dc6304985678d41f9d5}} 
+Opcode\+Op32&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Opcode64@{Opcode64}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!Opcode64@{Opcode64}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da6fad30d7aab98ad5451a2acaba88b2ba}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da6fad30d7aab98ad5451a2acaba88b2ba}} 
+Opcode64&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeMadd@{OpcodeMadd}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeMadd@{OpcodeMadd}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da38610e2cb9330d1311a4948dd3f8c032}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da38610e2cb9330d1311a4948dd3f8c032}} 
+Opcode\+Madd&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeMsub@{OpcodeMsub}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeMsub@{OpcodeMsub}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da6781515da94e40f7ef9feb9594e7e9a7}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da6781515da94e40f7ef9feb9594e7e9a7}} 
+Opcode\+Msub&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeNmsub@{OpcodeNmsub}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeNmsub@{OpcodeNmsub}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da67881f500488b1c26a4573710107c4e1}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da67881f500488b1c26a4573710107c4e1}} 
+Opcode\+Nmsub&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeNmadd@{OpcodeNmadd}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeNmadd@{OpcodeNmadd}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da32d42e3fcb0abb942f4ac1cb4ebf43be}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da32d42e3fcb0abb942f4ac1cb4ebf43be}} 
+Opcode\+Nmadd&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeOpFp@{OpcodeOpFp}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeOpFp@{OpcodeOpFp}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da9d0f13177242164a3d6b349b81b7f755}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da9d0f13177242164a3d6b349b81b7f755}} 
+Opcode\+Op\+Fp&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeOpV@{OpcodeOpV}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeOpV@{OpcodeOpV}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dab05c22055799d28dfb83ef665de0cbdf}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dab05c22055799d28dfb83ef665de0cbdf}} 
+Opcode\+OpV&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeCustom2@{OpcodeCustom2}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeCustom2@{OpcodeCustom2}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dadbe26baaf5fe441233dd995c97e58e0f}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dadbe26baaf5fe441233dd995c97e58e0f}} 
+Opcode\+Custom2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Opcode48\_@{Opcode48\_}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!Opcode48\_@{Opcode48\_}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dac646d3adfc10f671e5e79805365964a3}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dac646d3adfc10f671e5e79805365964a3}} 
+Opcode48\+\_\+&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeBranch@{OpcodeBranch}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeBranch@{OpcodeBranch}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dacb79957b5a0bb4e8d228d21a4e9a0529}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dacb79957b5a0bb4e8d228d21a4e9a0529}} 
+Opcode\+Branch&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeJalr@{OpcodeJalr}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeJalr@{OpcodeJalr}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da6323b85f7c4d14092bf5a3306104215d}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da6323b85f7c4d14092bf5a3306104215d}} 
+Opcode\+Jalr&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeReserved@{OpcodeReserved}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeReserved@{OpcodeReserved}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7daf7f8ec0923cd7ae3e2c9f9c87c5a6676}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7daf7f8ec0923cd7ae3e2c9f9c87c5a6676}} 
+Opcode\+Reserved&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeJal@{OpcodeJal}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeJal@{OpcodeJal}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da390ccdf3e20fc36c02dd8fd41776e4ec}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da390ccdf3e20fc36c02dd8fd41776e4ec}} 
+Opcode\+Jal&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeSystem@{OpcodeSystem}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeSystem@{OpcodeSystem}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dade816dc01d2872d62151b960867109f5}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7dade816dc01d2872d62151b960867109f5}} 
+Opcode\+System&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeOpVe@{OpcodeOpVe}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeOpVe@{OpcodeOpVe}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da4ff7431f6c675bc2c26d93fa7bff8867}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da4ff7431f6c675bc2c26d93fa7bff8867}} 
+Opcode\+Op\+Ve&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OpcodeCustom3@{OpcodeCustom3}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!OpcodeCustom3@{OpcodeCustom3}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da204a0394dabdb827c767eaaab5c3b3e1}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da204a0394dabdb827c767eaaab5c3b3e1}} 
+Opcode\+Custom3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Opcode80@{Opcode80}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!Opcode80@{Opcode80}}}\mbox{\Hypertarget{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da7b4b063d57095dcde2f24dab91ba4d55}\label{riscv__types_8svh_a8d0559dcae6e251ff5663e79d5581c7da7b4b063d57095dcde2f24dab91ba4d55}} 
+Opcode80&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7}\label{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!prv\_lvl\_t@{prv\_lvl\_t}}
+\index{prv\_lvl\_t@{prv\_lvl\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{prv\_lvl\_t}{prv\_lvl\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7}{prv\+\_\+lvl\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PrvLvlM@{PrvLvlM}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!PrvLvlM@{PrvLvlM}}}\mbox{\Hypertarget{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7ac134a8da8015ccc0162965a178bf1e7d}\label{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7ac134a8da8015ccc0162965a178bf1e7d}} 
+Prv\+LvlM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PrvLvlS@{PrvLvlS}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!PrvLvlS@{PrvLvlS}}}\mbox{\Hypertarget{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7a31960cefe3c2394afb365525cd3d3aa2}\label{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7a31960cefe3c2394afb365525cd3d3aa2}} 
+Prv\+LvlS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PrvLvlU@{PrvLvlU}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!PrvLvlU@{PrvLvlU}}}\mbox{\Hypertarget{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7a1e5144b445e1e3a4ed77ec3c7442cd8c}\label{riscv__types_8svh_a4dedeade6b5c313f2fd0691974279ce7a1e5144b445e1e3a4ed77ec3c7442cd8c}} 
+Prv\+LvlU&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35b}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35b}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!rv\_ext\_t@{rv\_ext\_t}}
+\index{rv\_ext\_t@{rv\_ext\_t}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{rv\_ext\_t}{rv\_ext\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35b}{rv\+\_\+ext\+\_\+t}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RVExtUnknown@{RVExtUnknown}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RVExtUnknown@{RVExtUnknown}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba0a5f000aac4ba1af0d3a6cf41b3d8688}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba0a5f000aac4ba1af0d3a6cf41b3d8688}} 
+RVExt\+Unknown&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RVExtI@{RVExtI}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RVExtI@{RVExtI}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba6f67bcac2e92fad7b53ff6cae9c4f89f}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba6f67bcac2e92fad7b53ff6cae9c4f89f}} 
+RVExtI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtE@{RvExtE}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtE@{RvExtE}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba31d9bbc20dc19a4322061a8f6034b9b7}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba31d9bbc20dc19a4322061a8f6034b9b7}} 
+Rv\+ExtE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtM@{RvExtM}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtM@{RvExtM}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba42b554c614bd1c3ed44f1d30e4486cea}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba42b554c614bd1c3ed44f1d30e4486cea}} 
+Rv\+ExtM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtA@{RvExtA}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtA@{RvExtA}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bad1de4960c59762f5abf7f03f9f75301e}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bad1de4960c59762f5abf7f03f9f75301e}} 
+Rv\+ExtA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtB@{RvExtB}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtB@{RvExtB}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba1a0809010ff292da20ba1180bc2fc324}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba1a0809010ff292da20ba1180bc2fc324}} 
+Rv\+ExtB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtC@{RvExtC}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtC@{RvExtC}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba5ef00392316e23bcaec0347a71c15110}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba5ef00392316e23bcaec0347a71c15110}} 
+Rv\+ExtC&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtD@{RvExtD}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtD@{RvExtD}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bace4045a02eabdfca3b47a56122755d0c}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bace4045a02eabdfca3b47a56122755d0c}} 
+Rv\+ExtD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtF@{RvExtF}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtF@{RvExtF}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bad79be5e9b4f7fcc125ac7cb1201880ca}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bad79be5e9b4f7fcc125ac7cb1201880ca}} 
+Rv\+ExtF&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtG@{RvExtG}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtG@{RvExtG}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba91132c039f2352acc26aa59f5b9ff1ae}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba91132c039f2352acc26aa59f5b9ff1ae}} 
+Rv\+ExtG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtH@{RvExtH}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtH@{RvExtH}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bacc083f506b62222b67e29171bd72629a}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bacc083f506b62222b67e29171bd72629a}} 
+Rv\+ExtH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtJ@{RvExtJ}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtJ@{RvExtJ}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bac5986fba540eebca868e1c5ab6357fc8}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bac5986fba540eebca868e1c5ab6357fc8}} 
+Rv\+ExtJ&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtL@{RvExtL}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtL@{RvExtL}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba9cc5710ecc3cb3325f07f45f556da137}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba9cc5710ecc3cb3325f07f45f556da137}} 
+Rv\+ExtL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtN@{RvExtN}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtN@{RvExtN}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba3246b22aa98c58262a842daccd11d07a}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba3246b22aa98c58262a842daccd11d07a}} 
+Rv\+ExtN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtP@{RvExtP}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtP@{RvExtP}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba8cf0b79264f0cf6794c7250cf47b5a5e}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba8cf0b79264f0cf6794c7250cf47b5a5e}} 
+Rv\+ExtP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtQ@{RvExtQ}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtQ@{RvExtQ}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba03735d8b3c8c9f4a6df0855441491cc1}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba03735d8b3c8c9f4a6df0855441491cc1}} 
+Rv\+ExtQ&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtS@{RvExtS}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtS@{RvExtS}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bac0bec55f42673899cac5999b1ca3765b}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35bac0bec55f42673899cac5999b1ca3765b}} 
+Rv\+ExtS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtT@{RvExtT}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtT@{RvExtT}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba119a1a851dd1f6ed1d29cb309a09e28f}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba119a1a851dd1f6ed1d29cb309a09e28f}} 
+Rv\+ExtT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtV@{RvExtV}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtV@{RvExtV}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba10afe37731541366ccadfda195d93c4a}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba10afe37731541366ccadfda195d93c4a}} 
+Rv\+ExtV&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtZfh@{RvExtZfh}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtZfh@{RvExtZfh}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba46e213a2026ff881aa441bc133f4512c}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba46e213a2026ff881aa441bc133f4512c}} 
+Rv\+Ext\+Zfh&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RvExtZawrs@{RvExtZawrs}!riscv\_types.svh@{riscv\_types.svh}}\index{riscv\_types.svh@{riscv\_types.svh}!RvExtZawrs@{RvExtZawrs}}}\mbox{\Hypertarget{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba8b6de36550e042d8998ff0c7e269580d}\label{riscv__types_8svh_a4123889e53e1e1f18200575976a8b35ba8b6de36550e042d8998ff0c7e269580d}} 
+Rv\+Ext\+Zawrs&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{riscv__types_8svh_a87363982a3d82af6673cd9833d55e942}\label{riscv__types_8svh_a87363982a3d82af6673cd9833d55e942}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!sort\_btype\_imm@{sort\_btype\_imm}}
+\index{sort\_btype\_imm@{sort\_btype\_imm}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{sort\_btype\_imm()}{sort\_btype\_imm()}}
+{\footnotesize\ttfamily automatic logic$<$19\+:0$>$ sort\+\_\+btype\+\_\+imm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbtype__t}{btype\+\_\+t}}}]{instr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{riscv__types_8svh_a15aa21cee0598963e06ffeff5a5988f5}\label{riscv__types_8svh_a15aa21cee0598963e06ffeff5a5988f5}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!sort\_jtype\_imm@{sort\_jtype\_imm}}
+\index{sort\_jtype\_imm@{sort\_jtype\_imm}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{sort\_jtype\_imm()}{sort\_jtype\_imm()}}
+{\footnotesize\ttfamily automatic logic$<$19\+:0$>$ sort\+\_\+jtype\+\_\+imm (\begin{DoxyParamCaption}\item[{logic$<$ 19\+:0 $>$}]{imm }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{riscv__types_8svh_a88545e1f39fa8ef2323f227112f222ba}\label{riscv__types_8svh_a88545e1f39fa8ef2323f227112f222ba}} 
+\index{riscv\_types.svh@{riscv\_types.svh}!sort\_stype\_imm@{sort\_stype\_imm}}
+\index{sort\_stype\_imm@{sort\_stype\_imm}!riscv\_types.svh@{riscv\_types.svh}}
+\doxysubsubsection{\texorpdfstring{sort\_stype\_imm()}{sort\_stype\_imm()}}
+{\footnotesize\ttfamily automatic logic$<$12\+:0$>$ sort\+\_\+stype\+\_\+imm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstype__t}{stype\+\_\+t}}}]{instr }\end{DoxyParamCaption})}
+

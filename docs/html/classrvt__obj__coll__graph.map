@@ -1,0 +1,4 @@
+<map id="rvt_obj" name="rvt_obj">
+<area shape="rect" id="node1" title="Base object class. All objects must be extended from this base class." alt="" coords="21,80,88,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,104,32"/>
+</map>

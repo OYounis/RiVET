@@ -1,0 +1,166 @@
+\hypertarget{classrvt__sim__params}{}\doxysection{rvt\+\_\+sim\+\_\+params Class Reference}
+\label{classrvt__sim__params}\index{rvt\_sim\_params@{rvt\_sim\_params}}
+
+
+Singleton class containing simulation parameters. A class extending this class should at least provide an implementation to \mbox{\hyperlink{classrvt__sim__params_a02c5829166dbd970251a3aaba392e4c1}{rvt\+\_\+sim\+\_\+params\+::initialize()}}; to parse the DUT specific parameters and add them to dut\+\_\+params.  
+
+
+
+
+Inheritance diagram for rvt\+\_\+sim\+\_\+params\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classrvt__sim__params__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rvt\+\_\+sim\+\_\+params\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{classrvt__sim__params__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classrvt__sim__params_a02c5829166dbd970251a3aaba392e4c1}{initialize}} ()
+\begin{DoxyCompactList}\small\item\em Initializes \mbox{\hyperlink{classrvt__sim__params_ab4150047cbb7879724d7168b3a7ee03e}{params}} with the simulation parameters. \end{DoxyCompactList}\item 
+virtual bit \mbox{\hyperlink{classrvt__sim__params_a18fe5a8def76ac68efaf073dc0d863ad}{validate\+\_\+params}} (output string message\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Checks that all the configured parameters are valid and that there are no conflits. \end{DoxyCompactList}\item 
+virtual bit \mbox{\hyperlink{classrvt__sim__params_a792b97ebe24d5cdf51c4113fb81579ab}{get\+\_\+param}} (string param, ref int value=0)
+\begin{DoxyCompactList}\small\item\em Get the value of the simulation parameter. \end{DoxyCompactList}\item 
+virtual bit \mbox{\hyperlink{classrvt__sim__params_a43b4bfa8c93ed4d8c322c51d92baecf8}{set\+\_\+param}} (string param, int value)
+\item 
+\mbox{\hyperlink{classrvt__sim__params_a3e474734bfdaa5be7c8ef24fb63cab3c}{RVT\+\_\+\+SINGLETON\+\_\+\+UTILS}} (\mbox{\hyperlink{classrvt__sim__params}{rvt\+\_\+sim\+\_\+params}})
+\begin{DoxyCompactList}\small\item\em RVT singleton macro. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classrvt__sim__params_a91711aec167d6b2614ed871c48267fb6}{uvm\+\_\+object\+\_\+utils\+\_\+begin}} (\mbox{\hyperlink{classrvt__sim__params}{rvt\+\_\+sim\+\_\+params}}) uvm\+\_\+field\+\_\+aa\+\_\+int\+\_\+string(\mbox{\hyperlink{classrvt__sim__params_ab4150047cbb7879724d7168b3a7ee03e}{params}}
+\begin{DoxyCompactList}\small\item\em UVM factory registry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+rand int \mbox{\hyperlink{classrvt__sim__params_ab4150047cbb7879724d7168b3a7ee03e}{params}} \mbox{[}string\mbox{]}
+\begin{DoxyCompactList}\small\item\em Associative array containing all parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Singleton class containing simulation parameters. A class extending this class should at least provide an implementation to \mbox{\hyperlink{classrvt__sim__params_a02c5829166dbd970251a3aaba392e4c1}{rvt\+\_\+sim\+\_\+params\+::initialize()}}; to parse the DUT specific parameters and add them to dut\+\_\+params. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classrvt__sim__params_a792b97ebe24d5cdf51c4113fb81579ab}\label{classrvt__sim__params_a792b97ebe24d5cdf51c4113fb81579ab}} 
+\index{rvt\_sim\_params@{rvt\_sim\_params}!get\_param@{get\_param}}
+\index{get\_param@{get\_param}!rvt\_sim\_params@{rvt\_sim\_params}}
+\doxysubsubsection{\texorpdfstring{get\_param()}{get\_param()}}
+{\footnotesize\ttfamily bit rvt\+\_\+sim\+\_\+params\+::get\+\_\+param (\begin{DoxyParamCaption}\item[{string}]{param,  }\item[{ref int}]{value = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the value of the simulation parameter. 
+
+Set the value of the core configuration parameter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em param} & -\/ Parameter name \\
+\hline
+\mbox{\texttt{ out}}  & {\em value} & -\/ Parameter value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ Parameter exists 
+
+0 -\/ Parameter does not exist
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em param} & -\/ Parameter name \\
+\hline
+\mbox{\texttt{ in}}  & {\em value} & -\/ Parameter value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ Operation is successful 
+
+0 -\/ Operation failed due to parameter rules 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrvt__sim__params_a02c5829166dbd970251a3aaba392e4c1}\label{classrvt__sim__params_a02c5829166dbd970251a3aaba392e4c1}} 
+\index{rvt\_sim\_params@{rvt\_sim\_params}!initialize@{initialize}}
+\index{initialize@{initialize}!rvt\_sim\_params@{rvt\_sim\_params}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily rvt\+\_\+sim\+\_\+params\+::initialize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Initializes \mbox{\hyperlink{classrvt__sim__params_ab4150047cbb7879724d7168b3a7ee03e}{params}} with the simulation parameters. 
+
+\mbox{\Hypertarget{classrvt__sim__params_a3e474734bfdaa5be7c8ef24fb63cab3c}\label{classrvt__sim__params_a3e474734bfdaa5be7c8ef24fb63cab3c}} 
+\index{rvt\_sim\_params@{rvt\_sim\_params}!RVT\_SINGLETON\_UTILS@{RVT\_SINGLETON\_UTILS}}
+\index{RVT\_SINGLETON\_UTILS@{RVT\_SINGLETON\_UTILS}!rvt\_sim\_params@{rvt\_sim\_params}}
+\doxysubsubsection{\texorpdfstring{RVT\_SINGLETON\_UTILS()}{RVT\_SINGLETON\_UTILS()}}
+{\footnotesize\ttfamily rvt\+\_\+sim\+\_\+params\+::\+RVT\+\_\+\+SINGLETON\+\_\+\+UTILS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrvt__sim__params}{rvt\+\_\+sim\+\_\+params}}}]{ }\end{DoxyParamCaption})}
+
+
+
+RVT singleton macro. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{rvt__macros_8svh}{rvt\+\_\+macros.\+svh}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classrvt__sim__params_a43b4bfa8c93ed4d8c322c51d92baecf8}\label{classrvt__sim__params_a43b4bfa8c93ed4d8c322c51d92baecf8}} 
+\index{rvt\_sim\_params@{rvt\_sim\_params}!set\_param@{set\_param}}
+\index{set\_param@{set\_param}!rvt\_sim\_params@{rvt\_sim\_params}}
+\doxysubsubsection{\texorpdfstring{set\_param()}{set\_param()}}
+{\footnotesize\ttfamily bit rvt\+\_\+sim\+\_\+params\+::set\+\_\+param (\begin{DoxyParamCaption}\item[{string}]{param,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrvt__sim__params_a91711aec167d6b2614ed871c48267fb6}\label{classrvt__sim__params_a91711aec167d6b2614ed871c48267fb6}} 
+\index{rvt\_sim\_params@{rvt\_sim\_params}!uvm\_object\_utils\_begin@{uvm\_object\_utils\_begin}}
+\index{uvm\_object\_utils\_begin@{uvm\_object\_utils\_begin}!rvt\_sim\_params@{rvt\_sim\_params}}
+\doxysubsubsection{\texorpdfstring{uvm\_object\_utils\_begin()}{uvm\_object\_utils\_begin()}}
+{\footnotesize\ttfamily rvt\+\_\+sim\+\_\+params\+::uvm\+\_\+object\+\_\+utils\+\_\+begin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrvt__sim__params}{rvt\+\_\+sim\+\_\+params}}}]{ }\end{DoxyParamCaption})}
+
+
+
+UVM factory registry. 
+
+\mbox{\Hypertarget{classrvt__sim__params_a18fe5a8def76ac68efaf073dc0d863ad}\label{classrvt__sim__params_a18fe5a8def76ac68efaf073dc0d863ad}} 
+\index{rvt\_sim\_params@{rvt\_sim\_params}!validate\_params@{validate\_params}}
+\index{validate\_params@{validate\_params}!rvt\_sim\_params@{rvt\_sim\_params}}
+\doxysubsubsection{\texorpdfstring{validate\_params()}{validate\_params()}}
+{\footnotesize\ttfamily bit rvt\+\_\+sim\+\_\+params\+::validate\+\_\+params (\begin{DoxyParamCaption}\item[{output string}]{message\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks that all the configured parameters are valid and that there are no conflits. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em message} & queue string of the status of all checks \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 -\/ Validation is successful 
+
+0 -\/ Validation failed 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classrvt__sim__params_ab4150047cbb7879724d7168b3a7ee03e}\label{classrvt__sim__params_ab4150047cbb7879724d7168b3a7ee03e}} 
+\index{rvt\_sim\_params@{rvt\_sim\_params}!params@{params}}
+\index{params@{params}!rvt\_sim\_params@{rvt\_sim\_params}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily rand int rvt\+\_\+sim\+\_\+params\+::params\mbox{[}string\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Associative array containing all parameters. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+base/configs/\mbox{\hyperlink{rvt__sim__params_8svh}{rvt\+\_\+sim\+\_\+params.\+svh}}\end{DoxyCompactItemize}

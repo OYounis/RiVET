@@ -1,0 +1,4 @@
+<map id="rvt_mon" name="rvt_mon">
+<area shape="rect" id="node1" title="Base monitor class. All non&#45;generic monitors should extend this class." alt="" coords="22,80,98,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,115,32"/>
+</map>

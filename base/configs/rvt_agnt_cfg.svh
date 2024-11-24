@@ -5,13 +5,12 @@
  */
 class rvt_agnt_cfg extends rvt_cfg;
 
-  //! @interface bfm
-  //! Bus functional model.
+  //! @brief Bus functional model.
   rvt_bfm bfm;
 
   //! @brief Calls plain UVM object constructor.
   //! @see dv_macros.svh
-  `uvm_object_new()
+  `uvm_object_new();
 
   //! @brief UVM factory registry.
   `uvm_object_param_utils_begin(rvt_agnt_cfg#(REQ, RSP))

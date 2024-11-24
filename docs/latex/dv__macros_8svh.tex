@@ -1,0 +1,862 @@
+\hypertarget{dv__macros_8svh}{}\doxysection{base/include/dv\+\_\+macros.svh File Reference}
+\label{dv__macros_8svh}\index{base/include/dv\_macros.svh@{base/include/dv\_macros.svh}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{dv__macros_8svh__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_ae8d8146241dbd32a96cb239f6cc20e7b}{gfn}}~\$sformatf(\char`\"{}\%m\char`\"{})
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_ad8550a68bb2befadf8a017676ed739be}{gtn}}~get\+\_\+type\+\_\+name()
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a67257ab509ec27f36e929cae3814537a}{gn}}~get\+\_\+name()
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a9cb3bad8c0a9b230f02a130d5eca9b9c}{gmv}}(csr)~csr.\+get\+\_\+mirrored\+\_\+value()
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a45c58ac39ea4e044893b8f611f335723}{downcast}}(EXT\+\_\+,  BASE\+\_\+,  MSG\+\_\+,  SEV\+\_\+fatal,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_ae6ba1afa22e0db4172754b2c846eb428}{uvm\+\_\+object\+\_\+new}}(NAME\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a2240ce47eed451877815a4ae71406d52}{uvm\+\_\+create\+\_\+obj}}(\+\_\+type\+\_\+name\+\_\+,  \+\_\+inst\+\_\+name\+\_\+)~    \+\_\+inst\+\_\+name\+\_\+ = \+\_\+type\+\_\+name\+\_\+\+::type\+\_\+id\+::create(\#\+\_\+inst\+\_\+name\+\_\+);
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_adf9b5372007f070238519e05d8e4b9a8}{uvm\+\_\+component\+\_\+new}}(NAME\+\_\+,  PARENT\+\_\+null)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a2a4e789a775055fb099dd14c442030ec}{uvm\+\_\+create\+\_\+comp}}(\+\_\+type\+\_\+name\+\_\+,  \+\_\+inst\+\_\+name\+\_\+)~    \+\_\+inst\+\_\+name\+\_\+ = \+\_\+type\+\_\+name\+\_\+\+::type\+\_\+id\+::create(\#\+\_\+inst\+\_\+name\+\_\+, this);
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a8a32c3b2aaef1021af8464139b0d1756}{DV\+\_\+\+STRINGIFY}}(I\+\_\+)~\#I\+\_\+
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a527754ffff2f998c8f71d749ef0679c5}{DUT\+\_\+\+HIER\+\_\+\+STR}}~\mbox{\hyperlink{dv__macros_8svh_a8a32c3b2aaef1021af8464139b0d1756}{DV\+\_\+\+STRINGIFY}}(DUT\+\_\+\+HIER)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_ad27e69d03f93f2716db4f2daa05602fd}{DV\+\_\+\+CHECK}}(T\+\_\+,  MSG\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a271360bc0fcca24937c2adab556abc32}{DV\+\_\+\+CHECK\+\_\+\+EQ}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a6380d5e7267eb1c838af95cdf6c312ab}{DV\+\_\+\+CHECK\+\_\+\+NE}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a03dfc6917862e0de9260c34c42dc57eb}{DV\+\_\+\+CHECK\+\_\+\+CASE\+\_\+\+EQ}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a4abc099cd4c59035b0a8254134d34f50}{DV\+\_\+\+CHECK\+\_\+\+CASE\+\_\+\+NE}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a16073702a833b075e087a4b706f21b47}{DV\+\_\+\+CHECK\+\_\+\+LT}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a69ada8b5a4f482efb6b67c26bc800cc0}{DV\+\_\+\+CHECK\+\_\+\+GT}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_ad8738c4e321b3e5a9eb14fb9c85a621a}{DV\+\_\+\+CHECK\+\_\+\+LE}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_af22ff128961dfd3db844eaf6694e2c61}{DV\+\_\+\+CHECK\+\_\+\+GE}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_aa5d6717a20698a8fc01ec26f05ffcc8c}{DV\+\_\+\+CHECK\+\_\+\+STREQ}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_ae12bf2a4d2d3af39d2bf946bd8ae54a8}{DV\+\_\+\+CHECK\+\_\+\+STRNE}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a40a55ba57d91118db6aa8d4934a52085}{DV\+\_\+\+CHECK\+\_\+\+Q\+\_\+\+EQ}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(T\+\_\+,  MSG\+\_\+,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_ad27e69d03f93f2716db4f2daa05602fd}{DV\+\_\+\+CHECK}}(T\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a971bf5b883ca0943af7357366fd3b964}{DV\+\_\+\+CHECK\+\_\+\+EQ\+\_\+\+FATAL}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_a271360bc0fcca24937c2adab556abc32}{DV\+\_\+\+CHECK\+\_\+\+EQ}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_aefb34134483486e8e669427afd89f300}{DV\+\_\+\+CHECK\+\_\+\+NE\+\_\+\+FATAL}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_a6380d5e7267eb1c838af95cdf6c312ab}{DV\+\_\+\+CHECK\+\_\+\+NE}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_ac1eae8b207e2b0eb5ca74a76ca4911da}{DV\+\_\+\+CHECK\+\_\+\+LT\+\_\+\+FATAL}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_a16073702a833b075e087a4b706f21b47}{DV\+\_\+\+CHECK\+\_\+\+LT}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_abbb6e87c3242b806597f640ed801a391}{DV\+\_\+\+CHECK\+\_\+\+GT\+\_\+\+FATAL}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_a69ada8b5a4f482efb6b67c26bc800cc0}{DV\+\_\+\+CHECK\+\_\+\+GT}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a6e97134e9c3fd0c7db15f3cd2b7f595a}{DV\+\_\+\+CHECK\+\_\+\+LE\+\_\+\+FATAL}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_ad8738c4e321b3e5a9eb14fb9c85a621a}{DV\+\_\+\+CHECK\+\_\+\+LE}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a1e63989c1a047a85957c7ac071cd4b50}{DV\+\_\+\+CHECK\+\_\+\+GE\+\_\+\+FATAL}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_af22ff128961dfd3db844eaf6694e2c61}{DV\+\_\+\+CHECK\+\_\+\+GE}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a4b8389ba7b7de3823d3c56f9f4f8abaf}{DV\+\_\+\+CHECK\+\_\+\+STREQ\+\_\+\+FATAL}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_aa5d6717a20698a8fc01ec26f05ffcc8c}{DV\+\_\+\+CHECK\+\_\+\+STREQ}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a70d6423e2d5dc901427bb89a460ca8f1}{DV\+\_\+\+CHECK\+\_\+\+STRNE\+\_\+\+FATAL}}(ACT\+\_\+,  EXP\+\_\+,  MSG\+\_\+,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_ae12bf2a4d2d3af39d2bf946bd8ae54a8}{DV\+\_\+\+CHECK\+\_\+\+STRNE}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a983beb6a0d704d22c36124c8f7212f7f}{DV\+\_\+\+CHECK\+\_\+\+RANDOMIZE\+\_\+\+FATAL}}(VAR\+\_\+,  MSG\+\_\+\+Randomization failed,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(VAR\+\_\+.\+randomize(), MSG\+\_\+, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_aac8dec6be0e6651cbe1054a9508413d2}{DV\+\_\+\+CHECK\+\_\+\+RANDOMIZE\+\_\+\+WITH\+\_\+\+FATAL}}(VAR\+\_\+,  WITH\+\_\+\+C\+\_\+,  MSG\+\_\+\+Randomization failed,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(VAR\+\_\+.\+randomize() with \{WITH\+\_\+\+C\+\_\+\}, MSG\+\_\+, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a4bea16a6e2b39146136b60ae1d5d4c41}{DV\+\_\+\+CHECK\+\_\+\+STD\+\_\+\+RANDOMIZE\+\_\+\+FATAL}}(VAR\+\_\+,  MSG\+\_\+\+Randomization failed,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(std\+::randomize(VAR\+\_\+), MSG\+\_\+, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a1cf7cfb62b04cc30b69daf277c36bcaf}{DV\+\_\+\+CHECK\+\_\+\+STD\+\_\+\+RANDOMIZE\+\_\+\+WITH\+\_\+\+FATAL}}(VAR\+\_\+,  WITH\+\_\+\+C\+\_\+,  MSG\+\_\+\+Randomization failed,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(std\+::randomize(VAR\+\_\+) with \{WITH\+\_\+\+C\+\_\+\}, MSG\+\_\+, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a49d90fd11343aa560b486ce0003fadbe}{DV\+\_\+\+CHECK\+\_\+\+MEMBER\+\_\+\+RANDOMIZE\+\_\+\+FATAL}}(VAR\+\_\+,  CLS\+\_\+\+INST\+\_\+this,  MSG\+\_\+\+Randomization failed,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(CLS\+\_\+\+INST\+\_\+.\+randomize(VAR\+\_\+), MSG\+\_\+, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a5900b85d2bc2389109364707b819aa8c}{DV\+\_\+\+CHECK\+\_\+\+MEMBER\+\_\+\+RANDOMIZE\+\_\+\+WITH\+\_\+\+FATAL}}(VAR\+\_\+,  C\+\_\+,  CLS\+\_\+\+INST\+\_\+this,  MSG\+\_\+\+Randomization failed,  ID\+\_\+gfn)~    \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(CLS\+\_\+\+INST\+\_\+.\+randomize(VAR\+\_\+) with \{C\+\_\+\}, MSG\+\_\+, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_aa6907a783428959e2c50c65276b99b3c}{DV\+\_\+\+PRINT\+\_\+\+ARR\+\_\+\+CONTENTS}}(ARR\+\_\+,  V\+\_\+uvm\+\_\+pkg\+UVM\+\_\+\+MEDIUM,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a6bfafd31d37e890636d89b28d71fc49c}{DV\+\_\+\+EOT\+\_\+\+PRINT\+\_\+\+TLM\+\_\+\+FIFO\+\_\+\+CONTENTS}}(TYP\+\_\+,  FIFO\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_aeccf1cf789b4786675c4c040b53d889a}{DV\+\_\+\+EOT\+\_\+\+PRINT\+\_\+\+TLM\+\_\+\+FIFO\+\_\+\+ARR\+\_\+\+CONTENTS}}(TYP\+\_\+,  FIFO\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_ad1b7f43611406c242dfc550072c98987}{DV\+\_\+\+EOT\+\_\+\+PRINT\+\_\+\+Q\+\_\+\+CONTENTS}}(TYP\+\_\+,  Q\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a54430d36e05b0093ccaf821b6d372be1}{DV\+\_\+\+EOT\+\_\+\+PRINT\+\_\+\+Q\+\_\+\+ARR\+\_\+\+CONTENTS}}(TYP\+\_\+,  Q\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_aba82dac308de9bae7d99e331e0443021}{DV\+\_\+\+EOT\+\_\+\+PRINT\+\_\+\+MAILBOX\+\_\+\+CONTENTS}}(TYP\+\_\+,  MAILBOX\+\_\+,  SEV\+\_\+error,  ID\+\_\+gfn)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a4c73f47f0479e9edc898c2bac5a0d73e}{GET\+\_\+\+PARITY}}(val,  odd)~($^\wedge$val $^\wedge$ odd)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a7b71bbbfe07954224462b96e0cfde6b3}{DV\+\_\+\+SPINWAIT\+\_\+\+EXIT}}(WAIT\+\_\+,  EXIT\+\_\+,  MSG\+\_\+ exit condition occurred,  ID\+\_\+ \mbox{\hyperlink{dv__macros_8svh_ae8d8146241dbd32a96cb239f6cc20e7b}{gfn}})
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a152205d2740e56e98c83a42c5a481970}{DV\+\_\+\+WAIT\+\_\+\+TIMEOUT}}(TIMEOUT\+\_\+\+NS\+\_\+,  ID\+\_\+ \mbox{\hyperlink{dv__macros_8svh_ae8d8146241dbd32a96cb239f6cc20e7b}{gfn}},  ERROR\+\_\+\+MSG\+\_\+ timeout occurred,  REPORT\+\_\+\+FATAL\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a787c2fa4ef0560a9523c0bad758743b3}{DV\+\_\+\+SPINWAIT}}(WAIT\+\_\+,  MSG\+\_\+ timeout occurred,  TIMEOUT\+\_\+\+NS\+\_\+ default\+\_\+spinwait\+\_\+timeout\+\_\+ns,  ID\+\_\+ \mbox{\hyperlink{dv__macros_8svh_ae8d8146241dbd32a96cb239f6cc20e7b}{gfn}})~  \mbox{\hyperlink{dv__macros_8svh_a7b71bbbfe07954224462b96e0cfde6b3}{DV\+\_\+\+SPINWAIT\+\_\+\+EXIT}}(WAIT\+\_\+, \mbox{\hyperlink{dv__macros_8svh_a152205d2740e56e98c83a42c5a481970}{DV\+\_\+\+WAIT\+\_\+\+TIMEOUT}}(TIMEOUT\+\_\+\+NS\+\_\+, ID\+\_\+, MSG\+\_\+);, \char`\"{}\char`\"{}, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a743f98785c4ba510e0a0dd2cc7a7b597}{DV\+\_\+\+WAIT}}(WAIT\+\_\+\+COND\+\_\+,  MSG\+\_\+ wait timeout occurred,  TIMEOUT\+\_\+\+NS\+\_\+ default\+\_\+spinwait\+\_\+timeout\+\_\+ns,  ID\+\_\+ \mbox{\hyperlink{dv__macros_8svh_ae8d8146241dbd32a96cb239f6cc20e7b}{gfn}})~  \mbox{\hyperlink{dv__macros_8svh_a787c2fa4ef0560a9523c0bad758743b3}{DV\+\_\+\+SPINWAIT}}(wait (WAIT\+\_\+\+COND\+\_\+);, MSG\+\_\+, TIMEOUT\+\_\+\+NS\+\_\+, ID\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_ac9cb8b348e3173ffaad4a2b5a24378f9}{DV\+\_\+\+ASSERT\+\_\+\+CTRL}}(LABEL\+\_\+,  HIER\+\_\+,  LEVELS\+\_\+,  SCOPE\+\_\+,  ID\+\_\+ sformatf(m)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a8882cc6c25c4b4dad2f57dbe96d98df9}{DV\+\_\+\+GET\+\_\+\+ENUM\+\_\+\+PLUSARG}}(ENUM\+\_\+,  VAR\+\_\+,  PLUSARG\+\_\+,  CHECK\+\_\+\+EXISTS\+\_\+,  ID\+\_\+ \mbox{\hyperlink{dv__macros_8svh_ae8d8146241dbd32a96cb239f6cc20e7b}{gfn}})
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a70a2c484850c12d24b21b4895553fa2a}{DV\+\_\+\+GET\+\_\+\+QUEUE\+\_\+\+PLUSARG}}(QUEUE\+\_\+,  PLUSARG\+\_\+,  DELIMITER\+\_\+, ,  CHECK\+\_\+\+EXISTS\+\_\+,  ID\+\_\+ \mbox{\hyperlink{dv__macros_8svh_ae8d8146241dbd32a96cb239f6cc20e7b}{gfn}})
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a717b8e15322baa3964d8bfc56ad217f0}{DV\+\_\+\+ASSERT\+\_\+\+CTRL\+\_\+\+REQ}}(LABEL\+\_\+,  VALUE\+\_\+,  SCOPE\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a4d69dd30cde194a43ac0df7a53a55651}{dv\+\_\+info}}(MSG\+\_\+,  VERBOSITY DUMMY\+\_\+,  ID\+\_\+ sformatf(m)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a12f00537f2a0f360b8c835fe57d6cb3e}{dv\+\_\+warning}}(MSG\+\_\+,  ID\+\_\+ sformatf(m)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a030194647047bdfd42058ab0ad6a72d8}{dv\+\_\+error}}(MSG\+\_\+,  ID\+\_\+ sformatf(m)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_af438ee0ccf1e6020a2a1b68db23be63c}{dv\+\_\+fatal}}(MSG\+\_\+,  ID\+\_\+ sformatf(m)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_ac82e4a944a928547cbc59c72ca13b569}{DV\+\_\+\+COMMON\+\_\+\+CLK\+\_\+\+CONSTRAINT}}(FREQ\+\_\+)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a10735e79792cca76f783f13a8399fcb8}{BUILD\+\_\+\+SEED}}~1
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a50bb5c80e2e9aaee81b60b6d8b193402}{DV\+\_\+\+MAX2}}(a,  b)~((a) $>$ (b) ? (a) \+: (b))
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a09192d07d9e83395336f7c44c7ff07d3}{DV\+\_\+\+CREATE\+\_\+\+SIGNAL\+\_\+\+PROBE\+\_\+\+FUNCTION}}(FUNC\+\_\+\+NAME\+\_\+,  SIGNAL\+\_\+\+PATH\+\_\+,  SIGNAL\+\_\+\+WIDTH\+\_\+ uvm\+\_\+pkg\+UVM\+\_\+\+HDL\+\_\+\+MAX\+\_\+\+WIDTH)
+\item 
+\#define \mbox{\hyperlink{dv__macros_8svh_a3c0a5546a0271d602f67d18bc9f65034}{OTDBG}}(x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{dv__macros_8svh_a10735e79792cca76f783f13a8399fcb8}\label{dv__macros_8svh_a10735e79792cca76f783f13a8399fcb8}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!BUILD\_SEED@{BUILD\_SEED}}
+\index{BUILD\_SEED@{BUILD\_SEED}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{BUILD\_SEED}{BUILD\_SEED}}
+{\footnotesize\ttfamily \#define BUILD\+\_\+\+SEED~1}
+
+\mbox{\Hypertarget{dv__macros_8svh_a45c58ac39ea4e044893b8f611f335723}\label{dv__macros_8svh_a45c58ac39ea4e044893b8f611f335723}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!downcast@{downcast}}
+\index{downcast@{downcast}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{downcast}{downcast}}
+{\footnotesize\ttfamily \#define downcast(\begin{DoxyParamCaption}\item[{}]{EXT\+\_\+,  }\item[{}]{BASE\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+fatal,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      if (!\$cast(EXT\_, BASE\_)) \{ \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\{\textcolor{stringliteral}{"{}Cast failed: base class variable \%0s "{}}, \(\backslash\)}
+\DoxyCodeLine{                              \textcolor{stringliteral}{"{}does not hold extended class \%0s handle \%s"{}}\}, \(\backslash\)}
+\DoxyCodeLine{\textcolor{preprocessor}{                              \#BASE\_, "{}EXT\_"{}}, MSG\_), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a527754ffff2f998c8f71d749ef0679c5}\label{dv__macros_8svh_a527754ffff2f998c8f71d749ef0679c5}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DUT\_HIER\_STR@{DUT\_HIER\_STR}}
+\index{DUT\_HIER\_STR@{DUT\_HIER\_STR}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DUT\_HIER\_STR}{DUT\_HIER\_STR}}
+{\footnotesize\ttfamily \#define DUT\+\_\+\+HIER\+\_\+\+STR~\mbox{\hyperlink{dv__macros_8svh_a8a32c3b2aaef1021af8464139b0d1756}{DV\+\_\+\+STRINGIFY}}(DUT\+\_\+\+HIER)}
+
+\mbox{\Hypertarget{dv__macros_8svh_ac9cb8b348e3173ffaad4a2b5a24378f9}\label{dv__macros_8svh_ac9cb8b348e3173ffaad4a2b5a24378f9}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_ASSERT\_CTRL@{DV\_ASSERT\_CTRL}}
+\index{DV\_ASSERT\_CTRL@{DV\_ASSERT\_CTRL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_ASSERT\_CTRL}{DV\_ASSERT\_CTRL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+ASSERT\+\_\+\+CTRL(\begin{DoxyParamCaption}\item[{}]{LABEL\+\_\+,  }\item[{}]{HIER\+\_\+,  }\item[{}]{LEVELS\+\_\+,  }\item[{}]{SCOPE\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{   ) \(\backslash\)}
+\DoxyCodeLine{   \{ \(\backslash\)}
+\DoxyCodeLine{    bit assert\_en; \(\backslash\)}
+\DoxyCodeLine{    forever \{ \(\backslash\)}
+\DoxyCodeLine{      uvm\_config\_db <bit> ::wait\_modified(\textcolor{keyword}{null}, SCOPE\_, LABEL\_); \(\backslash\)}
+\DoxyCodeLine{      if (!uvm\_config\_db <bit> ::get(\textcolor{keyword}{null}, SCOPE\_, LABEL\_, assert\_en)) \{ \(\backslash\)}
+\DoxyCodeLine{        uvm\_fatal(ID\_, \$sformatf(\textcolor{stringliteral}{"{}Failed to get \(\backslash\)"{}\%0s\(\backslash\)"{} from uvm\_config\_db"{}}, LABEL\_)) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{      if (assert\_en) \{ \(\backslash\)}
+\DoxyCodeLine{        uvm\_info(ID\_, \$sformatf(\textcolor{stringliteral}{"{}Enabling assertions: \%0s"{}}, \mbox{\hyperlink{dv__macros_8svh_a8a32c3b2aaef1021af8464139b0d1756}{DV\_STRINGIFY}}(HIER\_)), UVM\_LOW) \(\backslash\)}
+\DoxyCodeLine{        \$asserton(LEVELS\_, HIER\_); \(\backslash\)}
+\DoxyCodeLine{      \} \textcolor{keywordflow}{else} \{ \(\backslash\)}
+\DoxyCodeLine{        uvm\_info(ID\_, \$sformatf(\textcolor{stringliteral}{"{}Disabling assertions: \%0s"{}}, \mbox{\hyperlink{dv__macros_8svh_a8a32c3b2aaef1021af8464139b0d1756}{DV\_STRINGIFY}}(HIER\_)), UVM\_LOW) \(\backslash\)}
+\DoxyCodeLine{        \$assertoff(LEVELS\_, HIER\_); \(\backslash\)}
+\DoxyCodeLine{        \$assertkill(LEVELS\_, HIER\_); \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a717b8e15322baa3964d8bfc56ad217f0}\label{dv__macros_8svh_a717b8e15322baa3964d8bfc56ad217f0}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_ASSERT\_CTRL\_REQ@{DV\_ASSERT\_CTRL\_REQ}}
+\index{DV\_ASSERT\_CTRL\_REQ@{DV\_ASSERT\_CTRL\_REQ}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_ASSERT\_CTRL\_REQ}{DV\_ASSERT\_CTRL\_REQ}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+ASSERT\+\_\+\+CTRL\+\_\+\+REQ(\begin{DoxyParamCaption}\item[{}]{LABEL\+\_\+,  }\item[{}]{VALUE\+\_\+,  }\item[{}]{SCOPE\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \{ \(\backslash\)}
+\DoxyCodeLine{    uvm\_config\_db <bit> ::set(\textcolor{keyword}{null}, SCOPE\_, LABEL\_, VALUE\_); \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_ad27e69d03f93f2716db4f2daa05602fd}\label{dv__macros_8svh_ad27e69d03f93f2716db4f2daa05602fd}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK@{DV\_CHECK}}
+\index{DV\_CHECK@{DV\_CHECK}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK}{DV\_CHECK}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK(\begin{DoxyParamCaption}\item[{}]{T\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      if (T\_) ; \textcolor{keywordflow}{else} \{ \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}Check failed (\%s) \%s "{}}, \#T\_, MSG\_), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a03dfc6917862e0de9260c34c42dc57eb}\label{dv__macros_8svh_a03dfc6917862e0de9260c34c42dc57eb}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_CASE\_EQ@{DV\_CHECK\_CASE\_EQ}}
+\index{DV\_CHECK\_CASE\_EQ@{DV\_CHECK\_CASE\_EQ}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_CASE\_EQ}{DV\_CHECK\_CASE\_EQ}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+CASE\+\_\+\+EQ(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      if ((ACT\_) === (EXP\_)) ; \textcolor{keywordflow}{else} \{ \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}Check failed \%s === \%s (0x\%0h [\%0b] vs 0x\%0h [\%0b]) \%s"{}}, \(\backslash\)}
+\DoxyCodeLine{                             \#ACT\_, \textcolor{stringliteral}{"{}EXP\_"{}}, ACT\_, ACT\_, EXP\_, EXP\_, MSG\_), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a4abc099cd4c59035b0a8254134d34f50}\label{dv__macros_8svh_a4abc099cd4c59035b0a8254134d34f50}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_CASE\_NE@{DV\_CHECK\_CASE\_NE}}
+\index{DV\_CHECK\_CASE\_NE@{DV\_CHECK\_CASE\_NE}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_CASE\_NE}{DV\_CHECK\_CASE\_NE}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+CASE\+\_\+\+NE(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      if ((ACT\_) !== (EXP\_)) ; \textcolor{keywordflow}{else} \{ \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}Check failed \%s !== \%s (\%0d [0x\%0h] vs \%0d [0x\%0h]) \%s"{}}, \(\backslash\)}
+\DoxyCodeLine{                             \#ACT\_, \textcolor{stringliteral}{"{}EXP\_"{}}, ACT\_, ACT\_, EXP\_, EXP\_, MSG\_), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a271360bc0fcca24937c2adab556abc32}\label{dv__macros_8svh_a271360bc0fcca24937c2adab556abc32}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_EQ@{DV\_CHECK\_EQ}}
+\index{DV\_CHECK\_EQ@{DV\_CHECK\_EQ}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_EQ}{DV\_CHECK\_EQ}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+EQ(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      if ((ACT\_) == (EXP\_)) ; \textcolor{keywordflow}{else} \{ \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}Check failed \%s == \%s (\%0d [0x\%0h] vs \%0d [0x\%0h]) \%s"{}}, \(\backslash\)}
+\DoxyCodeLine{                             \#ACT\_, \textcolor{stringliteral}{"{}EXP\_"{}}, ACT\_, ACT\_, EXP\_, EXP\_, MSG\_), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a971bf5b883ca0943af7357366fd3b964}\label{dv__macros_8svh_a971bf5b883ca0943af7357366fd3b964}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_EQ\_FATAL@{DV\_CHECK\_EQ\_FATAL}}
+\index{DV\_CHECK\_EQ\_FATAL@{DV\_CHECK\_EQ\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_EQ\_FATAL}{DV\_CHECK\_EQ\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+EQ\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_a271360bc0fcca24937c2adab556abc32}{DV\+\_\+\+CHECK\+\_\+\+EQ}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}\label{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_FATAL@{DV\_CHECK\_FATAL}}
+\index{DV\_CHECK\_FATAL@{DV\_CHECK\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_FATAL}{DV\_CHECK\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{T\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_ad27e69d03f93f2716db4f2daa05602fd}{DV\+\_\+\+CHECK}}(T\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_af22ff128961dfd3db844eaf6694e2c61}\label{dv__macros_8svh_af22ff128961dfd3db844eaf6694e2c61}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_GE@{DV\_CHECK\_GE}}
+\index{DV\_CHECK\_GE@{DV\_CHECK\_GE}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_GE}{DV\_CHECK\_GE}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+GE(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      if ((ACT\_) >= (EXP\_)) ; \textcolor{keywordflow}{else} \{ \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}Check failed \%s >= \%s (\%0d [0x\%0h] vs \%0d [0x\%0h]) \%s"{}}, \(\backslash\)}
+\DoxyCodeLine{                             \#ACT\_, \textcolor{stringliteral}{"{}EXP\_"{}}, ACT\_, ACT\_, EXP\_, EXP\_, MSG\_), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a1e63989c1a047a85957c7ac071cd4b50}\label{dv__macros_8svh_a1e63989c1a047a85957c7ac071cd4b50}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_GE\_FATAL@{DV\_CHECK\_GE\_FATAL}}
+\index{DV\_CHECK\_GE\_FATAL@{DV\_CHECK\_GE\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_GE\_FATAL}{DV\_CHECK\_GE\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+GE\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_af22ff128961dfd3db844eaf6694e2c61}{DV\+\_\+\+CHECK\+\_\+\+GE}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_a69ada8b5a4f482efb6b67c26bc800cc0}\label{dv__macros_8svh_a69ada8b5a4f482efb6b67c26bc800cc0}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_GT@{DV\_CHECK\_GT}}
+\index{DV\_CHECK\_GT@{DV\_CHECK\_GT}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_GT}{DV\_CHECK\_GT}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+GT(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      if ((ACT\_) > (EXP\_)) ; \textcolor{keywordflow}{else} \{ \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}Check failed \%s > \%s (\%0d [0x\%0h] vs \%0d [0x\%0h]) \%s"{}}, \(\backslash\)}
+\DoxyCodeLine{                             \#ACT\_, \textcolor{stringliteral}{"{}EXP\_"{}}, ACT\_, ACT\_, EXP\_, EXP\_, MSG\_), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_abbb6e87c3242b806597f640ed801a391}\label{dv__macros_8svh_abbb6e87c3242b806597f640ed801a391}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_GT\_FATAL@{DV\_CHECK\_GT\_FATAL}}
+\index{DV\_CHECK\_GT\_FATAL@{DV\_CHECK\_GT\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_GT\_FATAL}{DV\_CHECK\_GT\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+GT\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_a69ada8b5a4f482efb6b67c26bc800cc0}{DV\+\_\+\+CHECK\+\_\+\+GT}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_ad8738c4e321b3e5a9eb14fb9c85a621a}\label{dv__macros_8svh_ad8738c4e321b3e5a9eb14fb9c85a621a}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_LE@{DV\_CHECK\_LE}}
+\index{DV\_CHECK\_LE@{DV\_CHECK\_LE}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_LE}{DV\_CHECK\_LE}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+LE(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      if ((ACT\_) <= (EXP\_)) ; \textcolor{keywordflow}{else} \{ \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}Check failed \%s <= \%s (\%0d [0x\%0h] vs \%0d [0x\%0h]) \%s"{}}, \(\backslash\)}
+\DoxyCodeLine{                             \#ACT\_, \textcolor{stringliteral}{"{}EXP\_"{}}, ACT\_, ACT\_, EXP\_, EXP\_, MSG\_), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a6e97134e9c3fd0c7db15f3cd2b7f595a}\label{dv__macros_8svh_a6e97134e9c3fd0c7db15f3cd2b7f595a}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_LE\_FATAL@{DV\_CHECK\_LE\_FATAL}}
+\index{DV\_CHECK\_LE\_FATAL@{DV\_CHECK\_LE\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_LE\_FATAL}{DV\_CHECK\_LE\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+LE\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_ad8738c4e321b3e5a9eb14fb9c85a621a}{DV\+\_\+\+CHECK\+\_\+\+LE}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_a16073702a833b075e087a4b706f21b47}\label{dv__macros_8svh_a16073702a833b075e087a4b706f21b47}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_LT@{DV\_CHECK\_LT}}
+\index{DV\_CHECK\_LT@{DV\_CHECK\_LT}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_LT}{DV\_CHECK\_LT}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+LT(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      if ((ACT\_) < (EXP\_)) ; \textcolor{keywordflow}{else} \{ \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}Check failed \%s < \%s (\%0d [0x\%0h] vs \%0d [0x\%0h]) \%s"{}}, \(\backslash\)}
+\DoxyCodeLine{                             \#ACT\_, \textcolor{stringliteral}{"{}EXP\_"{}}, ACT\_, ACT\_, EXP\_, EXP\_, MSG\_), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_ac1eae8b207e2b0eb5ca74a76ca4911da}\label{dv__macros_8svh_ac1eae8b207e2b0eb5ca74a76ca4911da}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_LT\_FATAL@{DV\_CHECK\_LT\_FATAL}}
+\index{DV\_CHECK\_LT\_FATAL@{DV\_CHECK\_LT\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_LT\_FATAL}{DV\_CHECK\_LT\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+LT\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_a16073702a833b075e087a4b706f21b47}{DV\+\_\+\+CHECK\+\_\+\+LT}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_a49d90fd11343aa560b486ce0003fadbe}\label{dv__macros_8svh_a49d90fd11343aa560b486ce0003fadbe}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_MEMBER\_RANDOMIZE\_FATAL@{DV\_CHECK\_MEMBER\_RANDOMIZE\_FATAL}}
+\index{DV\_CHECK\_MEMBER\_RANDOMIZE\_FATAL@{DV\_CHECK\_MEMBER\_RANDOMIZE\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_MEMBER\_RANDOMIZE\_FATAL}{DV\_CHECK\_MEMBER\_RANDOMIZE\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+MEMBER\+\_\+\+RANDOMIZE\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{VAR\+\_\+,  }\item[{}]{CLS\+\_\+\+INST\+\_\+this,  }\item[{}]{MSG\+\_\+\+Randomizationfailed,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(CLS\+\_\+\+INST\+\_\+.\+randomize(VAR\+\_\+), MSG\+\_\+, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_a5900b85d2bc2389109364707b819aa8c}\label{dv__macros_8svh_a5900b85d2bc2389109364707b819aa8c}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_MEMBER\_RANDOMIZE\_WITH\_FATAL@{DV\_CHECK\_MEMBER\_RANDOMIZE\_WITH\_FATAL}}
+\index{DV\_CHECK\_MEMBER\_RANDOMIZE\_WITH\_FATAL@{DV\_CHECK\_MEMBER\_RANDOMIZE\_WITH\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_MEMBER\_RANDOMIZE\_WITH\_FATAL}{DV\_CHECK\_MEMBER\_RANDOMIZE\_WITH\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+MEMBER\+\_\+\+RANDOMIZE\+\_\+\+WITH\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{VAR\+\_\+,  }\item[{}]{C\+\_\+,  }\item[{}]{CLS\+\_\+\+INST\+\_\+this,  }\item[{}]{MSG\+\_\+\+Randomizationfailed,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(CLS\+\_\+\+INST\+\_\+.\+randomize(VAR\+\_\+) with \{C\+\_\+\}, MSG\+\_\+, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_a6380d5e7267eb1c838af95cdf6c312ab}\label{dv__macros_8svh_a6380d5e7267eb1c838af95cdf6c312ab}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_NE@{DV\_CHECK\_NE}}
+\index{DV\_CHECK\_NE@{DV\_CHECK\_NE}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_NE}{DV\_CHECK\_NE}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+NE(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      if ((ACT\_) != (EXP\_)) ; \textcolor{keywordflow}{else} \{ \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}Check failed \%s != \%s (\%0d [0x\%0h] vs \%0d [0x\%0h]) \%s"{}}, \(\backslash\)}
+\DoxyCodeLine{                             \#ACT\_, \textcolor{stringliteral}{"{}EXP\_"{}}, ACT\_, ACT\_, EXP\_, EXP\_, MSG\_), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_aefb34134483486e8e669427afd89f300}\label{dv__macros_8svh_aefb34134483486e8e669427afd89f300}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_NE\_FATAL@{DV\_CHECK\_NE\_FATAL}}
+\index{DV\_CHECK\_NE\_FATAL@{DV\_CHECK\_NE\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_NE\_FATAL}{DV\_CHECK\_NE\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+NE\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_a6380d5e7267eb1c838af95cdf6c312ab}{DV\+\_\+\+CHECK\+\_\+\+NE}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_a40a55ba57d91118db6aa8d4934a52085}\label{dv__macros_8svh_a40a55ba57d91118db6aa8d4934a52085}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_Q\_EQ@{DV\_CHECK\_Q\_EQ}}
+\index{DV\_CHECK\_Q\_EQ@{DV\_CHECK\_Q\_EQ}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_Q\_EQ}{DV\_CHECK\_Q\_EQ}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+Q\+\_\+\+EQ(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      DV\_CHECK\_EQ(ACT\_.size(), EXP\_.size(), MSG\_, SEV\_, ID\_) \(\backslash\)}
+\DoxyCodeLine{      foreach (ACT\_[i]) \{ \(\backslash\)}
+\DoxyCodeLine{        DV\_CHECK\_EQ(ACT\_[i], EXP\_[i], \$sformatf(\textcolor{stringliteral}{"{}for i = \%0d \%s"{}}, i, MSG\_), SEV\_, ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a983beb6a0d704d22c36124c8f7212f7f}\label{dv__macros_8svh_a983beb6a0d704d22c36124c8f7212f7f}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_RANDOMIZE\_FATAL@{DV\_CHECK\_RANDOMIZE\_FATAL}}
+\index{DV\_CHECK\_RANDOMIZE\_FATAL@{DV\_CHECK\_RANDOMIZE\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_RANDOMIZE\_FATAL}{DV\_CHECK\_RANDOMIZE\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+RANDOMIZE\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{VAR\+\_\+,  }\item[{}]{MSG\+\_\+\+Randomizationfailed,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(VAR\+\_\+.\+randomize(), MSG\+\_\+, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_aac8dec6be0e6651cbe1054a9508413d2}\label{dv__macros_8svh_aac8dec6be0e6651cbe1054a9508413d2}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_RANDOMIZE\_WITH\_FATAL@{DV\_CHECK\_RANDOMIZE\_WITH\_FATAL}}
+\index{DV\_CHECK\_RANDOMIZE\_WITH\_FATAL@{DV\_CHECK\_RANDOMIZE\_WITH\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_RANDOMIZE\_WITH\_FATAL}{DV\_CHECK\_RANDOMIZE\_WITH\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+RANDOMIZE\+\_\+\+WITH\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{VAR\+\_\+,  }\item[{}]{WITH\+\_\+\+C\+\_\+,  }\item[{}]{MSG\+\_\+\+Randomizationfailed,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(VAR\+\_\+.\+randomize() with \{WITH\+\_\+\+C\+\_\+\}, MSG\+\_\+, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_a4bea16a6e2b39146136b60ae1d5d4c41}\label{dv__macros_8svh_a4bea16a6e2b39146136b60ae1d5d4c41}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_STD\_RANDOMIZE\_FATAL@{DV\_CHECK\_STD\_RANDOMIZE\_FATAL}}
+\index{DV\_CHECK\_STD\_RANDOMIZE\_FATAL@{DV\_CHECK\_STD\_RANDOMIZE\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_STD\_RANDOMIZE\_FATAL}{DV\_CHECK\_STD\_RANDOMIZE\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+STD\+\_\+\+RANDOMIZE\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{VAR\+\_\+,  }\item[{}]{MSG\+\_\+\+Randomizationfailed,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(std\+::randomize(VAR\+\_\+), MSG\+\_\+, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_a1cf7cfb62b04cc30b69daf277c36bcaf}\label{dv__macros_8svh_a1cf7cfb62b04cc30b69daf277c36bcaf}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_STD\_RANDOMIZE\_WITH\_FATAL@{DV\_CHECK\_STD\_RANDOMIZE\_WITH\_FATAL}}
+\index{DV\_CHECK\_STD\_RANDOMIZE\_WITH\_FATAL@{DV\_CHECK\_STD\_RANDOMIZE\_WITH\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_STD\_RANDOMIZE\_WITH\_FATAL}{DV\_CHECK\_STD\_RANDOMIZE\_WITH\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+STD\+\_\+\+RANDOMIZE\+\_\+\+WITH\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{VAR\+\_\+,  }\item[{}]{WITH\+\_\+\+C\+\_\+,  }\item[{}]{MSG\+\_\+\+Randomizationfailed,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_ae95c5608c1c2c154e0d75625e001a1df}{DV\+\_\+\+CHECK\+\_\+\+FATAL}}(std\+::randomize(VAR\+\_\+) with \{WITH\+\_\+\+C\+\_\+\}, MSG\+\_\+, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_aa5d6717a20698a8fc01ec26f05ffcc8c}\label{dv__macros_8svh_aa5d6717a20698a8fc01ec26f05ffcc8c}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_STREQ@{DV\_CHECK\_STREQ}}
+\index{DV\_CHECK\_STREQ@{DV\_CHECK\_STREQ}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_STREQ}{DV\_CHECK\_STREQ}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+STREQ(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      if ((ACT\_) == (EXP\_)) ; \textcolor{keywordflow}{else} \{ \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}Check failed \(\backslash\)"{}\%s\(\backslash\)"{} == \(\backslash\)"{}\%s\(\backslash\)"{} \%s"{}}, ACT\_, EXP\_, MSG\_), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a4b8389ba7b7de3823d3c56f9f4f8abaf}\label{dv__macros_8svh_a4b8389ba7b7de3823d3c56f9f4f8abaf}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_STREQ\_FATAL@{DV\_CHECK\_STREQ\_FATAL}}
+\index{DV\_CHECK\_STREQ\_FATAL@{DV\_CHECK\_STREQ\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_STREQ\_FATAL}{DV\_CHECK\_STREQ\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+STREQ\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_aa5d6717a20698a8fc01ec26f05ffcc8c}{DV\+\_\+\+CHECK\+\_\+\+STREQ}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_ae12bf2a4d2d3af39d2bf946bd8ae54a8}\label{dv__macros_8svh_ae12bf2a4d2d3af39d2bf946bd8ae54a8}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_STRNE@{DV\_CHECK\_STRNE}}
+\index{DV\_CHECK\_STRNE@{DV\_CHECK\_STRNE}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_STRNE}{DV\_CHECK\_STRNE}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+STRNE(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \{ \(\backslash\)}
+\DoxyCodeLine{      if ((ACT\_) != (EXP\_)) ; \textcolor{keywordflow}{else} \{ \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}Check failed \(\backslash\)"{}\%s\(\backslash\)"{} != \(\backslash\)"{}\%s\(\backslash\)"{} \%s"{}}, ACT\_, EXP\_, MSG\_), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a70d6423e2d5dc901427bb89a460ca8f1}\label{dv__macros_8svh_a70d6423e2d5dc901427bb89a460ca8f1}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CHECK\_STRNE\_FATAL@{DV\_CHECK\_STRNE\_FATAL}}
+\index{DV\_CHECK\_STRNE\_FATAL@{DV\_CHECK\_STRNE\_FATAL}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CHECK\_STRNE\_FATAL}{DV\_CHECK\_STRNE\_FATAL}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CHECK\+\_\+\+STRNE\+\_\+\+FATAL(\begin{DoxyParamCaption}\item[{}]{ACT\+\_\+,  }\item[{}]{EXP\+\_\+,  }\item[{}]{MSG\+\_\+,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~    \mbox{\hyperlink{dv__macros_8svh_ae12bf2a4d2d3af39d2bf946bd8ae54a8}{DV\+\_\+\+CHECK\+\_\+\+STRNE}}(ACT\+\_\+, EXP\+\_\+, MSG\+\_\+, fatal, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_ac82e4a944a928547cbc59c72ca13b569}\label{dv__macros_8svh_ac82e4a944a928547cbc59c72ca13b569}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_COMMON\_CLK\_CONSTRAINT@{DV\_COMMON\_CLK\_CONSTRAINT}}
+\index{DV\_COMMON\_CLK\_CONSTRAINT@{DV\_COMMON\_CLK\_CONSTRAINT}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_COMMON\_CLK\_CONSTRAINT}{DV\_COMMON\_CLK\_CONSTRAINT}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+COMMON\+\_\+\+CLK\+\_\+\+CONSTRAINT(\begin{DoxyParamCaption}\item[{}]{FREQ\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  FREQ\_ dist \{ \(\backslash\)}
+\DoxyCodeLine{    [5:23]  :/ 2, \(\backslash\)}
+\DoxyCodeLine{    [24:25] :/ 2, \(\backslash\)}
+\DoxyCodeLine{    [26:47] :/ 1, \(\backslash\)}
+\DoxyCodeLine{    [48:50] :/ 2, \(\backslash\)}
+\DoxyCodeLine{    [51:95] :/ 1, \(\backslash\)}
+\DoxyCodeLine{    96      :/ 1, \(\backslash\)}
+\DoxyCodeLine{    [97:99] :/ 1, \(\backslash\)}
+\DoxyCodeLine{    100     :/ 1  \(\backslash\)}
+\DoxyCodeLine{  \};}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a09192d07d9e83395336f7c44c7ff07d3}\label{dv__macros_8svh_a09192d07d9e83395336f7c44c7ff07d3}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_CREATE\_SIGNAL\_PROBE\_FUNCTION@{DV\_CREATE\_SIGNAL\_PROBE\_FUNCTION}}
+\index{DV\_CREATE\_SIGNAL\_PROBE\_FUNCTION@{DV\_CREATE\_SIGNAL\_PROBE\_FUNCTION}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_CREATE\_SIGNAL\_PROBE\_FUNCTION}{DV\_CREATE\_SIGNAL\_PROBE\_FUNCTION}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+CREATE\+\_\+\+SIGNAL\+\_\+\+PROBE\+\_\+\+FUNCTION(\begin{DoxyParamCaption}\item[{}]{FUNC\+\_\+\+NAME\+\_\+,  }\item[{}]{SIGNAL\+\_\+\+PATH\+\_\+,  }\item[{}]{SIGNAL\+\_\+\+WIDTH\+\_\+uvm\+\_\+pkg\+UVM\+\_\+\+HDL\+\_\+\+MAX\+\_\+\+WIDTH }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{   \textcolor{keyword}{static} logic <SIGNAL\_WIDTH\_-\/1:0>  FUNC\_NAME\_(dv\_utils\_pkg::signal\_probe\_e kind,     \(\backslash\)}
+\DoxyCodeLine{                                                       logic <SIGNAL\_WIDTH\_-\/1:0>  \mbox{\hyperlink{namespacealign__hex_a7ae2f0da0d5a9680d25477cbd0ba82f2}{value}} = 0) \{ \(\backslash\)}
+\DoxyCodeLine{    case  (kind) \{                                                                                \(\backslash\)}
+\DoxyCodeLine{      dv\_utils\_pkg::SignalProbeSample: ;                                                      \(\backslash\)}
+\DoxyCodeLine{      dv\_utils\_pkg::SignalProbeForce: force SIGNAL\_PATH\_ = \mbox{\hyperlink{namespacealign__hex_a7ae2f0da0d5a9680d25477cbd0ba82f2}{value}};                             \(\backslash\)}
+\DoxyCodeLine{      dv\_utils\_pkg::SignalProbeRelease: release SIGNAL\_PATH\_;                                 \(\backslash\)}
+\DoxyCodeLine{      default: uvm\_fatal(\#FUNC\_NAME\_, \$sformatf(\textcolor{stringliteral}{"{}Bad value: \%0d"{}}, kind))                  \(\backslash\)}
+\DoxyCodeLine{    \}                                                                                   \(\backslash\)}
+\DoxyCodeLine{    return SIGNAL\_PATH\_;                                                                      \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_aba82dac308de9bae7d99e331e0443021}\label{dv__macros_8svh_aba82dac308de9bae7d99e331e0443021}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_EOT\_PRINT\_MAILBOX\_CONTENTS@{DV\_EOT\_PRINT\_MAILBOX\_CONTENTS}}
+\index{DV\_EOT\_PRINT\_MAILBOX\_CONTENTS@{DV\_EOT\_PRINT\_MAILBOX\_CONTENTS}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_EOT\_PRINT\_MAILBOX\_CONTENTS}{DV\_EOT\_PRINT\_MAILBOX\_CONTENTS}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+EOT\+\_\+\+PRINT\+\_\+\+MAILBOX\+\_\+\+CONTENTS(\begin{DoxyParamCaption}\item[{}]{TYP\+\_\+,  }\item[{}]{MAILBOX\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \{ \(\backslash\)}
+\DoxyCodeLine{    while (MAILBOX\_.num() != 0) \{ \(\backslash\)}
+\DoxyCodeLine{      TYP\_ item; \(\backslash\)}
+\DoxyCodeLine{      void(MAILBOX\_.try\_get(item)); \(\backslash\)}
+\DoxyCodeLine{      dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}\%s item uncompared:\(\backslash\)n\%s"{}}, \#MAILBOX\_, item.sprint()), ID\_) \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a54430d36e05b0093ccaf821b6d372be1}\label{dv__macros_8svh_a54430d36e05b0093ccaf821b6d372be1}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_EOT\_PRINT\_Q\_ARR\_CONTENTS@{DV\_EOT\_PRINT\_Q\_ARR\_CONTENTS}}
+\index{DV\_EOT\_PRINT\_Q\_ARR\_CONTENTS@{DV\_EOT\_PRINT\_Q\_ARR\_CONTENTS}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_EOT\_PRINT\_Q\_ARR\_CONTENTS}{DV\_EOT\_PRINT\_Q\_ARR\_CONTENTS}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+EOT\+\_\+\+PRINT\+\_\+\+Q\+\_\+\+ARR\+\_\+\+CONTENTS(\begin{DoxyParamCaption}\item[{}]{TYP\+\_\+,  }\item[{}]{Q\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \{ \(\backslash\)}
+\DoxyCodeLine{    foreach (Q\_[i]) \{ \(\backslash\)}
+\DoxyCodeLine{      while (Q\_[i].size() != 0) \{ \(\backslash\)}
+\DoxyCodeLine{        TYP\_ item = Q\_[i].pop\_front(); \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}\%s[\%0d] item uncompared:\(\backslash\)n\%s"{}}, \#Q\_, i, item.sprint()), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_ad1b7f43611406c242dfc550072c98987}\label{dv__macros_8svh_ad1b7f43611406c242dfc550072c98987}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_EOT\_PRINT\_Q\_CONTENTS@{DV\_EOT\_PRINT\_Q\_CONTENTS}}
+\index{DV\_EOT\_PRINT\_Q\_CONTENTS@{DV\_EOT\_PRINT\_Q\_CONTENTS}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_EOT\_PRINT\_Q\_CONTENTS}{DV\_EOT\_PRINT\_Q\_CONTENTS}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+EOT\+\_\+\+PRINT\+\_\+\+Q\+\_\+\+CONTENTS(\begin{DoxyParamCaption}\item[{}]{TYP\+\_\+,  }\item[{}]{Q\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \{ \(\backslash\)}
+\DoxyCodeLine{    while (Q\_.size() != 0) \{ \(\backslash\)}
+\DoxyCodeLine{      TYP\_ item = Q\_.pop\_front(); \(\backslash\)}
+\DoxyCodeLine{      dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}\%s item uncompared:\(\backslash\)n\%s"{}}, \#Q\_, item.sprint()), ID\_) \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_aeccf1cf789b4786675c4c040b53d889a}\label{dv__macros_8svh_aeccf1cf789b4786675c4c040b53d889a}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_EOT\_PRINT\_TLM\_FIFO\_ARR\_CONTENTS@{DV\_EOT\_PRINT\_TLM\_FIFO\_ARR\_CONTENTS}}
+\index{DV\_EOT\_PRINT\_TLM\_FIFO\_ARR\_CONTENTS@{DV\_EOT\_PRINT\_TLM\_FIFO\_ARR\_CONTENTS}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_EOT\_PRINT\_TLM\_FIFO\_ARR\_CONTENTS}{DV\_EOT\_PRINT\_TLM\_FIFO\_ARR\_CONTENTS}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+EOT\+\_\+\+PRINT\+\_\+\+TLM\+\_\+\+FIFO\+\_\+\+ARR\+\_\+\+CONTENTS(\begin{DoxyParamCaption}\item[{}]{TYP\+\_\+,  }\item[{}]{FIFO\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \{ \(\backslash\)}
+\DoxyCodeLine{    foreach (FIFO\_[i]) \{ \(\backslash\)}
+\DoxyCodeLine{      while (!FIFO\_[i].is\_empty()) \{ \(\backslash\)}
+\DoxyCodeLine{        TYP\_ item; \(\backslash\)}
+\DoxyCodeLine{        void(FIFO\_[i].try\_get(item)); \(\backslash\)}
+\DoxyCodeLine{        dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}\%s[\%0d] item uncompared:\(\backslash\)n\%s"{}}, \#FIFO\_, i, item.sprint()), ID\_) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a6bfafd31d37e890636d89b28d71fc49c}\label{dv__macros_8svh_a6bfafd31d37e890636d89b28d71fc49c}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_EOT\_PRINT\_TLM\_FIFO\_CONTENTS@{DV\_EOT\_PRINT\_TLM\_FIFO\_CONTENTS}}
+\index{DV\_EOT\_PRINT\_TLM\_FIFO\_CONTENTS@{DV\_EOT\_PRINT\_TLM\_FIFO\_CONTENTS}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_EOT\_PRINT\_TLM\_FIFO\_CONTENTS}{DV\_EOT\_PRINT\_TLM\_FIFO\_CONTENTS}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+EOT\+\_\+\+PRINT\+\_\+\+TLM\+\_\+\+FIFO\+\_\+\+CONTENTS(\begin{DoxyParamCaption}\item[{}]{TYP\+\_\+,  }\item[{}]{FIFO\+\_\+,  }\item[{}]{SEV\+\_\+error,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \{ \(\backslash\)}
+\DoxyCodeLine{    while (!FIFO\_.is\_empty()) \{ \(\backslash\)}
+\DoxyCodeLine{      TYP\_ item; \(\backslash\)}
+\DoxyCodeLine{      void(FIFO\_.try\_get(item)); \(\backslash\)}
+\DoxyCodeLine{      dv\_\#\#SEV\_(\$sformatf(\textcolor{stringliteral}{"{}\%s item uncompared:\(\backslash\)n\%s"{}}, \#FIFO\_, item.sprint()), ID\_) \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a030194647047bdfd42058ab0ad6a72d8}\label{dv__macros_8svh_a030194647047bdfd42058ab0ad6a72d8}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!dv\_error@{dv\_error}}
+\index{dv\_error@{dv\_error}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{dv\_error}{dv\_error}}
+{\footnotesize\ttfamily \#define dv\+\_\+error(\begin{DoxyParamCaption}\item[{}]{MSG\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    ) \(\backslash\)}
+\DoxyCodeLine{    \$error(\textcolor{stringliteral}{"{}\%0t: (\%0s:\%0d) [\%0s] \%0s"{}}, \$time, \_\_FILE\_\_, \_\_LINE\_\_, ID\_, MSG\_);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_af438ee0ccf1e6020a2a1b68db23be63c}\label{dv__macros_8svh_af438ee0ccf1e6020a2a1b68db23be63c}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!dv\_fatal@{dv\_fatal}}
+\index{dv\_fatal@{dv\_fatal}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{dv\_fatal}{dv\_fatal}}
+{\footnotesize\ttfamily \#define dv\+\_\+fatal(\begin{DoxyParamCaption}\item[{}]{MSG\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    ) \(\backslash\)}
+\DoxyCodeLine{    \$fatal(1, \textcolor{stringliteral}{"{}\%0t: (\%0s:\%0d) [\%0s] \%0s"{}}, \$time, \_\_FILE\_\_, \_\_LINE\_\_, ID\_, MSG\_);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a8882cc6c25c4b4dad2f57dbe96d98df9}\label{dv__macros_8svh_a8882cc6c25c4b4dad2f57dbe96d98df9}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_GET\_ENUM\_PLUSARG@{DV\_GET\_ENUM\_PLUSARG}}
+\index{DV\_GET\_ENUM\_PLUSARG@{DV\_GET\_ENUM\_PLUSARG}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_GET\_ENUM\_PLUSARG}{DV\_GET\_ENUM\_PLUSARG}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+GET\+\_\+\+ENUM\+\_\+\+PLUSARG(\begin{DoxyParamCaption}\item[{}]{ENUM\+\_\+,  }\item[{}]{VAR\+\_\+,  }\item[{}]{PLUSARG\+\_\+,  }\item[{}]{CHECK\+\_\+\+EXISTS\+\_\+,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \{ \(\backslash\)}
+\DoxyCodeLine{    string str; \(\backslash\)}
+\DoxyCodeLine{    if (\$value\$plusargs(\textcolor{stringliteral}{"{}``PLUSARG\_``=\%0s`"{}}, str)) \{ \(\backslash\)}
+\DoxyCodeLine{      if (!uvm\_enum\_wrapper <ENUM\_> ::from\_name(str, VAR\_)) \{ \(\backslash\)}
+\DoxyCodeLine{        uvm\_fatal(ID\_, \$sformatf(\textcolor{stringliteral}{"{}Cannot find \%s from enum \#\#ENUM\_\#\#"{}}, VAR\_.name())) \(\backslash\)}
+\DoxyCodeLine{      \} \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (CHECK\_EXISTS\_) \{ \(\backslash\)}
+\DoxyCodeLine{      uvm\_fatal(ID\_, \textcolor{stringliteral}{"{}Please pass the plusarg +\#\#PLUSARG\_\#\#=<\#\#ENUM\_\#\#-\/literal>"{}}) \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a70a2c484850c12d24b21b4895553fa2a}\label{dv__macros_8svh_a70a2c484850c12d24b21b4895553fa2a}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_GET\_QUEUE\_PLUSARG@{DV\_GET\_QUEUE\_PLUSARG}}
+\index{DV\_GET\_QUEUE\_PLUSARG@{DV\_GET\_QUEUE\_PLUSARG}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_GET\_QUEUE\_PLUSARG}{DV\_GET\_QUEUE\_PLUSARG}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+GET\+\_\+\+QUEUE\+\_\+\+PLUSARG(\begin{DoxyParamCaption}\item[{}]{QUEUE\+\_\+,  }\item[{}]{PLUSARG\+\_\+,  }\item[{}]{DELIMITER\+\_\+,  }\item[{}]{CHECK\+\_\+\+EXISTS\+\_\+,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \{ \(\backslash\)}
+\DoxyCodeLine{    string str; \(\backslash\)}
+\DoxyCodeLine{    if (\$value\$plusargs(\textcolor{stringliteral}{"{}``PLUSARG\_``=\%0s`"{}}, str)) \{ \(\backslash\)}
+\DoxyCodeLine{      str\_split(str, QUEUE\_, DELIMITER\_); \(\backslash\)}
+\DoxyCodeLine{    \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (CHECK\_EXISTS\_) \{ \(\backslash\)}
+\DoxyCodeLine{      uvm\_fatal(ID\_, \textcolor{stringliteral}{"{}Please pass the plusarg +\#\#PLUSARG\_\#\#=<\#\#ENUM\_\#\#-\/literal>"{}}) \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a4d69dd30cde194a43ac0df7a53a55651}\label{dv__macros_8svh_a4d69dd30cde194a43ac0df7a53a55651}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!dv\_info@{dv\_info}}
+\index{dv\_info@{dv\_info}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{dv\_info}{dv\_info}}
+{\footnotesize\ttfamily \#define dv\+\_\+info(\begin{DoxyParamCaption}\item[{}]{MSG\+\_\+,  }\item[{}]{VERBOSITYDUMMY\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    ) \(\backslash\)}
+\DoxyCodeLine{    \$display(\textcolor{stringliteral}{"{}\%0t: (\%0s:\%0d) [\%0s] \%0s"{}}, \$time, \_\_FILE\_\_, \_\_LINE\_\_, ID\_, MSG\_);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a50bb5c80e2e9aaee81b60b6d8b193402}\label{dv__macros_8svh_a50bb5c80e2e9aaee81b60b6d8b193402}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_MAX2@{DV\_MAX2}}
+\index{DV\_MAX2@{DV\_MAX2}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_MAX2}{DV\_MAX2}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+MAX2(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~((a) $>$ (b) ? (a) \+: (b))}
+
+\mbox{\Hypertarget{dv__macros_8svh_aa6907a783428959e2c50c65276b99b3c}\label{dv__macros_8svh_aa6907a783428959e2c50c65276b99b3c}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_PRINT\_ARR\_CONTENTS@{DV\_PRINT\_ARR\_CONTENTS}}
+\index{DV\_PRINT\_ARR\_CONTENTS@{DV\_PRINT\_ARR\_CONTENTS}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_PRINT\_ARR\_CONTENTS}{DV\_PRINT\_ARR\_CONTENTS}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+PRINT\+\_\+\+ARR\+\_\+\+CONTENTS(\begin{DoxyParamCaption}\item[{}]{ARR\+\_\+,  }\item[{}]{V\+\_\+uvm\+\_\+pkg\+UVM\+\_\+\+MEDIUM,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \{ \(\backslash\)}
+\DoxyCodeLine{    foreach (ARR\_[i]) \{ \(\backslash\)}
+\DoxyCodeLine{      dv\_info(\$sformatf(\textcolor{stringliteral}{"{}\%s[\%0d] = \%0d (0x\%0h)"{}}, \#ARR\_, i, ARR\_[i], ARR\_[i]), V\_, ID\_) \(\backslash\)}
+\DoxyCodeLine{    \} \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a787c2fa4ef0560a9523c0bad758743b3}\label{dv__macros_8svh_a787c2fa4ef0560a9523c0bad758743b3}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_SPINWAIT@{DV\_SPINWAIT}}
+\index{DV\_SPINWAIT@{DV\_SPINWAIT}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_SPINWAIT}{DV\_SPINWAIT}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+SPINWAIT(\begin{DoxyParamCaption}\item[{}]{WAIT\+\_\+,  }\item[{}]{MSG\+\_\+ timeoutoccurred,  }\item[{}]{TIMEOUT\+\_\+\+NS\+\_\+default\+\_\+spinwait\+\_\+timeout\+\_\+ns,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~  \mbox{\hyperlink{dv__macros_8svh_a7b71bbbfe07954224462b96e0cfde6b3}{DV\+\_\+\+SPINWAIT\+\_\+\+EXIT}}(WAIT\+\_\+, \mbox{\hyperlink{dv__macros_8svh_a152205d2740e56e98c83a42c5a481970}{DV\+\_\+\+WAIT\+\_\+\+TIMEOUT}}(TIMEOUT\+\_\+\+NS\+\_\+, ID\+\_\+, MSG\+\_\+);, \char`\"{}\char`\"{}, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_a7b71bbbfe07954224462b96e0cfde6b3}\label{dv__macros_8svh_a7b71bbbfe07954224462b96e0cfde6b3}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_SPINWAIT\_EXIT@{DV\_SPINWAIT\_EXIT}}
+\index{DV\_SPINWAIT\_EXIT@{DV\_SPINWAIT\_EXIT}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_SPINWAIT\_EXIT}{DV\_SPINWAIT\_EXIT}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+SPINWAIT\+\_\+\+EXIT(\begin{DoxyParamCaption}\item[{}]{WAIT\+\_\+,  }\item[{}]{EXIT\+\_\+,  }\item[{}]{MSG\+\_\+ exit conditionoccurred,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \{ \(\backslash\)}
+\DoxyCodeLine{    fork \{ \(\backslash\)}
+\DoxyCodeLine{      fork \(\backslash\)}
+\DoxyCodeLine{        \{ \(\backslash\)}
+\DoxyCodeLine{          WAIT\_ \(\backslash\)}
+\DoxyCodeLine{        \} \(\backslash\)}
+\DoxyCodeLine{        \{ \(\backslash\)}
+\DoxyCodeLine{          EXIT\_ \(\backslash\)}
+\DoxyCodeLine{          if (MSG\_ != \textcolor{stringliteral}{"{}"{}}) \{ \(\backslash\)}
+\DoxyCodeLine{            dv\_info(MSG\_, uvm\_pkg::UVM\_HIGH, ID\_) \(\backslash\)}
+\DoxyCodeLine{          \} \(\backslash\)}
+\DoxyCodeLine{        \} \(\backslash\)}
+\DoxyCodeLine{      join\_any \(\backslash\)}
+\DoxyCodeLine{      disable fork; \(\backslash\)}
+\DoxyCodeLine{    \} join \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a8a32c3b2aaef1021af8464139b0d1756}\label{dv__macros_8svh_a8a32c3b2aaef1021af8464139b0d1756}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_STRINGIFY@{DV\_STRINGIFY}}
+\index{DV\_STRINGIFY@{DV\_STRINGIFY}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_STRINGIFY}{DV\_STRINGIFY}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+STRINGIFY(\begin{DoxyParamCaption}\item[{}]{I\+\_\+ }\end{DoxyParamCaption})~\#I\+\_\+}
+
+\mbox{\Hypertarget{dv__macros_8svh_a743f98785c4ba510e0a0dd2cc7a7b597}\label{dv__macros_8svh_a743f98785c4ba510e0a0dd2cc7a7b597}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_WAIT@{DV\_WAIT}}
+\index{DV\_WAIT@{DV\_WAIT}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_WAIT}{DV\_WAIT}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+WAIT(\begin{DoxyParamCaption}\item[{}]{WAIT\+\_\+\+COND\+\_\+,  }\item[{}]{MSG\+\_\+ wait timeoutoccurred,  }\item[{}]{TIMEOUT\+\_\+\+NS\+\_\+default\+\_\+spinwait\+\_\+timeout\+\_\+ns,  }\item[{}]{ID\+\_\+gfn }\end{DoxyParamCaption})~  \mbox{\hyperlink{dv__macros_8svh_a787c2fa4ef0560a9523c0bad758743b3}{DV\+\_\+\+SPINWAIT}}(wait (WAIT\+\_\+\+COND\+\_\+);, MSG\+\_\+, TIMEOUT\+\_\+\+NS\+\_\+, ID\+\_\+)}
+
+\mbox{\Hypertarget{dv__macros_8svh_a152205d2740e56e98c83a42c5a481970}\label{dv__macros_8svh_a152205d2740e56e98c83a42c5a481970}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!DV\_WAIT\_TIMEOUT@{DV\_WAIT\_TIMEOUT}}
+\index{DV\_WAIT\_TIMEOUT@{DV\_WAIT\_TIMEOUT}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{DV\_WAIT\_TIMEOUT}{DV\_WAIT\_TIMEOUT}}
+{\footnotesize\ttfamily \#define DV\+\_\+\+WAIT\+\_\+\+TIMEOUT(\begin{DoxyParamCaption}\item[{}]{TIMEOUT\+\_\+\+NS\+\_\+,  }\item[{}]{ID\+\_\+gfn,  }\item[{}]{ERROR\+\_\+\+MSG\+\_\+ timeoutoccurred,  }\item[{}]{REPORT\+\_\+\+FATAL\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \{ \(\backslash\)}
+\DoxyCodeLine{    <TIMEOUT\_NS\_ * 1ns> ; \(\backslash\)}
+\DoxyCodeLine{    if (REPORT\_FATAL\_) \mbox{\hyperlink{dv__macros_8svh_af438ee0ccf1e6020a2a1b68db23be63c}{dv\_fatal}}(ERROR\_MSG\_, ID\_) \(\backslash\)}
+\DoxyCodeLine{    else               \mbox{\hyperlink{dv__macros_8svh_a030194647047bdfd42058ab0ad6a72d8}{dv\_error}}(ERROR\_MSG\_, ID\_) \(\backslash\)}
+\DoxyCodeLine{  \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a12f00537f2a0f360b8c835fe57d6cb3e}\label{dv__macros_8svh_a12f00537f2a0f360b8c835fe57d6cb3e}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!dv\_warning@{dv\_warning}}
+\index{dv\_warning@{dv\_warning}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{dv\_warning}{dv\_warning}}
+{\footnotesize\ttfamily \#define dv\+\_\+warning(\begin{DoxyParamCaption}\item[{}]{MSG\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    ) \(\backslash\)}
+\DoxyCodeLine{    \$warning(\textcolor{stringliteral}{"{}\%0t: (\%0s:\%0d) [\%0s] \%0s"{}}, \$time, \_\_FILE\_\_, \_\_LINE\_\_, ID\_, MSG\_);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a4c73f47f0479e9edc898c2bac5a0d73e}\label{dv__macros_8svh_a4c73f47f0479e9edc898c2bac5a0d73e}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!GET\_PARITY@{GET\_PARITY}}
+\index{GET\_PARITY@{GET\_PARITY}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{GET\_PARITY}{GET\_PARITY}}
+{\footnotesize\ttfamily \#define GET\+\_\+\+PARITY(\begin{DoxyParamCaption}\item[{}]{val,  }\item[{}]{odd }\end{DoxyParamCaption})~($^\wedge$val $^\wedge$ odd)}
+
+\mbox{\Hypertarget{dv__macros_8svh_ae8d8146241dbd32a96cb239f6cc20e7b}\label{dv__macros_8svh_ae8d8146241dbd32a96cb239f6cc20e7b}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!gfn@{gfn}}
+\index{gfn@{gfn}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{gfn}{gfn}}
+{\footnotesize\ttfamily \#define gfn~\$sformatf(\char`\"{}\%m\char`\"{})}
+
+\mbox{\Hypertarget{dv__macros_8svh_a9cb3bad8c0a9b230f02a130d5eca9b9c}\label{dv__macros_8svh_a9cb3bad8c0a9b230f02a130d5eca9b9c}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!gmv@{gmv}}
+\index{gmv@{gmv}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{gmv}{gmv}}
+{\footnotesize\ttfamily \#define gmv(\begin{DoxyParamCaption}\item[{}]{csr }\end{DoxyParamCaption})~csr.\+get\+\_\+mirrored\+\_\+value()}
+
+\mbox{\Hypertarget{dv__macros_8svh_a67257ab509ec27f36e929cae3814537a}\label{dv__macros_8svh_a67257ab509ec27f36e929cae3814537a}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!gn@{gn}}
+\index{gn@{gn}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{gn}{gn}}
+{\footnotesize\ttfamily \#define gn~get\+\_\+name()}
+
+\mbox{\Hypertarget{dv__macros_8svh_ad8550a68bb2befadf8a017676ed739be}\label{dv__macros_8svh_ad8550a68bb2befadf8a017676ed739be}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!gtn@{gtn}}
+\index{gtn@{gtn}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{gtn}{gtn}}
+{\footnotesize\ttfamily \#define gtn~get\+\_\+type\+\_\+name()}
+
+\mbox{\Hypertarget{dv__macros_8svh_a3c0a5546a0271d602f67d18bc9f65034}\label{dv__macros_8svh_a3c0a5546a0271d602f67d18bc9f65034}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!OTDBG@{OTDBG}}
+\index{OTDBG@{OTDBG}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{OTDBG}{OTDBG}}
+{\footnotesize\ttfamily \#define OTDBG(\begin{DoxyParamCaption}\item[{}]{x }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{  \$write(\$sformatf(\textcolor{stringliteral}{"{}\%t:OTDBG:\%s:\%d:"{}},\$time,\_\_FILE\_\_, \_\_LINE\_\_));\(\backslash\)}
+\DoxyCodeLine{  \$display(\$sformatf x);}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_adf9b5372007f070238519e05d8e4b9a8}\label{dv__macros_8svh_adf9b5372007f070238519e05d8e4b9a8}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!uvm\_component\_new@{uvm\_component\_new}}
+\index{uvm\_component\_new@{uvm\_component\_new}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{uvm\_component\_new}{uvm\_component\_new}}
+{\footnotesize\ttfamily \#define uvm\+\_\+component\+\_\+new(\begin{DoxyParamCaption}\item[{}]{NAME\+\_\+,  }\item[{}]{PARENT\+\_\+null }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{     \textcolor{keyword}{new} (\textcolor{keywordtype}{string} \mbox{\hyperlink{namespacealign__hex_a0a9933421ed6408481416e2465260aa1}{name}}=NAME\_, uvm\_component parent=PARENT\_) \{ \(\backslash\)}
+\DoxyCodeLine{      super.new(\mbox{\hyperlink{namespacealign__hex_a0a9933421ed6408481416e2465260aa1}{name}}, parent); \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{dv__macros_8svh_a2a4e789a775055fb099dd14c442030ec}\label{dv__macros_8svh_a2a4e789a775055fb099dd14c442030ec}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!uvm\_create\_comp@{uvm\_create\_comp}}
+\index{uvm\_create\_comp@{uvm\_create\_comp}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{uvm\_create\_comp}{uvm\_create\_comp}}
+{\footnotesize\ttfamily \#define uvm\+\_\+create\+\_\+comp(\begin{DoxyParamCaption}\item[{}]{\+\_\+type\+\_\+name\+\_\+,  }\item[{}]{\+\_\+inst\+\_\+name\+\_\+ }\end{DoxyParamCaption})~    \+\_\+inst\+\_\+name\+\_\+ = \+\_\+type\+\_\+name\+\_\+\+::type\+\_\+id\+::create(\#\+\_\+inst\+\_\+name\+\_\+, this);}
+
+\mbox{\Hypertarget{dv__macros_8svh_a2240ce47eed451877815a4ae71406d52}\label{dv__macros_8svh_a2240ce47eed451877815a4ae71406d52}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!uvm\_create\_obj@{uvm\_create\_obj}}
+\index{uvm\_create\_obj@{uvm\_create\_obj}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{uvm\_create\_obj}{uvm\_create\_obj}}
+{\footnotesize\ttfamily \#define uvm\+\_\+create\+\_\+obj(\begin{DoxyParamCaption}\item[{}]{\+\_\+type\+\_\+name\+\_\+,  }\item[{}]{\+\_\+inst\+\_\+name\+\_\+ }\end{DoxyParamCaption})~    \+\_\+inst\+\_\+name\+\_\+ = \+\_\+type\+\_\+name\+\_\+\+::type\+\_\+id\+::create(\#\+\_\+inst\+\_\+name\+\_\+);}
+
+\mbox{\Hypertarget{dv__macros_8svh_ae6ba1afa22e0db4172754b2c846eb428}\label{dv__macros_8svh_ae6ba1afa22e0db4172754b2c846eb428}} 
+\index{dv\_macros.svh@{dv\_macros.svh}!uvm\_object\_new@{uvm\_object\_new}}
+\index{uvm\_object\_new@{uvm\_object\_new}!dv\_macros.svh@{dv\_macros.svh}}
+\doxysubsubsection{\texorpdfstring{uvm\_object\_new}{uvm\_object\_new}}
+{\footnotesize\ttfamily \#define uvm\+\_\+object\+\_\+new(\begin{DoxyParamCaption}\item[{}]{NAME\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{     \textcolor{keyword}{new} (\textcolor{keywordtype}{string} \mbox{\hyperlink{namespacealign__hex_a0a9933421ed6408481416e2465260aa1}{name}}=NAME\_) \{ \(\backslash\)}
+\DoxyCodeLine{      super.new(\mbox{\hyperlink{namespacealign__hex_a0a9933421ed6408481416e2465260aa1}{name}}); \(\backslash\)}
+\DoxyCodeLine{    \}}
+
+\end{DoxyCode}

@@ -7,7 +7,7 @@ class rvt_item extends uvm_sequence_item;
 
   //! @brief Calls plain UVM object constructor.
   //! @see dv_macros.svh
-  `uvm_object_new()
+  `uvm_object_new();
 
   //! @brief UVM factory registry.
   `uvm_object_utils(rvt_item)

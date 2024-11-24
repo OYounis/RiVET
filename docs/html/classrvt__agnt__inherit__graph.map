@@ -1,0 +1,4 @@
+<map id="rvt_agnt" name="rvt_agnt">
+<area shape="rect" id="node1" title="Base agent class. All non&#45;generic agents should extend this class." alt="" coords="15,80,91,107"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,100,32"/>
+</map>
